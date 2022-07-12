@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ">
+
+    <title>Dashboard - bookingfleet</title>
+
+    <link rel="icon" type="image/png" href="../uploads/finallogo.png">
+
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <!-- Styles -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../libs/font-awesome/css/font-awesome.css">
+    <link href="../css/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../css/ionicons/icofont.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="../libs/daterange/daterangepicker.css">
+    <link rel="stylesheet" href="../css/admin/vendors.css">
+    <link rel="stylesheet" href="../css/admin/app.css">
+
+    <script src="../js/app.js"></script>
+    <!-- <script type="text/javascript">jQuery.noConflict(true);</script> -->
+
+    <link rel="stylesheet" href="../css/admin/chartjs.css">
+    <link rel="stylesheet" href="../css/font-face.css">
+
+</head>
+
+<body>
+    <div id="app">
+        <div class="main-header d-flex">
+            <div class="header-logo flex-shrink-0">
+                <h3 class="logo-text"><a href="https://bookingfleet.com/BookingFleet/public/admin">Booking Core <span
+                            class="app-version">2.0.0</span></a></h3>
+            </div>
+            <div class="header-widgets d-flex flex-grow-1">
+                <div class="widgets-left d-flex flex-grow-1 align-items-center">
+                    <div class="header-widget">
+                        <span class="btn-toggle-admin-menu btn btn-sm btn-link"><i class="icon ion-ios-menu"></i></span>
+                    </div>
+                    <div class="header-widget search-widget">
+
+                        <a href="https://bookingfleet.com/BookingFleet/public" class="btn btn-link" target="_blank"><i
+                                class="fa fa-eye"></i> Home
+                        </a>
+                    </div>
+                </div>
+                <div class="widgets-right flex-shrink-0 d-flex">
+                    <div class="dropdown header-widget widget-user pt-2 dropdown-notifications flex-shrink-0"
+                        style="min-width: 0">
+                        <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa fa-lg fa-bell m-1 p-1"></i>
+                            <span class="badge badge-danger notification-icon">1156</span>
+                        </div>
+                        <div class="dropdown-menu overflow-auto notify-items dropdown-container dropdown-menu-right dropdown-large"
+                            aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-toolbar">
+                                <div class="dropdown-toolbar-actions">
+                                    <a href="#" class="markAllAsRead">Mark all as read</a>
+                                </div>
+                                <h3 class="dropdown-toolbar-title">Notifications (<span class="notif-count">1156</span>)
+                                </h3>
+                            </div>
+                            <ul class="dropdown-list-items p-0">
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="bookingFleet">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="66352cb0-240a-4c8a-badf-5131b60d27f4"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel?id=77">dawn
+                                                was updated to Publish by bookingFleet</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 10 days 15 hours 51 minutes 45 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="bookingFleet">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="1138f283-e42c-43bb-a79b-f6c103c27be4"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/edit/77">bookingFleet
+                                                has created hotel dawn</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 10 days 16 hours 26 minutes 47 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="ds">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="0d4b882b-9545-43cb-ad9b-e3da9b0bcadb"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">ds
+                                                has requested to become a vendor</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 15 days 30 minutes 44 seconds </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="waqas khursheed">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="075bd3ee-6174-4d61-bf92-c817a4041909"
+                                                href="../admin/report/booking/index.html">waqas
+                                                khursheed has created new Booking</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 22 days 22 hours 15 minutes 14 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="waqas khursheed">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="f0118f76-5ff5-4c3e-b628-2ae1453be2d2"
+                                                href="../admin/report/booking/index.html">waqas
+                                                khursheed has created new Booking</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 22 days 22 hours 19 minutes 25 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="dropdown-footer text-center">
+                                <a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown header-widget widget-user flex-shrink-0">
+                        <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="user-avatar flex-shrink-0">
+                                <div class="avatar avatar-cover"
+                                    style="background-image: url('https://bookingfleet.com/BookingFleet/public/images/avatar.png')">
+                                </div>
+                            </span>
+                            <div class="user-info flex-grow-1">
+                                <div class="user-name">Front end Developer</div>
+                                <div class="user-role">Administrator</div>
+                            </div>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item"
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/edit/63">Edit
+                                Profile</a>
+                            <a class="dropdown-item"
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/password/63">Change
+                                Password</a>
+                            <a class="dropdown-item" href="#"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                                    class="fa fa-sign-out"></i> Logout
+                            </a>
+                        </div>
+                        <form id="logout-form" action="https://bookingfleet.com/BookingFleet/public/logout"
+                            method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-sidebar">
+            <ul class="main-menu">
+                <li class=" admin"><a href="index.html">
+                        <span class="icon text-center"><i class="icon ion-ios-desktop"></i></span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class=" has-children admin_module_news">
+                    <a href="news/index.html">
+                        <span class="icon text-center"><i class="ion-md-bookmarks"></i></span>
+                        News
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_news"><a href="news/index.html"> All News</a> </li>
+                        <li class=" has-children admin_module_news"><a href="news/create/index.html"> Add News</a> </li>
+                        <li class=" has-children admin_module_news"><a href="news/category/index.html">Categories</a>
+                        </li>
+                        <li class=" has-children admin_module_news"><a href="news/tags/index.html"> Tags</a></li>
+                    </ul>
+                </li>
+                <li class=" admin_module_page"><a href="pages/index.html">
+                        <span class="icon text-center"><i class="icon ion-ios-bookmarks"></i></span>
+                        Page
+                    </a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location">
+                    <a href="location/index.html">
+                        <span class="icon text-center"><i class="icon ion-md-compass"></i></span>
+                        Location
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location">
+                            <a href="location/index.html">
+                                <i class="icon ion-md-compass"></i>
+                                All Location
+                            </a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location">
+                            <a href="location/category/index.html">
+                                <i class="icon ion-md-compass"></i>
+                                All Category
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_hotel">
+                    <a href="hotel/index.html">
+                        <span class="icon text-center"><i class="fa fa-building-o"></i></span>
+                        Hotel
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_hotel">
+                            <a href="hotel/index.html">All Hotels</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel">
+                            <a href="hotel/add/index.html">Add new Hotel</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel">
+                            <a href="hotel/attribute/index.html">Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel">
+                            <a href="hotel/room/index.html">Room Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel">
+                            <a href="hotel/recovery.html">Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_tour">
+                    <a href="tour/index.html">
+                        <span class="icon text-center"><i class="icon ion-md-umbrella"></i></span>
+                        Tour
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_tour">
+                            <a href="tour/index.html">All Tours</a>
+                        </li>
+                        <li class=" has-children admin_module_tour">
+                            <a href="tour/add/index.html">Add Tour</a>
+                        </li>
+                        <li class=" has-children admin_module_tour">
+                            <a href="tour/categories/index.html">Categories</a>
+                        </li>
+                        <li class=" has-children admin_module_tour">
+                            <a href="tour/attribute/index.html">Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_tour">
+                            <a href="tour/availability/index.html">Availability</a>
+                        </li>
+                        <li class=" has-children admin_module_tour">
+                            <a href="tour/bookingCalendar.html">Booking
+                                Calendar</a>
+                        </li>
+                        <li class=" has-children admin_module_tour">
+                            <a href="tour/recovery">Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_space">
+                    <a href="space/index.html">
+                        <span class="icon text-center"><i class="ion ion-md-home"></i></span>
+                        Space
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_space">
+                            <a href="space/index.html">
+                                All Spaces</a>
+                        </li>
+                        <li class=" has-children admin_module_space">
+                            <a href="space/add/index.html">
+                                Add new Space</a>
+                        </li>
+                        <li class=" has-children admin_module_space">
+                            <a href="space/attribute/index.html">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_space">
+                            <a href="space/availability/index.html">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children admin_module_space">
+                            <a href="space/recovery/index.html">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_car">
+                    <a href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                        <span class="icon text-center"><i class="ion-logo-model-s"></i></span>
+                        Car
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                                All Cars</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/create">
+                                Add new Car</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/availability">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" admin_module_review">
+                    <a href="reviews/index.html">
+                        <span class="icon text-center"><i class="icon ion-ios-text"></i></span>
+                        Reviews
+                    </a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                    <a href="event/index.html">
+                        <span class="icon text-center"><i class="ion-ios-calendar"></i></span>
+                        Event
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                            <a href="event/index.html">
+                                All Events</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                            <a href="event/add/index.html">
+                                Add new Event</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                            <a href="event/attribute/index.html">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                            <a href="event/availability/index.html">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                            <a href="event/recovery.html">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" https:__bookingfleet.com_BookingFleet_public_admin_module_media">
+                    <a href="media/index.html">
+                        <span class="icon text-center"><i class="fa fa-picture-o"></i></span>
+                        Media
+                    </a>
+                </li>
+                <li class=" admin_module_core_menu">
+                    <a href="menu/index.html">
+                        <span class="icon text-center"><i class="icon ion-ios-apps"></i></span>
+                        Menu
+                    </a>
+                </li>
+                <li class=" admin_module_core_emailsetting">
+                    <a href="emailsetting/index.html">
+                        <span class="icon text-center"><i class="fa fa-envelope"></i></span>
+                        Email Setting
+                    </a>
+                </li>
+                <li class=" admin_module_template">
+                    <a href="templates/index.html">
+                        <span class="icon text-center"><i class="icon ion-logo-html5"></i></span>
+                        Templates
+                    </a>
+                </li>
+                <li class=" admin_module_vendor_payout">
+                    <a href="payout/index.html">
+                        <span class="icon text-center"><i class="icon ion-md-card"></i></span>
+                        Payouts
+                    </a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                    <a href="setting/index.html">
+                        <span class="icon text-center"><i class="icon ion-ios-cog"></i></span>
+                        Setting
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/index.html"> General Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/car/index.html"> Car Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/event/index.html"> Event Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/hotel/index.html"> Hotel Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/space/index.html"> Space Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/tour/index.html"> Tour Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/news/index.html"> News Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/booking/index.html"> Booking Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/enquiry/index.html"> Enquiry Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/user/index.html"> User Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/wallet/index.html"> Wallet Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/vendor/index.html"> Vendor Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/payment/index.html"> Payment Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/style/index.html"> Style Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/advance/index.html"> Advance Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/email/index.html"> Email Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/sms/index.html"> Sms Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/mobile/index.html"> Mobile App Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general">
+                            <a href="setting/review/index.html"> Review Advance Settings</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_core_tools">
+                    <a href="tools/index.html">
+                        <span class="icon text-center"><i class="icon ion-ios-hammer"></i></span>
+                        Tools
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_core_tools">
+                            <a href="tools/index.html">
+                                <i class="icon ion-ios-globe"></i>
+                                Languages
+                            </a>
+                        </li>
+                        <li class=" has-children admin_module_core_tools">
+                            <a href="tools/translation/index.html">
+                                <i class="icon ion-ios-globe"></i>
+                                Translation Manager
+                            </a>
+                        </li>
+                        <li class=" has-children admin_module_core_tools">
+                            <a href="logs/index.html">
+                                <i class="icon ion-ios-nuclear"></i>
+                                System Logs
+                            </a>
+                        </li>
+                        <li class=" has-children admin_module_core_tools">
+                            <a href="tools/updater/index.html">
+                                <i class="icon ion-md-download"></i>
+                                Updater
+                            </a>
+                        </li>
+                        <li class=" has-children admin_module_core_tools">
+                            <a href="tools/plugins/index.html">
+                                <i class="icon ion-md-color-wand"></i>
+                                Plugins
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_user">
+                    <a href="users/all/index.html">
+                        <span class="icon text-center"><i class="icon ion-ios-contacts"></i></span>
+                        Users <span class="badge badge-warning">1</span>
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_user">
+                            <a href="users/all/index.html">
+                                <i class="fa fa-user"></i>
+                                All Users</a>
+                        </li>
+                        <li class=" has-children admin_module_user">
+                            <a href="users/role/index.html">
+                                <i class="fa fa-lock"></i>
+                                Role Manager</a>
+                        </li>
+                        <li class=" has-children admin_module_user">
+                            <a href="users/subscribers/index.html">
+                                Subscribers</a>
+                        </li>
+                        <li class=" has-children admin_module_user">
+                            <a href="users/upgradeRequest/index.html">
+                                Upgrade Request <span class="badge badge-warning">4</span></a>
+                        </li>
+                        <li class=" has-children admin_module_user">
+                            <a href="users/verification/index.html">
+                                Verification Request <span class="badge badge-warning">1</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_report_booking">
+                    <a href="report/enquiry/index.html">
+                        <span class="icon text-center"><i class="icon ion-ios-pie"></i></span>
+                        Reports <span class="badge badge-warning">2</span>
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_report_booking">
+                            <a href="report/enquiry/index.html">
+                                <i class="icon ion-ios-pricetags"></i>
+                                Enquiry Reports
+                            </a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking">
+                            <a href="report/booking/index.html">
+                                <i class="icon ion-ios-pricetags"></i>
+                                Booking Reports
+                            </a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking">
+                            <a href="report/statistic/index.html">
+                                <i class="icon ion ion-md-podium"></i>
+                                Booking Statistic
+                            </a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking">
+                            <a href="report/contact/index.html">
+                                <i class="icon ion ion-md-mail"></i>
+                                Contact Submissions
+                            </a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking">
+                            <a href="report/credit-purchase/index.html">
+                                <i class="fa fa-money"></i>
+                                Credit Purchase Report <span class="badge badge-warning">2</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <div class="container-fluid">
+                <div class="dashboard-page">
+                    <h4 class="welcome-title text-uppercase">Welcome Front end!</h4>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dashboard-report-card card purple">
+                            <div class="card-content">
+                                <span class="card-title">Revenue</span>
+                                <span class="card-amount">1,123,812 ₨</span>
+                                <span class="card-desc">Total revenue</span>
+                            </div>
+                            <div class="card-media">
+                                <i class="icon ion-ios-cart"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dashboard-report-card card pink">
+                            <div class="card-content">
+                                <span class="card-title">Earning</span>
+                                <span class="card-amount">112,919 ₨</span>
+                                <span class="card-desc">Total Earning</span>
+                            </div>
+                            <div class="card-media">
+                                <i class="icon ion-ios-gift"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dashboard-report-card card info">
+                            <div class="card-content">
+                                <span class="card-title">Bookings</span>
+                                <span class="card-amount">214</span>
+                                <span class="card-desc">Total bookings</span>
+                            </div>
+                            <div class="card-media">
+                                <i class="icon ion-ios-pricetags"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3">
+                        <div class="dashboard-report-card card success">
+                            <div class="card-content">
+                                <span class="card-title">Services</span>
+                                <span class="card-amount">83</span>
+                                <span class="card-desc">Total bookable services</span>
+                            </div>
+                            <div class="card-media">
+                                <i class="icon ion-ios-flash"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-lg-12 ">
+                        <div class="panel">
+                            <div class="panel-title d-flex justify-content-between">
+                                <strong>Payment Mode</strong>
+                                <a href="../admin/report/booking/index.html" class="btn-link">More
+                                    <i class="icon ion-ios-arrow-forward"></i></a>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th width="60px">#</th>
+                                                <th>Payment Title</th>
+                                                <th width="100px">Status</th>
+                                                <th width="100px">Created At</th>
+                                                <th width="100px">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#1</td>
+                                                <td>
+                                                    Cash Payment
+                                                </td>
+                                                <td> <span class="badge badge-success">Active</span>
+                                                </td>
+                                                <td>01/02/2022 23:14</td>
+                                                <td><a href="#">Delete</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td>#2</td>
+                                                <td>
+                                                    Credit Card
+                                                </td>
+                                                <td> <span class="badge badge-danger">Inactive</span>
+                                                </td>
+                                                <td>01/03/2022 06:29</td>
+                                                <td><a href="#">Delete</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-12 col-lg-6 mb-3">
+                        <div class="panel">
+                            <div class="panel-title d-flex justify-content-between align-items-center">
+                                <strong>Earning statistics</strong>
+                                <div id="reportrange"
+                                    style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc;">
+                                    <i class="fa fa-calendar"></i>&nbsp;
+                                    <span>May 29, 2022 - June 3, 2022</span> <i class="fa fa-caret-down"></i>
+                                </div>
+                            </div>
+                            <div class="panel-body">
+                                <div class="chartjs-size-monitor">
+                                    <div class="chartjs-size-monitor-expand">
+                                        <div class=""></div>
+                                    </div>
+                                    <div class="chartjs-size-monitor-shrink">
+                                        <div class=""></div>
+                                    </div>
+                                </div>
+                                <canvas id="earning_chart" style="display: block; height: 239px; width: 478px;"
+                                    width="956" height="478" class="chartjs-render-monitor">
+                                </canvas>
+                                <script>
+                                    var earning_chart_data = { "labels": ["06\/06\/2022", "06\/07\/2022", "06\/08\/2022", "06\/09\/2022"], "datasets": [{ "label": "Total Revenue", "data": [0, 0, 0, 0], "backgroundColor": "#8892d6", "stack": "group-total" }, { "label": "Total Earning", "data": [0, 0, 0, 0], "backgroundColor": "#F06292", "stack": "group-extra" }] };
+                                </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-lg-6 ">
+                        <div class="panel">
+                            <div class="panel-title d-flex justify-content-between">
+                                <strong>Recent Bookings</strong>
+                                <a href="../admin/report/booking/index.html" class="btn-link">More
+                                    <i class="icon ion-ios-arrow-forward"></i></a>
+                            </div>
+                            <div class="panel-body">
+                                <div class="table-responsive">
+                                    <table class="table table-hover">
+                                        <thead>
+                                            <tr>
+                                                <th width="60px">#</th>
+                                                <th>Item</th>
+                                                <th width="100px">Total</th>
+                                                <th width="100px">Paid</th>
+                                                <th width="100px">Status</th>
+                                                <th width="100px">Created At</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>#364</td>
+                                                <td>
+                                                    <a href="../detailpage/index.html" target="_blank">Beach Luxury
+                                                        Hotel</a>
+                                                </td>
+                                                <td>1059.50&nbsp;PKR</td>
+                                                <td></td>
+                                                <td>
+                                                    <span class="badge badge-primary">Confirmed</span>
+                                                </td>
+                                                <td>04/11/2022 11:07</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#363</td>
+                                                <td>
+                                                    <a href="../detailpage/index.html" target="_blank">Beach Luxury
+                                                        Hotel</a>
+                                                </td>
+                                                <td>1059.50&nbsp;PKR</td>
+                                                <td></td>
+                                                <td>
+                                                    <span class="badge badge-primary">Confirmed</span>
+                                                </td>
+                                                <td>04/11/2022 11:03</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#362</td>
+                                                <td>
+                                                    <a href="../detailpage/index.html" target="_blank">Beach Luxury
+                                                        Hotel</a>
+                                                </td>
+                                                <td>1059.50&nbsp;PKR</td>
+                                                <td></td>
+                                                <td>
+                                                    <span class="badge badge-primary">Confirmed</span>
+                                                </td>
+                                                <td>04/11/2022 10:59</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#361</td>
+                                                <td>
+                                                    <a href="../detailpage/index.html" target="_blank">Beach Luxury
+                                                        Hotel</a>
+                                                </td>
+                                                <td>1059.50&nbsp;PKR</td>
+                                                <td></td>
+                                                <td>
+                                                    <span class="badge badge-primary">Confirmed</span>
+                                                </td>
+                                                <td>04/11/2022 10:44</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#359</td>
+                                                <td>
+                                                    <a href="../detailpage/index.html" target="_blank">Beach Luxury
+                                                        Hotel</a>
+                                                </td>
+                                                <td>111.00&nbsp;PKR</td>
+                                                <td></td>
+                                                <td>
+                                                    <span class="badge badge-primary">Confirmed</span>
+                                                </td>
+                                                <td>04/11/2022 09:46</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#358</td>
+                                                <td>
+                                                    <a href="../detailpage/index.html" target="_blank">Beach Luxury
+                                                        Hotel</a>
+                                                </td>
+                                                <td>1005.85&nbsp;PKR</td>
+                                                <td></td>
+                                                <td>
+                                                    <span class="badge badge-primary">Confirmed</span>
+                                                </td>
+                                                <td>04/11/2022 08:58</td>
+                                            </tr>
+                                            <tr>
+                                                <td>#357</td>
+                                                <td>
+                                                    <a href="../detailpage/index.html" target="_blank">Beach Luxury
+                                                        Hotel</a>
+                                                </td>
+                                                <td>1012.87&nbsp;PKR</td>
+                                                <td></td>
+                                                <td>
+                                                    <span class="badge badge-primary">Confirmed</span>
+                                                </td>
+                                                <td>04/11/2022 08:54</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                </div>
+            </div>
+            <footer class="main-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 copy-right">
+                            2022 © Booking Core by <a href="https://www.bookingcore.org" target="_blank">BookingCore
+                                Team</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="https://www.bookingcore.org" target="_blank">About Us</a>
+                                <a href="https://m.me/bookingcore" target="_blank">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="backdrop-sidebar-mobile"></div>
+    </div>
+
+    <div id="cdn-browser-modal" class="modal fade">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div id="cdn-browser" class="cdn-browser d-flex flex-column">
+                    <div class="files-nav flex-shrink-0">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-left d-flex align-items-center">
+                                <div class="filter-item"><input type="text" placeholder="Search file name...."
+                                        class="form-control"></div>
+                                <div class="filter-item"><button class="btn btn-default"><i class="fa fa-search"></i>
+                                        Search</button></div>
+                                <div class="filter-item"><small><i>Total: 0 files</i></small></div>
+                            </div>
+                            <div class="col-right"><i class="fa-spin fa fa-spinner icon-loading active"
+                                    style="display: none;"></i> <button class="btn btn-success btn-pick-files"><span><i
+                                            class="fa fa-upload"></i> Upload</span> <input multiple="multiple"
+                                        type="file" name="files[]"></button></div>
+                        </div>
+                    </div>
+                    <div display="none" class="upload-new" style="display: none;"><input type="file" name="filepond[]"
+                            class="my-pond"></div>
+                    <div class="files-list">
+                        <div class="files-wraps  view-grid"></div>
+                        <p class="no-files-text text-center" style="display: none;">No file found</p>
+                        <!---->
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="daterangepicker ltr show-ranges show-calendar opensleft">
+        <div class="ranges">
+            <ul>
+                <li data-range-key="Today">Today</li>
+                <li data-range-key="Yesterday">Yesterday</li>
+                <li data-range-key="Last 7 Days">Last 7 Days</li>
+                <li data-range-key="Last 30 Days">Last 30 Days</li>
+                <li data-range-key="This Month">This Month</li>
+                <li data-range-key="Last Month">Last Month</li>
+                <li data-range-key="This Year">This Year</li>
+                <li data-range-key="This Week">This Week</li>
+                <li data-range-key="Custom Range">Custom Range</li>
+            </ul>
+        </div>
+        <div class="drp-calendar left">
+            <div class="calendar-table"></div>
+            <div class="calendar-time" style="display: none;"></div>
+        </div>
+        <div class="drp-calendar right">
+            <div class="calendar-table"></div>
+            <div class="calendar-time" style="display: none;"></div>
+        </div>
+        <div class="drp-buttons"><span class="drp-selected"></span><button class="cancelBtn btn btn-sm btn-default"
+                type="button">Cancel</button><button class="applyBtn btn btn-sm btn-primary" disabled="disabled"
+                type="button">Apply</button> </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="../libs/js/pusher.min.js"></script>
+    <script src="../dist/admin/js/manifest.js"></script>
+    <script src="../dist/admin/js/vendor.js"></script>
+    <script src="../dist/admin/js/app.js"></script>
+    <script src="../libs/daterange/moment.min.js"></script>
+    <script src="../libs/daterange/daterangepicker.min.js"></script>
+    <script src="../libs/chart_js/Chart.min.js"></script>
+    <script src="../js/admin/chartjs.js"></script>
+
+</body>
+<loom-container id="lo-companion-container">
+    <loom-shadow classname="resolved"></loom-shadow>
+</loom-container>
+<loom-container id="lo-engage-ext-container">
+    <loom-shadow classname="resolved"></loom-shadow>
+</loom-container>
+
+</html>

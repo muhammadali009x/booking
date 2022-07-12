@@ -1,0 +1,1116 @@
+
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ">
+
+    <title>All Notifications - bookingfleet</title>
+
+                                    <link rel="icon" type="image/png" href="https://bookingfleet.com/BookingFleet/public/uploads/0000/1/2021/08/13/finallogo.png" />
+            
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <!-- Styles -->
+    <link href="https://bookingfleet.com/BookingFleet/public/libs/select2/css/select2.min.css" rel="stylesheet">
+    <link href="https://bookingfleet.com/BookingFleet/public/libs/flags/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://bookingfleet.com/BookingFleet/public/libs/daterange/daterangepicker.css"/>
+    <link href="https://bookingfleet.com/BookingFleet/public/dist/admin/css/vendors.css" rel="stylesheet">
+    <link href="https://bookingfleet.com/BookingFleet/public/dist/admin/css/app.css" rel="stylesheet">
+    
+    
+    <script>
+        var bookingCore  = {
+            url:'https://bookingfleet.com/BookingFleet/public',
+            map_provider:'gmap',
+            map_gmap_key:'AIzaSyBZYeA9O8nBrKECtS-M1omOennUHM0gYYY',
+            csrf:'NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ',
+            date_format:'MM/DD/YYYY',
+            markAsRead:'https://bookingfleet.com/BookingFleet/public/admin/module/core/markAsRead',
+            markAllAsRead:'https://bookingfleet.com/BookingFleet/public/admin/module/core/markAllAsRead',
+            loadNotify : 'https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications',
+            pusher_api_key : '',
+            pusher_cluster : '',
+            isAdmin : 1,
+            currentUser: 63,
+        };
+        var i18n = {
+            warning:"Warning",
+            success:"Success",
+            confirm_delete:"Do you want to delete?",
+            confirm_recovery:"Do you want to restore?",
+            confirm:"Confirm",
+            cancel:"Cancel",
+        };
+        var daterangepickerLocale = {
+            "applyLabel": "Apply",
+            "cancelLabel": "Cancel",
+            "fromLabel": "From",
+            "toLabel": "To",
+            "customRangeLabel": "Custom",
+            "weekLabel": "W",
+            "first_day_of_week": 1,
+            "daysOfWeek": [
+                "Su",
+                "Mo",
+                "Tu",
+                "We",
+                "Th",
+                "Fr",
+                "Sa"
+            ],
+            "monthNames": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ],
+        };
+    </script>
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/tinymce/js/tinymce/tinymce.min.js" ></script>
+    
+<link rel='stylesheet' type='text/css' property='stylesheet' href='//bookingfleet.com/BookingFleet/public/_debugbar/assets/stylesheets?v=1625121810&theme=auto'><script type='text/javascript' src='//bookingfleet.com/BookingFleet/public/_debugbar/assets/javascript?v=1625121810'></script><script type="text/javascript">jQuery.noConflict(true);</script>
+<script> Sfdump = window.Sfdump || (function (doc) { var refStyle = doc.createElement('style'), rxEsc = /([.*+?^${}()|\[\]\/\\])/g, idRx = /\bsf-dump-\d+-ref[012]\w+\b/, keyHint = 0 <= navigator.platform.toUpperCase().indexOf('MAC') ? 'Cmd' : 'Ctrl', addEventListener = function (e, n, cb) { e.addEventListener(n, cb, false); }; refStyle.innerHTML = '.phpdebugbar pre.sf-dump .sf-dump-compact, .sf-dump-str-collapse .sf-dump-str-collapse, .sf-dump-str-expand .sf-dump-str-expand { display: none; }'; (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); refStyle = doc.createElement('style'); (doc.documentElement.firstElementChild || doc.documentElement.children[0]).appendChild(refStyle); if (!doc.addEventListener) { addEventListener = function (element, eventName, callback) { element.attachEvent('on' + eventName, function (e) { e.preventDefault = function () {e.returnValue = false;}; e.target = e.srcElement; callback(e); }); }; } function toggle(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className, arrow, newClass; if (/\bsf-dump-compact\b/.test(oldClass)) { arrow = '▼'; newClass = 'sf-dump-expanded'; } else if (/\bsf-dump-expanded\b/.test(oldClass)) { arrow = '▶'; newClass = 'sf-dump-compact'; } else { return false; } if (doc.createEvent && s.dispatchEvent) { var event = doc.createEvent('Event'); event.initEvent('sf-dump-expanded' === newClass ? 'sfbeforedumpexpand' : 'sfbeforedumpcollapse', true, false); s.dispatchEvent(event); } a.lastChild.innerHTML = arrow; s.className = s.className.replace(/\bsf-dump-(compact|expanded)\b/, newClass); if (recursive) { try { a = s.querySelectorAll('.'+oldClass); for (s = 0; s < a.length; ++s) { if (-1 == a[s].className.indexOf(newClass)) { a[s].className = newClass; a[s].previousSibling.lastChild.innerHTML = arrow; } } } catch (e) { } } return true; }; function collapse(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-expanded\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function expand(a, recursive) { var s = a.nextSibling || {}, oldClass = s.className; if (/\bsf-dump-compact\b/.test(oldClass)) { toggle(a, recursive); return true; } return false; }; function collapseAll(root) { var a = root.querySelector('a.sf-dump-toggle'); if (a) { collapse(a, true); expand(a); return true; } return false; } function reveal(node) { var previous, parents = []; while ((node = node.parentNode || {}) && (previous = node.previousSibling) && 'A' === previous.tagName) { parents.push(previous); } if (0 !== parents.length) { parents.forEach(function (parent) { expand(parent); }); return true; } return false; } function highlight(root, activeNode, nodes) { resetHighlightedNodes(root); Array.from(nodes||[]).forEach(function (node) { if (!/\bsf-dump-highlight\b/.test(node.className)) { node.className = node.className + ' sf-dump-highlight'; } }); if (!/\bsf-dump-highlight-active\b/.test(activeNode.className)) { activeNode.className = activeNode.className + ' sf-dump-highlight-active'; } } function resetHighlightedNodes(root) { Array.from(root.querySelectorAll('.sf-dump-str, .sf-dump-key, .sf-dump-public, .sf-dump-protected, .sf-dump-private')).forEach(function (strNode) { strNode.className = strNode.className.replace(/\bsf-dump-highlight\b/, ''); strNode.className = strNode.className.replace(/\bsf-dump-highlight-active\b/, ''); }); } return function (root, x) { root = doc.getElementById(root); var indentRx = new RegExp('^('+(root.getAttribute('data-indent-pad') || ' ').replace(rxEsc, '\\$1')+')+', 'm'), options = {"maxDepth":1,"maxStringLength":160,"fileLinkFormat":false}, elt = root.getElementsByTagName('A'), len = elt.length, i = 0, s, h, t = []; while (i < len) t.push(elt[i++]); for (i in x) { options[i] = x[i]; } function a(e, f) { addEventListener(root, e, function (e, n) { if ('A' == e.target.tagName) { f(e.target, e); } else if ('A' == e.target.parentNode.tagName) { f(e.target.parentNode, e); } else { n = /\bsf-dump-ellipsis\b/.test(e.target.className) ? e.target.parentNode : e.target; if ((n = n.nextElementSibling) && 'A' == n.tagName) { if (!/\bsf-dump-toggle\b/.test(n.className)) { n = n.nextElementSibling || n; } f(n, e, true); } } }); }; function isCtrlKey(e) { return e.ctrlKey || e.metaKey; } function xpathString(str) { var parts = str.match(/[^'"]+|['"]/g).map(function (part) { if ("'" == part) { return '"\'"'; } if ('"' == part) { return "'\"'"; } return "'" + part + "'"; }); return "concat(" + parts.join(",") + ", '')"; } function xpathHasClass(className) { return "contains(concat(' ', normalize-space(@class), ' '), ' " + className +" ')"; } addEventListener(root, 'mouseover', function (e) { if ('' != refStyle.innerHTML) { refStyle.innerHTML = ''; } }); a('mouseover', function (a, e, c) { if (c) { e.target.style.cursor = "pointer"; } else if (a = idRx.exec(a.className)) { try { refStyle.innerHTML = '.phpdebugbar pre.sf-dump .'+a[0]+'{background-color: #B729D9; color: #FFF !important; border-radius: 2px}'; } catch (e) { } } }); a('click', function (a, e, c) { if (/\bsf-dump-toggle\b/.test(a.className)) { e.preventDefault(); if (!toggle(a, isCtrlKey(e))) { var r = doc.getElementById(a.getAttribute('href').substr(1)), s = r.previousSibling, f = r.parentNode, t = a.parentNode; t.replaceChild(r, a); f.replaceChild(a, s); t.insertBefore(s, r); f = f.firstChild.nodeValue.match(indentRx); t = t.firstChild.nodeValue.match(indentRx); if (f && t && f[0] !== t[0]) { r.innerHTML = r.innerHTML.replace(new RegExp('^'+f[0].replace(rxEsc, '\\$1'), 'mg'), t[0]); } if (/\bsf-dump-compact\b/.test(r.className)) { toggle(s, isCtrlKey(e)); } } if (c) { } else if (doc.getSelection) { try { doc.getSelection().removeAllRanges(); } catch (e) { doc.getSelection().empty(); } } else { doc.selection.empty(); } } else if (/\bsf-dump-str-toggle\b/.test(a.className)) { e.preventDefault(); e = a.parentNode.parentNode; e.className = e.className.replace(/\bsf-dump-str-(expand|collapse)\b/, a.parentNode.className); } }); elt = root.getElementsByTagName('SAMP'); len = elt.length; i = 0; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; if ('SAMP' == elt.tagName) { a = elt.previousSibling || {}; if ('A' != a.tagName) { a = doc.createElement('A'); a.className = 'sf-dump-ref'; elt.parentNode.insertBefore(a, elt); } else { a.innerHTML += ' '; } a.title = (a.title ? a.title+'\n[' : '[')+keyHint+'+click] Expand all children'; a.innerHTML += elt.className == 'sf-dump-compact' ? '<span>▶</span>' : '<span>▼</span>'; a.className += ' sf-dump-toggle'; x = 1; if ('sf-dump' != elt.parentNode.className) { x += elt.parentNode.getAttribute('data-depth')/1; } } else if (/\bsf-dump-ref\b/.test(elt.className) && (a = elt.getAttribute('href'))) { a = a.substr(1); elt.className += ' '+a; if (/[\[{]$/.test(elt.previousSibling.nodeValue)) { a = a != elt.nextSibling.id && doc.getElementById(a); try { s = a.nextSibling; elt.appendChild(a); s.parentNode.insertBefore(a, s); if (/^[@#]/.test(elt.innerHTML)) { elt.innerHTML += ' <span>▶</span>'; } else { elt.innerHTML = '<span>▶</span>'; elt.className = 'sf-dump-ref'; } elt.className += ' sf-dump-toggle'; } catch (e) { if ('&' == elt.innerHTML.charAt(0)) { elt.innerHTML = '…'; elt.className = 'sf-dump-ref'; } } } } } if (doc.evaluate && Array.from && root.children.length > 1) { root.setAttribute('tabindex', 0); SearchState = function () { this.nodes = []; this.idx = 0; }; SearchState.prototype = { next: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx < (this.nodes.length - 1) ? this.idx + 1 : 0; return this.current(); }, previous: function () { if (this.isEmpty()) { return this.current(); } this.idx = this.idx > 0 ? this.idx - 1 : (this.nodes.length - 1); return this.current(); }, isEmpty: function () { return 0 === this.count(); }, current: function () { if (this.isEmpty()) { return null; } return this.nodes[this.idx]; }, reset: function () { this.nodes = []; this.idx = 0; }, count: function () { return this.nodes.length; }, }; function showCurrent(state) { var currentNode = state.current(), currentRect, searchRect; if (currentNode) { reveal(currentNode); highlight(root, currentNode, state.nodes); if ('scrollIntoView' in currentNode) { currentNode.scrollIntoView(true); currentRect = currentNode.getBoundingClientRect(); searchRect = search.getBoundingClientRect(); if (currentRect.top < (searchRect.top + searchRect.height)) { window.scrollBy(0, -(searchRect.top + searchRect.height + 5)); } } } counter.textContent = (state.isEmpty() ? 0 : state.idx + 1) + ' of ' + state.count(); } var search = doc.createElement('div'); search.className = 'sf-dump-search-wrapper sf-dump-search-hidden'; search.innerHTML = ' <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0<\/span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"\/><\/svg> <\/button> '; root.insertBefore(search, root.firstChild); var state = new SearchState(); var searchInput = search.querySelector('.sf-dump-search-input'); var counter = search.querySelector('.sf-dump-search-count'); var searchInputTimer = 0; var previousSearchQuery = ''; addEventListener(searchInput, 'keyup', function (e) { var searchQuery = e.target.value; /* Don't perform anything if the pressed key didn't change the query */ if (searchQuery === previousSearchQuery) { return; } previousSearchQuery = searchQuery; clearTimeout(searchInputTimer); searchInputTimer = setTimeout(function () { state.reset(); collapseAll(root); resetHighlightedNodes(root); if ('' === searchQuery) { counter.textContent = '0 of 0'; return; } var classMatches = [ "sf-dump-str", "sf-dump-key", "sf-dump-public", "sf-dump-protected", "sf-dump-private", ].map(xpathHasClass).join(' or '); var xpathResult = doc.evaluate('.//span[' + classMatches + '][contains(translate(child::text(), ' + xpathString(searchQuery.toUpperCase()) + ', ' + xpathString(searchQuery.toLowerCase()) + '), ' + xpathString(searchQuery.toLowerCase()) + ')]', root, null, XPathResult.ORDERED_NODE_ITERATOR_TYPE, null); while (node = xpathResult.iterateNext()) state.nodes.push(node); showCurrent(state); }, 400); }); Array.from(search.querySelectorAll('.sf-dump-search-input-next, .sf-dump-search-input-previous')).forEach(function (btn) { addEventListener(btn, 'click', function (e) { e.preventDefault(); -1 !== e.target.className.indexOf('next') ? state.next() : state.previous(); searchInput.focus(); collapseAll(root); showCurrent(state); }) }); addEventListener(root, 'keydown', function (e) { var isSearchActive = !/\bsf-dump-search-hidden\b/.test(search.className); if ((114 === e.keyCode && !isSearchActive) || (isCtrlKey(e) && 70 === e.keyCode)) { /* F3 or CMD/CTRL + F */ if (70 === e.keyCode && document.activeElement === searchInput) { /* * If CMD/CTRL + F is hit while having focus on search input, * the user probably meant to trigger browser search instead. * Let the browser execute its behavior: */ return; } e.preventDefault(); search.className = search.className.replace(/\bsf-dump-search-hidden\b/, ''); searchInput.focus(); } else if (isSearchActive) { if (27 === e.keyCode) { /* ESC key */ search.className += ' sf-dump-search-hidden'; e.preventDefault(); resetHighlightedNodes(root); searchInput.value = ''; } else if ( (isCtrlKey(e) && 71 === e.keyCode) /* CMD/CTRL + G */ || 13 === e.keyCode /* Enter */ || 114 === e.keyCode /* F3 */ ) { e.preventDefault(); e.shiftKey ? state.previous() : state.next(); collapseAll(root); showCurrent(state); } } }); } if (0 >= options.maxStringLength) { return; } try { elt = root.querySelectorAll('.sf-dump-str'); len = elt.length; i = 0; t = []; while (i < len) t.push(elt[i++]); len = t.length; for (i = 0; i < len; ++i) { elt = t[i]; s = elt.innerText || elt.textContent; x = s.length - options.maxStringLength; if (0 < x) { h = elt.innerHTML; elt[elt.innerText ? 'innerText' : 'textContent'] = s.substring(0, options.maxStringLength); elt.className += ' sf-dump-str-collapse'; elt.innerHTML = '<span class=sf-dump-str-collapse>'+h+'<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span>'+ '<span class=sf-dump-str-expand>'+elt.innerHTML+'<a class="sf-dump-ref sf-dump-str-toggle" title="'+x+' remaining characters"> ▶</a></span>'; } } } catch (e) { } }; })(document); </script><style> .phpdebugbar pre.sf-dump { display: block; white-space: pre; padding: 5px; overflow: initial !important; } .phpdebugbar pre.sf-dump:after { content: ""; visibility: hidden; display: block; height: 0; clear: both; } .phpdebugbar pre.sf-dump span { display: inline; } .phpdebugbar pre.sf-dump a { text-decoration: none; cursor: pointer; border: 0; outline: none; color: inherit; } .phpdebugbar pre.sf-dump img { max-width: 50em; max-height: 50em; margin: .5em 0 0 0; padding: 0; background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAAAAAA6mKC9AAAAHUlEQVQY02O8zAABilCaiQEN0EeA8QuUcX9g3QEAAjcC5piyhyEAAAAASUVORK5CYII=) #D3D3D3; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis { display: inline-block; overflow: visible; text-overflow: ellipsis; max-width: 5em; white-space: nowrap; overflow: hidden; vertical-align: top; } .phpdebugbar pre.sf-dump .sf-dump-ellipsis+.sf-dump-ellipsis { max-width: none; } .phpdebugbar pre.sf-dump code { display:inline; padding:0; background:none; } .sf-dump-public.sf-dump-highlight, .sf-dump-protected.sf-dump-highlight, .sf-dump-private.sf-dump-highlight, .sf-dump-str.sf-dump-highlight, .sf-dump-key.sf-dump-highlight { background: rgba(111, 172, 204, 0.3); border: 1px solid #7DA0B1; border-radius: 3px; } .sf-dump-public.sf-dump-highlight-active, .sf-dump-protected.sf-dump-highlight-active, .sf-dump-private.sf-dump-highlight-active, .sf-dump-str.sf-dump-highlight-active, .sf-dump-key.sf-dump-highlight-active { background: rgba(253, 175, 0, 0.4); border: 1px solid #ffa500; border-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-hidden { display: none !important; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper { font-size: 0; white-space: nowrap; margin-bottom: 5px; display: flex; position: -webkit-sticky; position: sticky; top: 5px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > * { vertical-align: top; box-sizing: border-box; height: 21px; font-weight: normal; border-radius: 0; background: #FFF; color: #757575; border: 1px solid #BBB; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > input.sf-dump-search-input { padding: 3px; height: 21px; font-size: 12px; border-right: none; border-top-left-radius: 3px; border-bottom-left-radius: 3px; color: #000; min-width: 15px; width: 100%; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous { background: #F2F2F2; outline: none; border-left: none; font-size: 0; line-height: 0; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next { border-top-right-radius: 3px; border-bottom-right-radius: 3px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-next > svg, .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-input-previous > svg { pointer-events: none; width: 12px; height: 12px; } .phpdebugbar pre.sf-dump .sf-dump-search-wrapper > .sf-dump-search-count { display: inline-block; padding: 0 5px; margin: 0; border-left: none; line-height: 21px; font-size: 12px; }.phpdebugbar pre.sf-dump, .phpdebugbar pre.sf-dump .sf-dump-default{word-wrap: break-word; white-space: pre-wrap; word-break: normal}.phpdebugbar pre.sf-dump .sf-dump-num{font-weight:bold; color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-const{font-weight:bold}.phpdebugbar pre.sf-dump .sf-dump-str{font-weight:bold; color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-note{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ref{color:#7B7B7B}.phpdebugbar pre.sf-dump .sf-dump-public{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-protected{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-private{color:#000000}.phpdebugbar pre.sf-dump .sf-dump-meta{color:#B729D9}.phpdebugbar pre.sf-dump .sf-dump-key{color:#3A9B26}.phpdebugbar pre.sf-dump .sf-dump-index{color:#1299DA}.phpdebugbar pre.sf-dump .sf-dump-ellipsis{color:#A0A000}.phpdebugbar pre.sf-dump .sf-dump-ns{user-select:none;}.phpdebugbar pre.sf-dump .sf-dump-ellipsis-note{color:#1299DA}</style>
+</head>
+<body class=" ">
+<div id="app">
+    <div class="main-header d-flex">
+        <div class="header-logo flex-shrink-0">
+    <h3 class="logo-text"><a href="https://bookingfleet.com/BookingFleet/public/admin">Booking Core <span class="app-version">2.0.0</span></a></h3>
+</div>
+<div class="header-widgets d-flex flex-grow-1">
+    <div class="widgets-left d-flex flex-grow-1 align-items-center">
+        <div class="header-widget">
+            <span class="btn-toggle-admin-menu btn btn-sm btn-link"><i class="icon ion-ios-menu"></i></span>
+        </div>
+        <div class="header-widget search-widget">
+            
+            <a href="https://bookingfleet.com/BookingFleet/public" class="btn btn-link" target="_blank"><i class="fa fa-eye"></i> Home
+            </a>
+        </div>
+    </div>
+    <div class="widgets-right flex-shrink-0 d-flex">
+                <div class="dropdown header-widget widget-user pt-2 dropdown-notifications flex-shrink-0" style="min-width: 0">
+            <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-lg fa-bell m-1 p-1"></i>
+                <span class="badge badge-danger notification-icon">1156</span>
+            </div>
+            <div class="dropdown-menu overflow-auto notify-items dropdown-container dropdown-menu-right dropdown-large" aria-labelledby="dropdownMenuButton">
+                <div class="dropdown-toolbar">
+                    <div class="dropdown-toolbar-actions">
+                        <a href="#" class="markAllAsRead">Mark all as read</a>
+                    </div>
+                    <h3 class="dropdown-toolbar-title">Notifications (<span class="notif-count">1156</span>)</h3>
+                </div>
+                <ul class="dropdown-list-items p-0">
+                                                                                                    <li class="notification active">
+                                <div class="media">
+                                        <div class="media-left">
+                                              <div class="media-object">
+                                                                                                      <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="bookingFleet">
+                                                                                                </div>
+                                            </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="66352cb0-240a-4c8a-badf-5131b60d27f4" href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel?id=77">dawn was updated to Publish by bookingFleet</a>
+                                              <div class="notification-meta">
+                                                    <small class="timestamp">1 months 10 days 18 hours 41 minutes 4 seconds </small>
+                                                  </div>
+                                            </div>
+                                      </div>
+                                </li>
+                                                                                <li class="notification active">
+                                <div class="media">
+                                        <div class="media-left">
+                                              <div class="media-object">
+                                                                                                      <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="bookingFleet">
+                                                                                                </div>
+                                            </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="1138f283-e42c-43bb-a79b-f6c103c27be4" href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/edit/77">bookingFleet has created hotel dawn</a>
+                                              <div class="notification-meta">
+                                                    <small class="timestamp">1 months 10 days 19 hours 16 minutes 6 seconds </small>
+                                                  </div>
+                                            </div>
+                                      </div>
+                                </li>
+                                                                                <li class="notification active">
+                                <div class="media">
+                                        <div class="media-left">
+                                              <div class="media-object">
+                                                                                                      <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="ds">
+                                                                                                </div>
+                                            </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="0d4b882b-9545-43cb-ad9b-e3da9b0bcadb" href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">ds has requested to become a vendor</a>
+                                              <div class="notification-meta">
+                                                    <small class="timestamp">1 months 15 days 3 hours 20 minutes 3 seconds </small>
+                                                  </div>
+                                            </div>
+                                      </div>
+                                </li>
+                                                                                <li class="notification active">
+                                <div class="media">
+                                        <div class="media-left">
+                                              <div class="media-object">
+                                                                                                      <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                                                </div>
+                                            </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="075bd3ee-6174-4d61-bf92-c817a4041909" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                              <div class="notification-meta">
+                                                    <small class="timestamp">1 months 23 days 1 hours 4 minutes 33 seconds </small>
+                                                  </div>
+                                            </div>
+                                      </div>
+                                </li>
+                                                                                <li class="notification active">
+                                <div class="media">
+                                        <div class="media-left">
+                                              <div class="media-object">
+                                                                                                      <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                                                </div>
+                                            </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="f0118f76-5ff5-4c3e-b628-2ae1453be2d2" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                              <div class="notification-meta">
+                                                    <small class="timestamp">1 months 23 days 1 hours 8 minutes 44 seconds </small>
+                                                  </div>
+                                            </div>
+                                      </div>
+                                </li>
+                                                            </ul>
+                <div class="dropdown-footer text-center">
+                    <a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications">View More</a>
+                </div>
+            </div>
+        </div>
+        <div class="dropdown header-widget widget-user flex-shrink-0">
+            <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true" aria-expanded="false">
+                <span class="user-avatar flex-shrink-0">
+                                             <div class="avatar avatar-cover" style="background-image: url('https://bookingfleet.com/BookingFleet/public/images/avatar.png')"></div>
+                                    </span>
+                <div class="user-info flex-grow-1">
+                    <div class="user-name">Front end Developer</div>
+                    <div class="user-role">Administrator</div>
+                </div>
+                <i class="fa fa-angle-down"></i>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="https://bookingfleet.com/BookingFleet/public/admin/module/user/edit/63">Edit Profile</a>
+                <a class="dropdown-item" href="https://bookingfleet.com/BookingFleet/public/admin/module/user/password/63">Change Password</a>
+                <a class="dropdown-item" href="#" onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i class="fa fa-sign-out"></i> Logout
+                </a>
+            </div>
+            <form id="logout-form" action="https://bookingfleet.com/BookingFleet/public/logout" method="POST" style="display: none;">
+                <input type="hidden" name="_token" value="NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ">
+            </form>
+        </div>
+    </div>
+</div>
+    </div>
+    <div class="main-sidebar">
+        <ul class="main-menu">
+                    <li class=" admin"><a href="https://bookingfleet.com/BookingFleet/public/admin">
+                                    <span class="icon text-center"><i class="icon ion-ios-desktop"></i></span>
+                                Dashboard
+            </a>
+                    </li>
+                    <li class=" has-children admin_module_news"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/news">
+                                    <span class="icon text-center"><i class="ion-md-bookmarks"></i></span>
+                                News
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children admin_module_news"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/news">
+                                                                All News</a>
+                        </li>
+                                            <li class=" has-children admin_module_news"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/news/create">
+                                                                Add News</a>
+                        </li>
+                                            <li class=" has-children admin_module_news"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/news/category">
+                                                                Categories</a>
+                        </li>
+                                            <li class=" has-children admin_module_news"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/news/tag">
+                                                                Tags</a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" admin_module_page"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/page">
+                                    <span class="icon text-center"><i class="icon ion-ios-bookmarks"></i></span>
+                                Page
+            </a>
+                    </li>
+                    <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/location">
+                                    <span class="icon text-center"><i class="icon ion-md-compass"></i></span>
+                                Location
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/location">
+                                                                    <i class="icon ion-md-compass"></i>
+                                                                All Location</a>
+                        </li>
+                                            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/location/category">
+                                                                    <i class="icon ion-md-compass"></i>
+                                                                All Category</a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" has-children admin_module_hotel"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel">
+                                    <span class="icon text-center"><i class="fa fa-building-o"></i></span>
+                                Hotel
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children admin_module_hotel"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel">
+                                                                All Hotels</a>
+                        </li>
+                                            <li class=" has-children admin_module_hotel"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/create">
+                                                                Add new Hotel</a>
+                        </li>
+                                            <li class=" has-children admin_module_hotel"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/attribute">
+                                                                Attributes</a>
+                        </li>
+                                            <li class=" has-children admin_module_hotel"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/room/attribute">
+                                                                Room Attributes</a>
+                        </li>
+                                            <li class=" has-children admin_module_hotel"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/recovery">
+                                                                Recovery</a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" has-children admin_module_tour"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/tour">
+                                    <span class="icon text-center"><i class="icon ion-md-umbrella"></i></span>
+                                Tour
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children admin_module_tour"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/tour">
+                                                                All Tours</a>
+                        </li>
+                                            <li class=" has-children admin_module_tour"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/create">
+                                                                Add Tour</a>
+                        </li>
+                                            <li class=" has-children admin_module_tour"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/category">
+                                                                Categories</a>
+                        </li>
+                                            <li class=" has-children admin_module_tour"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/attribute">
+                                                                Attributes</a>
+                        </li>
+                                            <li class=" has-children admin_module_tour"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/availability">
+                                                                Availability</a>
+                        </li>
+                                            <li class=" has-children admin_module_tour"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/booking">
+                                                                Booking Calendar</a>
+                        </li>
+                                            <li class=" has-children admin_module_tour"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/recovery">
+                                                                Recovery</a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" has-children admin_module_space"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/space">
+                                    <span class="icon text-center"><i class="ion ion-md-home"></i></span>
+                                Space
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children admin_module_space"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/space">
+                                                                All Spaces</a>
+                        </li>
+                                            <li class=" has-children admin_module_space"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/space/create">
+                                                                Add new Space</a>
+                        </li>
+                                            <li class=" has-children admin_module_space"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/space/attribute">
+                                                                Attributes</a>
+                        </li>
+                                            <li class=" has-children admin_module_space"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/space/availability">
+                                                                Availability</a>
+                        </li>
+                                            <li class=" has-children admin_module_space"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/space/recovery">
+                                                                Recovery</a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" has-children admin_module_car"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                                    <span class="icon text-center"><i class="ion-logo-model-s"></i></span>
+                                Car
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children admin_module_car"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                                                                All Cars</a>
+                        </li>
+                                            <li class=" has-children admin_module_car"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/car/create">
+                                                                Add new Car</a>
+                        </li>
+                                            <li class=" has-children admin_module_car"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/car/attribute">
+                                                                Attributes</a>
+                        </li>
+                                            <li class=" has-children admin_module_car"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/car/availability">
+                                                                Availability</a>
+                        </li>
+                                            <li class=" has-children admin_module_car"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/car/recovery">
+                                                                Recovery</a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" admin_module_review"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/review">
+                                    <span class="icon text-center"><i class="icon ion-ios-text"></i></span>
+                                Reviews
+            </a>
+                    </li>
+                    <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/event">
+                                    <span class="icon text-center"><i class="ion-ios-calendar"></i></span>
+                                Event
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/event">
+                                                                All Events</a>
+                        </li>
+                                            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/event/create">
+                                                                Add new Event</a>
+                        </li>
+                                            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/event/attribute">
+                                                                Attributes</a>
+                        </li>
+                                            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/event/availability">
+                                                                Availability</a>
+                        </li>
+                                            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/event/recovery">
+                                                                Recovery</a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" https:__bookingfleet.com_BookingFleet_public_admin_module_media"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/media">
+                                    <span class="icon text-center"><i class="fa fa-picture-o"></i></span>
+                                Media
+            </a>
+                    </li>
+                    <li class=" admin_module_core_menu"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/menu">
+                                    <span class="icon text-center"><i class="icon ion-ios-apps"></i></span>
+                                Menu
+            </a>
+                    </li>
+                    <li class=" admin_module_core_emailsetting"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/emailsetting">
+                                    <span class="icon text-center"><i class="fa fa-envelope"></i></span>
+                                Email Setting
+            </a>
+                    </li>
+                    <li class=" admin_module_template"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/template">
+                                    <span class="icon text-center"><i class="icon ion-logo-html5"></i></span>
+                                Templates
+            </a>
+                    </li>
+                    <li class=" admin_module_vendor_payout"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/vendor/payout">
+                                    <span class="icon text-center"><i class="icon ion-md-card"></i></span>
+                                Payouts 
+            </a>
+                    </li>
+                    <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/general">
+                                    <span class="icon text-center"><i class="icon ion-ios-cog"></i></span>
+                                Setting
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/general">
+                                                                General Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/car">
+                                                                Car Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/event">
+                                                                Event Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/hotel">
+                                                                Hotel Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/space">
+                                                                Space Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/tour">
+                                                                Tour Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/news">
+                                                                News Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/booking">
+                                                                Booking Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/enquiry">
+                                                                Enquiry Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/user">
+                                                                User Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/wallet">
+                                                                Wallet Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/vendor">
+                                                                Vendor Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/payment">
+                                                                Payment Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/style">
+                                                                Style Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/advance">
+                                                                Advance Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/email">
+                                                                Email Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/sms">
+                                                                Sms Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/api">
+                                                                Mobile App Settings</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_settings_index_general"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/review">
+                                                                Review Advance Settings</a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" has-children admin_module_core_tools"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/tools">
+                                    <span class="icon text-center"><i class="icon ion-ios-hammer"></i></span>
+                                Tools
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children admin_module_core_tools"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/language">
+                                                                    <i class="icon ion-ios-globe"></i>
+                                                                Languages</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_tools"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/language/translations">
+                                                                    <i class="icon ion-ios-globe"></i>
+                                                                Translation Manager</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_tools"><a href="https://bookingfleet.com/BookingFleet/public/admin/logs">
+                                                                    <i class="icon ion-ios-nuclear"></i>
+                                                                System Logs</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_tools"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/updater">
+                                                                    <i class="icon ion-md-download"></i>
+                                                                Updater</a>
+                        </li>
+                                            <li class=" has-children admin_module_core_tools"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/plugins">
+                                                                    <i class="icon ion-md-color-wand"></i>
+                                                                Plugins</a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" has-children admin_module_user"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/user">
+                                    <span class="icon text-center"><i class="icon ion-ios-contacts"></i></span>
+                                Users <span class="badge badge-warning">1</span>
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children admin_module_user"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/user">
+                                                                    <i class="fa fa-user"></i>
+                                                                All Users</a>
+                        </li>
+                                            <li class=" has-children admin_module_user"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/user/role">
+                                                                    <i class="fa fa-lock"></i>
+                                                                Role Manager</a>
+                        </li>
+                                            <li class=" has-children admin_module_user"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/user/subscriber">
+                                                                Subscribers</a>
+                        </li>
+                                            <li class=" has-children admin_module_user"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">
+                                                                Upgrade Request <span class="badge badge-warning">4</span></a>
+                        </li>
+                                            <li class=" has-children admin_module_user"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/user/verification">
+                                                                Verification Request <span class="badge badge-warning">1</span></a>
+                        </li>
+                                    </ul>
+                    </li>
+                    <li class=" has-children admin_module_report_booking"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">
+                                    <span class="icon text-center"><i class="icon ion-ios-pie"></i></span>
+                                Reports <span class="badge badge-warning">2</span>
+            </a>
+                            <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                <ul class="children">
+                                            <li class=" has-children admin_module_report_booking"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/report/enquiry">
+                                                                    <i class="icon ion-ios-pricetags"></i>
+                                                                Enquiry Reports</a>
+                        </li>
+                                            <li class=" has-children admin_module_report_booking"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">
+                                                                    <i class="icon ion-ios-pricetags"></i>
+                                                                Booking Reports</a>
+                        </li>
+                                            <li class=" has-children admin_module_report_booking"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/report/statistic">
+                                                                    <i class="icon ion ion-md-podium"></i>
+                                                                Booking Statistic</a>
+                        </li>
+                                            <li class=" has-children admin_module_report_booking"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/contact">
+                                                                    <i class="icon ion ion-md-mail"></i>
+                                                                Contact Submissions</a>
+                        </li>
+                                            <li class=" has-children admin_module_report_booking"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/user/wallet/report">
+                                                                    <i class="fa fa-money"></i>
+                                                                Credit Purchase Report <span class="badge badge-warning">2</span></a>
+                        </li>
+                                    </ul>
+                    </li>
+    </ul>
+    </div>
+    <div class="main-content">
+                    <div class="container-fluid">
+        <div class="d-flex justify-content-between mb20">
+            <h1 class="title-bar">All Notifications</h1>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <div class="panel">
+                    <ul class="dropdown-list-items p-0">
+                        <li class="notification  active ">
+                            <i class="fa fa-inbox fa-lg mr-2"></i> <a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications">&nbsp;All</a>
+                        </li>
+                        <li class="notification ">
+                            <i class="fa fa-envelope-o fa-lg mr-2"></i> <a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?type=unread">Unread</a>
+                        </li>
+                        <li class="notification ">
+                            <i class="fa fa-envelope-open-o fa-lg mr-2"></i> <a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?type=read">Read</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-9">
+    <div class="panel">
+        <ul class="dropdown-list-items p-0">
+                                                                    <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="bookingFleet">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="66352cb0-240a-4c8a-badf-5131b60d27f4" href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel?id=77">dawn was updated to Publish by bookingFleet</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 10 days 18 hours 41 minutes 4 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="bookingFleet">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="1138f283-e42c-43bb-a79b-f6c103c27be4" href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/edit/77">bookingFleet has created hotel dawn</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 10 days 19 hours 16 minutes 6 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="ds">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="0d4b882b-9545-43cb-ad9b-e3da9b0bcadb" href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">ds has requested to become a vendor</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 15 days 3 hours 20 minutes 3 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="075bd3ee-6174-4d61-bf92-c817a4041909" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 23 days 1 hours 4 minutes 33 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="f0118f76-5ff5-4c3e-b628-2ae1453be2d2" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 23 days 1 hours 8 minutes 44 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="caf61bdc-136d-4bd9-9ff9-897c7c5d6219" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 23 days 1 hours 12 minutes 58 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="15cc70b1-9bf9-43cc-b8b5-bca3b6954b01" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 23 days 1 hours 24 minutes 39 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="46dea5e9-ea92-476e-9c44-6d8ffcd72357" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 23 days 2 hours 26 minutes </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="dda5d095-bc29-4925-ad37-9e1462815c85" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 23 days 3 hours 13 minutes 21 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="1bdd0fe6-7e70-45dc-9670-b4fffbae6022" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 23 days 3 hours 17 minutes 35 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="c2f1b76f-e732-45ca-b48b-b6ee6dcb2ca6" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 23 days 3 hours 38 minutes 10 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="2d334191-c3f6-4f04-ac6d-52e386331b70" href="https://bookingfleet.com/BookingFleet/public/admin/module/user?s=61">waqas khursheed has been registered</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 30 days 3 hours 4 minutes 20 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="51831231-da92-470c-a066-c4bce65fa7da" href="https://bookingfleet.com/BookingFleet/public/admin/module/user?s=60">waqas khursheed has been registered</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 30 days 3 hours 17 minutes 18 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="f966ea9e-a169-4577-a3c8-8408d840f32c" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 30 days 3 hours 48 minutes 40 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="c4ac9ade-4016-4eeb-b456-3d6a11f4050b" href="https://bookingfleet.com/BookingFleet/public/admin/module/user?s=59">waqas khursheed has been registered</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">1 months 30 days 4 hours 12 minutes 11 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="Muhammad Nouman">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="2aa3bacb-26b3-430a-8862-0f871cf27f56" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">Muhammad Nouman has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">2 months 7 days 4 hours 53 minutes 55 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="Muhammad Nouman">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="6b448515-37a3-4afc-ae35-34987d78104b" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">Muhammad Nouman has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">2 months 7 days 5 hours 16 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="8be46677-9969-4dc8-94b4-e3cbb4df3351" href="https://bookingfleet.com/BookingFleet/public/admin/module/user?s=58">waqas khursheed has been registered</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">2 months 12 days 16 hours 53 minutes 56 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="Muhammad Nouman">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="d457ba95-f6b7-4b03-b9f0-04a5be103a18" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">Muhammad Nouman has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">2 months 19 days 5 hours 19 minutes 51 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                                        <li class="notification active">
+                        <div class="media">
+                            <div class="media-left">
+                                <div class="media-object">
+                                                                            <img class="image-responsive" src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="Muhammad Nouman">
+                                                                    </div>
+                            </div>
+                            <div class="media-body">
+                                <a class="markAsRead p-0" data-id="69009caf-e432-4700-b644-165c2d0d39ad" href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">Muhammad Nouman has created new Booking</a>
+                                <div class="notification-meta">
+                                    <small class="timestamp">2 months 20 days 1 hours 29 minutes 16 seconds </small>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                    </ul>
+
+        <div class="d-flex justify-content-end">
+            <nav>
+        <ul class="pagination">
+            
+                            <li class="page-item disabled" aria-disabled="true" aria-label="&laquo; Previous">
+                    <span class="page-link" aria-hidden="true">&lsaquo;</span>
+                </li>
+            
+            
+                            
+                
+                
+                                                                                        <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=2">2</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=3">3</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=4">4</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=5">5</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=6">6</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=7">7</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=8">8</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=9">9</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=10">10</a></li>
+                                                                                        
+                                    <li class="page-item disabled" aria-disabled="true"><span class="page-link">...</span></li>
+                
+                
+                                            
+                
+                
+                                                                                        <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=58">58</a></li>
+                                                                                                <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=59">59</a></li>
+                                                                        
+            
+                            <li class="page-item">
+                    <a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications?page=2" rel="next" aria-label="Next &raquo;">&rsaquo;</a>
+                </li>
+                    </ul>
+    </nav>
+
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+        <footer class="main-footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-6 copy-right" >
+                        2022 &copy; Booking Core by <a href="https://www.bookingcore.org" target="_blank">BookingCore Team</a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="text-md-right footer-links d-none d-sm-block">
+                            <a href="https://www.bookingcore.org" target="_blank">About Us</a>
+                            <a href="https://m.me/bookingcore" target="_blank">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div class="backdrop-sidebar-mobile"></div>
+</div>
+
+<div id="cdn-browser-modal" class="modal fade">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div id="cdn-browser" class="cdn-browser d-flex flex-column" v-cloak :class="{is_loading:isLoading}">
+                <div class="files-nav flex-shrink-0">
+                    <div class="d-flex justify-content-between">
+                        <div class="col-left d-flex align-items-center">
+                            <div class="filter-item">
+                                <input type="text" placeholder="Search file name...." class="form-control" v-model="filter.s" @keyup.enter="filter.page = 1;reloadLists()">
+                            </div>
+                            <div class="filter-item">
+                                <button class="btn btn-default" @click="filter.page = 1;reloadLists()">
+                                    <i class="fa fa-search"></i> Search</button>
+                            </div>
+                            <div class="filter-item">
+                                <small><i>Total: {{total}} files</i></small>
+                            </div>
+                        </div>
+                        <div class="col-right">
+                            <i class="fa-spin fa fa-spinner icon-loading active" v-show="isLoading"></i>
+                            <button class="btn btn-success btn-pick-files">
+                                <span><i class="fa fa-upload"></i> Upload</span>
+                                <input multiple type="file" name="files[]" ref="files">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="upload-new" v-show="showUploader" display="none">
+                    <input type="file" name="filepond[]" class="my-pond">
+                </div>
+                <div class="files-list">
+                    <div class="files-wraps " :class="'view-'+viewType">
+                        <file-item v-for="(file,index) in files" :key="index" :view-type="viewType" :selected="selected" :file="file" v-on:select-file="selectFile"></file-item>
+                    </div>
+                    <p class="no-files-text text-center" v-show="!total && apiFinished" style="display: none">No file found</p>
+                    <div class="text-center" v-if="totalPage > 1">
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination">
+                                <li class="page-item" :class="{disabled:filter.page <= 1}">
+                                    <a class="page-link" v-if="filter.page <=1">Previous</a>
+                                    <a class="page-link" href="#" v-if="filter.page > 1" v-on:click="changePage(filter.page-1,$event)">Previous</a>
+                                </li>
+                                <li class="page-item" v-if="p >= (filter.page-3) && p <= (filter.page+3)" :class="{active: p == filter.page}" v-for="p in totalPage" @click="changePage(p,$event)">
+                                    <a class="page-link" href="#">{{p}}</a></li>
+                                <li class="page-item" :class="{disabled:filter.page >= totalPage}">
+                                    <a v-if="filter.page >= totalPage" class="page-link">Next</a>
+                                    <a href="#" class="page-link" v-if="filter.page < totalPage" v-on:click="changePage(filter.page+1,$event)">Next</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="browser-actions d-flex justify-content-between flex-shrink-0" v-if="selected.length">
+                    <div class="col-left" v-show="selected.length">
+                        <div class="control-remove" v-if="selected && selected.length">
+                            <button class="btn btn-danger" @click="removeFiles">Delete file</button>
+                        </div>
+                        <div class="control-info" v-if="selected && selected.length">
+                            <div class="count-selected">{{selected.length}} file selected</div>
+                            <div class="clear-selected" @click="selected=[]"><i>unselect</i></div>
+                        </div>
+                    </div>
+                    <div class="col-right" v-show="selected.length">
+                        <button class="btn btn-primary" :class="{disabled:!selected.length}" @click="sendFiles">Use file</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/x-template" id="file-item-template">
+    <div class="file-item" :class="fileClass(file)">
+        <div class="inner" :class="{active:selected.indexOf(file.id) !== -1 }" @click="selectFile(file)" :title="file.file_name">
+            <div class="file-thumb" v-if="viewType=='grid'" v-html="getFileThumb(file)">
+            </div>
+            <div class="file-name">{{file.file_name}}</div>
+            <span class="file-checked-status" v-show="selected.indexOf(file.id) !== -1">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M186.301 339.893L96 249.461l-32 30.507L186.301 402 448 140.506 416 110z"/></svg>
+            </span>
+        </div>
+    </div>
+</script>
+
+<!-- Scripts -->
+
+<script src="https://bookingfleet.com/BookingFleet/public/libs/pusher.min.js"></script>
+<script src="https://bookingfleet.com/BookingFleet/public/dist/admin/js/manifest.js?_ver=2.0.0" ></script>
+<script src="https://bookingfleet.com/BookingFleet/public/dist/admin/js/vendor.js?_ver=2.0.0" ></script>
+
+<script src="https://bookingfleet.com/BookingFleet/public/dist/admin/js/app.js?_ver=2.0.0" ></script>
+<script src="https://bookingfleet.com/BookingFleet/public/libs/vue/vue.js"></script>
+
+<script src="https://bookingfleet.com/BookingFleet/public/libs/select2/js/select2.min.js" ></script>
+<script src="https://bookingfleet.com/BookingFleet/public/libs/bootbox/bootbox.min.js"></script>
+
+<script src="https://bookingfleet.com/BookingFleet/public/libs/daterange/moment.min.js"></script>
+<script src="https://bookingfleet.com/BookingFleet/public/libs/daterange/daterangepicker.min.js?_ver=2.0.0"></script>
+
+
+
+
+<script type="text/javascript">
+var phpdebugbar = new PhpDebugBar.DebugBar();
+phpdebugbar.addIndicator("php_version", new PhpDebugBar.DebugBar.Indicator({"icon":"code","tooltip":"PHP Version"}), "right");
+phpdebugbar.addTab("messages", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Messages", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addIndicator("time", new PhpDebugBar.DebugBar.Indicator({"icon":"clock-o","tooltip":"Request Duration"}), "right");
+phpdebugbar.addTab("timeline", new PhpDebugBar.DebugBar.Tab({"icon":"tasks","title":"Timeline", "widget": new PhpDebugBar.Widgets.TimelineWidget()}));
+phpdebugbar.addIndicator("memory", new PhpDebugBar.DebugBar.Indicator({"icon":"cogs","tooltip":"Memory Usage"}), "right");
+phpdebugbar.addTab("exceptions", new PhpDebugBar.DebugBar.Tab({"icon":"bug","title":"Exceptions", "widget": new PhpDebugBar.Widgets.ExceptionsWidget()}));
+phpdebugbar.addTab("views", new PhpDebugBar.DebugBar.Tab({"icon":"leaf","title":"Views", "widget": new PhpDebugBar.Widgets.TemplatesWidget()}));
+phpdebugbar.addTab("route", new PhpDebugBar.DebugBar.Tab({"icon":"share","title":"Route", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addIndicator("currentroute", new PhpDebugBar.DebugBar.Indicator({"icon":"share","tooltip":"Route"}), "right");
+phpdebugbar.addTab("queries", new PhpDebugBar.DebugBar.Tab({"icon":"database","title":"Queries", "widget": new PhpDebugBar.Widgets.LaravelSQLQueriesWidget()}));
+phpdebugbar.addTab("models", new PhpDebugBar.DebugBar.Tab({"icon":"cubes","title":"Models", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.addTab("emails", new PhpDebugBar.DebugBar.Tab({"icon":"inbox","title":"Mails", "widget": new PhpDebugBar.Widgets.MailsWidget()}));
+phpdebugbar.addTab("auth", new PhpDebugBar.DebugBar.Tab({"icon":"lock","title":"Auth", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addIndicator("auth.name", new PhpDebugBar.DebugBar.Indicator({"icon":"user","tooltip":"Auth status"}), "right");
+phpdebugbar.addTab("gate", new PhpDebugBar.DebugBar.Tab({"icon":"list-alt","title":"Gate", "widget": new PhpDebugBar.Widgets.MessagesWidget()}));
+phpdebugbar.addTab("session", new PhpDebugBar.DebugBar.Tab({"icon":"archive","title":"Session", "widget": new PhpDebugBar.Widgets.VariableListWidget()}));
+phpdebugbar.addTab("request", new PhpDebugBar.DebugBar.Tab({"icon":"tags","title":"Request", "widget": new PhpDebugBar.Widgets.HtmlVariableListWidget()}));
+phpdebugbar.setDataMap({
+"php_version": ["php.version", ],
+"messages": ["messages.messages", []],
+"messages:badge": ["messages.count", null],
+"time": ["time.duration_str", '0ms'],
+"timeline": ["time", {}],
+"memory": ["memory.peak_usage_str", '0B'],
+"exceptions": ["exceptions.exceptions", []],
+"exceptions:badge": ["exceptions.count", null],
+"views": ["views", []],
+"views:badge": ["views.nb_templates", 0],
+"route": ["route", {}],
+"currentroute": ["route.uri", ],
+"queries": ["queries", []],
+"queries:badge": ["queries.nb_statements", 0],
+"models": ["models.data", {}],
+"models:badge": ["models.count", 0],
+"emails": ["swiftmailer_mails.mails", []],
+"emails:badge": ["swiftmailer_mails.count", null],
+"auth": ["auth.guards", {}],
+"auth.name": ["auth.names", ],
+"gate": ["gate.messages", []],
+"gate:badge": ["gate.count", null],
+"session": ["session", {}],
+"request": ["request", {}]
+});
+phpdebugbar.restoreState();
+phpdebugbar.ajaxHandler = new PhpDebugBar.AjaxHandler(phpdebugbar, undefined, true);
+phpdebugbar.ajaxHandler.bindToFetch();
+phpdebugbar.ajaxHandler.bindToXHR();
+phpdebugbar.setOpenHandler(new PhpDebugBar.OpenHandler({"url":"https:\/\/bookingfleet.com\/BookingFleet\/public\/_debugbar\/open"}));
+phpdebugbar.addDataSet({"__meta":{"id":"Xb4b4fe6ae9e56162fc15081eb9ecb87f","datetime":"2022-06-03 12:12:34","utime":1654258354.5607259273529052734375,"method":"GET","uri":"\/BookingFleet\/public\/admin\/module\/core\/notifications","ip":"111.119.183.25"},"php":{"version":"8.0.16","interface":"litespeed"},"messages":{"count":0,"messages":[]},"time":{"start":1654258354.2348539829254150390625,"end":1654258354.56074810028076171875,"duration":0.3258941173553466796875,"duration_str":"326ms","measures":[{"label":"Booting","start":1654258354.2348539829254150390625,"relative_start":0,"end":1654258354.2896940708160400390625,"relative_end":1654258354.2896940708160400390625,"duration":0.054840087890625,"duration_str":"54.84ms","params":[],"collector":null},{"label":"Application","start":1654258354.2900550365447998046875,"relative_start":0.055201053619384765625,"end":1654258354.5607509613037109375,"relative_end":2.86102294921875e-6,"duration":0.2706959247589111328125,"duration_str":"271ms","params":[],"collector":null}]},"memory":{"peak_usage":11555480,"peak_usage_str":"11MB"},"exceptions":{"count":0,"exceptions":[]},"views":{"nb_templates":9,"templates":[{"name":"Core::admin.notification.index (modules\/Core\/Views\/admin\/notification\/index.blade.php)","param_count":3,"params":["rows","page_title","type"],"type":"blade"},{"name":"Core::admin.notification.list (modules\/Core\/Views\/admin\/notification\/list.blade.php)","param_count":7,"params":["obLevel","__env","app","errors","rows","page_title","type"],"type":"blade"},{"name":"pagination::bootstrap-4 (vendor\/laravel\/framework\/src\/Illuminate\/Pagination\/resources\/views\/bootstrap-4.blade.php)","param_count":2,"params":["paginator","elements"],"type":"blade"},{"name":"admin.layouts.app (resources\/views\/admin\/layouts\/app.blade.php)","param_count":7,"params":["obLevel","__env","app","errors","rows","page_title","type"],"type":"blade"},{"name":"Layout::admin.app (modules\/Layout\/admin\/app.blade.php)","param_count":7,"params":["obLevel","__env","app","errors","rows","page_title","type"],"type":"blade"},{"name":"Layout::admin.parts.header (modules\/Layout\/admin\/parts\/header.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","rows","page_title","type","favicon","file"],"type":"blade"},{"name":"Layout::admin.parts.sidebar (modules\/Layout\/admin\/parts\/sidebar.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","rows","page_title","type","favicon","file"],"type":"blade"},{"name":"Layout::admin.parts.bc (modules\/Layout\/admin\/parts\/bc.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","rows","page_title","type","favicon","file"],"type":"blade"},{"name":"Media::browser (modules\/Media\/Views\/browser.blade.php)","param_count":9,"params":["obLevel","__env","app","errors","rows","page_title","type","favicon","file"],"type":"blade"}]},"route":{"uri":"GET admin\/module\/core\/notifications","middleware":"web, dashboard","controller":"Modules\\Core\\Admin\\NotificationController@loadNotify","namespace":"Modules\\Core\\Admin","prefix":"admin\/module\/core","where":[],"as":"core.admin.notification.loadNotify","file":"modules\/Core\/Admin\/NotificationController.php:46-71"},"queries":{"nb_statements":15,"nb_failed_statements":0,"accumulated_duration":0.044070000000000005002664948960955371148884296417236328125,"accumulated_duration_str":"44.07ms","statements":[{"sql":"select * from `users` where `id` = 63 and `users`.`deleted_at` is null limit 1","type":"query","params":[],"bindings":["63"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/EloquentUserProvider.php","line":52},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/SessionGuard.php","line":139},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/GuardHelpers.php","line":60},{"index":18,"namespace":"middleware","name":"auth","line":63},{"index":19,"namespace":"middleware","name":"auth","line":28}],"duration":0.00601999999999999930999639019546521012671291828155517578125,"duration_str":"6.02ms","stmt_id":"\/vendor\/laravel\/framework\/src\/Illuminate\/Auth\/EloquentUserProvider.php:52","connection":"bookinp7_bookingfleet"},{"sql":"select column_name as `column_name` from information_schema.columns where table_schema = 'bookinp7_bookingfleet' and table_name = 'core_permissions'","type":"query","params":[],"bindings":["bookinp7_bookingfleet","core_permissions"],"hints":[],"show_copy":false,"backtrace":[{"index":14,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Models\/Permission.php","line":27},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php","line":849},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php","line":691},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Foundation\/Application.php","line":796},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Container\/Container.php","line":637}],"duration":0.00154999999999999994552968285432825723546557128429412841796875,"duration_str":"1.55ms","stmt_id":"\/vendor\/spatie\/laravel-permission\/src\/Models\/Permission.php:27","connection":"bookinp7_bookingfleet"},{"sql":"select `core_permissions`.*, `core_model_has_permissions`.`model_id` as `pivot_model_id`, `core_model_has_permissions`.`permission_id` as `pivot_permission_id`, `core_model_has_permissions`.`model_type` as `pivot_model_type` from `core_permissions` inner join `core_model_has_permissions` on `core_permissions`.`id` = `core_model_has_permissions`.`permission_id` where `core_model_has_permissions`.`model_id` = 63 and `core_model_has_permissions`.`model_type` = 'App\\User'","type":"query","params":[],"bindings":["63","App\\User"],"hints":[],"show_copy":false,"backtrace":[{"index":19,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasPermissions.php","line":285},{"index":20,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasPermissions.php","line":139},{"index":21,"namespace":null,"name":"\/app\/Http\/Middleware\/HideDebugbar.php","line":21},{"index":22,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167},{"index":23,"namespace":null,"name":"\/app\/Http\/Middleware\/RedirectForMultiLanguage.php","line":58}],"duration":0.00076000000000000004184153024056058711721561849117279052734375,"duration_str":"760\u03bcs","stmt_id":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasPermissions.php:285","connection":"bookinp7_bookingfleet"},{"sql":"select column_name as `column_name` from information_schema.columns where table_schema = 'bookinp7_bookingfleet' and table_name = 'core_roles'","type":"query","params":[],"bindings":["bookinp7_bookingfleet","core_roles"],"hints":[],"show_copy":false,"backtrace":[{"index":14,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Models\/Role.php","line":26},{"index":17,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasRoles.php","line":47},{"index":22,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasRoles.php","line":208},{"index":23,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasPermissions.php","line":258},{"index":24,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasPermissions.php","line":139}],"duration":0.000939999999999999971862785219656188928638584911823272705078125,"duration_str":"940\u03bcs","stmt_id":"\/vendor\/spatie\/laravel-permission\/src\/Models\/Role.php:26","connection":"bookinp7_bookingfleet"},{"sql":"select `core_roles`.*, `core_model_has_roles`.`model_id` as `pivot_model_id`, `core_model_has_roles`.`role_id` as `pivot_role_id`, `core_model_has_roles`.`model_type` as `pivot_model_type` from `core_roles` inner join `core_model_has_roles` on `core_roles`.`id` = `core_model_has_roles`.`role_id` where `core_model_has_roles`.`model_id` = 63 and `core_model_has_roles`.`model_type` = 'App\\User'","type":"query","params":[],"bindings":["63","App\\User"],"hints":[],"show_copy":false,"backtrace":[{"index":19,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasRoles.php","line":208},{"index":20,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasPermissions.php","line":258},{"index":21,"namespace":null,"name":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasPermissions.php","line":139},{"index":22,"namespace":null,"name":"\/app\/Http\/Middleware\/HideDebugbar.php","line":21},{"index":23,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Pipeline\/Pipeline.php","line":167}],"duration":0.000859999999999999978871068062602489590062759816646575927734375,"duration_str":"860\u03bcs","stmt_id":"\/vendor\/spatie\/laravel-permission\/src\/Traits\/HasRoles.php:208","connection":"bookinp7_bookingfleet"},{"sql":"select count(*) as aggregate from `notifications` where (`data` LIKE '%\\\"for_admin\\\":1%' or `notifiable_id` = 63)","type":"query","params":[],"bindings":["%&quot;for_admin&quot;:1%","63"],"hints":[],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/modules\/Core\/Admin\/NotificationController.php","line":66},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":239},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":196}],"duration":0.006400000000000000306699110552699494292028248310089111328125,"duration_str":"6.4ms","stmt_id":"\/modules\/Core\/Admin\/NotificationController.php:66","connection":"bookinp7_bookingfleet"},{"sql":"select * from `notifications` where (`data` LIKE '%\\\"for_admin\\\":1%' or `notifiable_id` = 63) order by `created_at` desc limit 20 offset 0","type":"query","params":[],"bindings":["%&quot;for_admin&quot;:1%","63"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/modules\/Core\/Admin\/NotificationController.php","line":66},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Controller.php","line":54},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/ControllerDispatcher.php","line":45},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":239},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/Routing\/Route.php","line":196}],"duration":0.0077599999999999995370369987313097226433455944061279296875,"duration_str":"7.76ms","stmt_id":"\/modules\/Core\/Admin\/NotificationController.php:66","connection":"bookinp7_bookingfleet"},{"sql":"select * from `notifications` where (`data` LIKE '%\\\"for_admin\\\":1%' or `notifiable_id` = 63) order by `created_at` desc limit 5","type":"query","params":[],"bindings":["%&quot;for_admin&quot;:1%","63"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table"],"show_copy":false,"backtrace":[{"index":14,"namespace":"view","name":"Layout::admin.parts.header","line":9},{"index":16,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":57},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":139},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":122},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":91}],"duration":0.00745999999999999961752816801663357182405889034271240234375,"duration_str":"7.46ms","stmt_id":"view::Layout::admin.parts.header:9","connection":"bookinp7_bookingfleet"},{"sql":"select count(*) as aggregate from `notifications` where (`data` LIKE '%\\\"for_admin\\\":1%' or `notifiable_id` = 63) and `read_at` is null limit 5","type":"query","params":[],"bindings":["%&quot;for_admin&quot;:1%","63"],"hints":["<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":15,"namespace":"view","name":"Layout::admin.parts.header","line":10},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":57},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":139},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":122},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":91}],"duration":0.0071500000000000001054711873393898713402450084686279296875,"duration_str":"7.15ms","stmt_id":"view::Layout::admin.parts.header:10","connection":"bookinp7_bookingfleet"},{"sql":"select * from `user_meta` where (`user_id` = 63 and `name` = 'social_meta_avatar') limit 1","type":"query","params":[],"bindings":["63","social_meta_avatar"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":13,"namespace":null,"name":"\/app\/User.php","line":89},{"index":14,"namespace":null,"name":"\/app\/User.php","line":187},{"index":15,"namespace":"view","name":"Layout::admin.parts.header","line":129},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":57},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":139}],"duration":0.000609999999999999973666897634672068306826986372470855712890625,"duration_str":"610\u03bcs","stmt_id":"\/app\/User.php:89","connection":"bookinp7_bookingfleet"},{"sql":"select * from `user_meta` where (`user_id` = 63 and `name` = 'social_meta_avatar') limit 1","type":"query","params":[],"bindings":["63","social_meta_avatar"],"hints":["Use <code>SELECT *<\/code> only if you need all columns from table","<code>LIMIT<\/code> without <code>ORDER BY<\/code> causes non-deterministic results, depending on the query execution plan"],"show_copy":false,"backtrace":[{"index":13,"namespace":null,"name":"\/app\/User.php","line":89},{"index":14,"namespace":null,"name":"\/app\/User.php","line":187},{"index":15,"namespace":"view","name":"Layout::admin.parts.header","line":130},{"index":17,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":57},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":139}],"duration":0.0004799999999999999579503029423221960314549505710601806640625,"duration_str":"480\u03bcs","stmt_id":"\/app\/User.php:89","connection":"bookinp7_bookingfleet"},{"sql":"select count(`id`) as aggregate from `bravo_booking_payments` where `object_model` = 'wallet_deposit' and `status` = 'processing'","type":"query","params":[],"bindings":["wallet_deposit","processing"],"hints":[],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/modules\/User\/Models\/Wallet\/DepositPayment.php","line":15},{"index":16,"namespace":null,"name":"\/modules\/Report\/ModuleProvider.php","line":18},{"index":17,"namespace":"view","name":"Layout::admin.parts.sidebar","line":80},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":57},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":139}],"duration":0.00126000000000000005224987109642142968368716537952423095703125,"duration_str":"1.26ms","stmt_id":"\/modules\/User\/Models\/Wallet\/DepositPayment.php:15","connection":"bookinp7_bookingfleet"},{"sql":"select count(`id`) as aggregate from `users` where `verify_submit_status` in ('new', 'partial') and `users`.`deleted_at` is null","type":"query","params":[],"bindings":["new","partial"],"hints":[],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/app\/User.php","line":395},{"index":16,"namespace":null,"name":"\/modules\/User\/ModuleProvider.php","line":29},{"index":17,"namespace":"view","name":"Layout::admin.parts.sidebar","line":80},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":57},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":139}],"duration":0.000839999999999999926413030149063843055046163499355316162109375,"duration_str":"840\u03bcs","stmt_id":"\/app\/User.php:395","connection":"bookinp7_bookingfleet"},{"sql":"select count(*) as aggregate from `user_upgrade_request` where `status` = 'pending' and `user_upgrade_request`.`deleted_at` is null","type":"query","params":[],"bindings":["pending"],"hints":[],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/modules\/User\/ModuleProvider.php","line":30},{"index":16,"namespace":"view","name":"Layout::admin.parts.sidebar","line":80},{"index":18,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":57},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":139},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":122}],"duration":0.000870000000000000005100087019371812857571057975292205810546875,"duration_str":"870\u03bcs","stmt_id":"\/modules\/User\/ModuleProvider.php:30","connection":"bookinp7_bookingfleet"},{"sql":"select count(`id`) as aggregate from `bravo_payouts` where `status` = 'initial'","type":"query","params":[],"bindings":["initial"],"hints":[],"show_copy":false,"backtrace":[{"index":15,"namespace":null,"name":"\/modules\/Vendor\/Models\/VendorPayout.php","line":63},{"index":16,"namespace":null,"name":"\/modules\/Vendor\/ModuleProvider.php","line":26},{"index":17,"namespace":"view","name":"Layout::admin.parts.sidebar","line":80},{"index":19,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/Engines\/CompilerEngine.php","line":57},{"index":20,"namespace":null,"name":"\/vendor\/laravel\/framework\/src\/Illuminate\/View\/View.php","line":139}],"duration":0.00111000000000000009249545573908335427404381334781646728515625,"duration_str":"1.11ms","stmt_id":"\/modules\/Vendor\/Models\/VendorPayout.php:63","connection":"bookinp7_bookingfleet"}]},"models":{"data":{"Modules\\Core\\Models\\NotificationPush":25,"Spatie\\Permission\\Models\\Role":1,"App\\User":1},"count":27},"swiftmailer_mails":{"count":0,"mails":[]},"auth":{"guards":{"web":"array:2 [\n  \"name\" => \"frontend@gmail.com\"\n  \"user\" => array:38 [\n    \"id\" => 63\n    \"name\" => \"Front end Developer\"\n    \"first_name\" => \"Front end\"\n    \"last_name\" => \"Developer\"\n    \"email\" => \"frontend@gmail.com\"\n    \"active_status\" => 0\n    \"dark_mode\" => 0\n    \"messenger_color\" => \"#2180f3\"\n    \"avatar\" => \"avatar.png\"\n    \"email_verified_at\" => \"2022-05-26T19:32:24.000000Z\"\n    \"address\" => \"1\"\n    \"address2\" => null\n    \"phone\" => \"0345-2414408\"\n    \"birthday\" => \"1970-01-01\"\n    \"city\" => \"Karachi\"\n    \"state\" => \"Sindh\"\n    \"country\" => \"PK\"\n    \"zip_code\" => 75600\n    \"last_login_at\" => null\n    \"avatar_id\" => null\n    \"bio\" => \"\"\n    \"status\" => \"publish\"\n    \"create_user\" => null\n    \"update_user\" => null\n    \"vendor_commission_amount\" => null\n    \"vendor_commission_type\" => null\n    \"deleted_at\" => null\n    \"created_at\" => \"2022-05-26T19:06:14.000000Z\"\n    \"updated_at\" => \"2022-05-26T19:32:50.000000Z\"\n    \"payment_gateway\" => null\n    \"total_guests\" => null\n    \"locale\" => null\n    \"business_name\" => null\n    \"verify_submit_status\" => null\n    \"is_verified\" => null\n    \"user_name\" => \"Frontend\"\n    \"permissions\" => []\n    \"roles\" => array:1 [\n      0 => array:8 [\n        \"id\" => 3\n        \"name\" => \"administrator\"\n        \"guard_name\" => \"web\"\n        \"origin_id\" => null\n        \"lang\" => null\n        \"created_at\" => \"2021-06-15T20:29:04.000000Z\"\n        \"updated_at\" => \"2021-06-15T20:29:04.000000Z\"\n        \"pivot\" => array:3 [\n          \"model_id\" => 63\n          \"role_id\" => 3\n          \"model_type\" => \"App\\User\"\n        ]\n      ]\n    ]\n  ]\n]","api":"null"},"names":"web: frontend@gmail.com"},"gate":{"count":0,"messages":[]},"session":{"_token":"NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ","login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d":"63","_previous":"array:1 [\n  \"url\" => \"https:\/\/bookingfleet.com\/BookingFleet\/public\/admin\/module\/core\/notifications\"\n]","_flash":"array:2 [\n  \"old\" => []\n  \"new\" => []\n]","PHPDEBUGBAR_STACK_DATA":"[]"},"request":{"path_info":"\/admin\/module\/core\/notifications","status_code":"<pre class=sf-dump id=sf-dump-255134181 data-indent-pad=\"  \"><span class=sf-dump-num>200<\/span>\n<\/pre><script>Sfdump(\"sf-dump-255134181\", {\"maxDepth\":0})<\/script>\n","status_text":"OK","format":"html","content_type":"text\/html; charset=UTF-8","request_query":"<pre class=sf-dump id=sf-dump-892890375 data-indent-pad=\"  \">[]\n<\/pre><script>Sfdump(\"sf-dump-892890375\", {\"maxDepth\":0})<\/script>\n","request_request":"<pre class=sf-dump id=sf-dump-149014552 data-indent-pad=\"  \">[]\n<\/pre><script>Sfdump(\"sf-dump-149014552\", {\"maxDepth\":0})<\/script>\n","request_headers":"<pre class=sf-dump id=sf-dump-939126628 data-indent-pad=\"  \"><span class=sf-dump-note>array:18<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>accept<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"135 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.9<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-encoding<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"17 characters\">gzip, deflate, br<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>accept-language<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"14 characters\">en-US,en;q=0.9<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>content-length<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>0<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>cookie<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"1523 characters\">humans_21909=1; booking_cookie_agreement_enable=eyJpdiI6IkRiQXZqRVJWTVo1bUlaMi9yOGJ0MHc9PSIsInZhbHVlIjoiZUhnL0pSZlFaaHpqdnVkTGJlR1BOdDhyQ1VjeDZxOXZzWDlieUpxUXRjQW5XYmJNSkFkNzhCRnNsaHE4SUlJbSIsIm1hYyI6IjYyOWU5YmI1NjE0YTg4OGE1NTVmZWI1YjM2NTA2ZDVkZjViYzA3MzNjNTVhNDkzNTZiYzY4M2U0NGQ2YTE1ZjIifQ%3D%3D; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6ImhRbzdHbi9CS2ppMlFDelhiZkJhdUE9PSIsInZhbHVlIjoiM01WWlZqSmQybkZwYkZNNGR4VGljU0IxWmZzTWlYMXd5UWVnb2ZPMmhoRzd0MWhqeTM2TGN0dnpLL0ppQ0JCYWV2cmI5SFkra1NhdXVtUjFKUU9WZ0VGU3FLNzRsZVdDMlQ2OFdFTnNybE9uRkw3b2R2NmhsMENyMUNDck1rMEwwRW1FYjBDb3VxaXVmT1huNkZ2bjZzenFaUUFFTzFGM0JyVi9UK3NCVG9jeHcwOGdSRDFaKzBXTWpjMXltTnI1T1l0U292ZU94TWhmVDZBNXFlUjk2bm41d2daWG1DNXpHSzdETm9pMklSND0iLCJtYWMiOiI5ZWMwYmFkZjM2ODQ5MTQxNjkxMjY0ZDE5NzM5ZDczNGM0MTRiZjdjODkwNWY3ZDI4MWI5OWZjMTc2ZmY5YjMwIn0%3D; XSRF-TOKEN=eyJpdiI6IlIzWDZCdnoxMkhKdnZqK0pFVWF0Vnc9PSIsInZhbHVlIjoiR2hSZ1ZYTTB4SS9YbnVwWUt3TDg4ZE40cTIrcWlDUG4zTmZvK0U1ZWFjWlhaTXd5SmwxUUwzeXpuanJXa1lDN3piQXRRRU9URFNTQUp6U0xnV0hPeDkzS2hNMnNCUUpMYVNEeWozZG9JVHdTbDJPV0M3TGwzN3dUNVhNTnBDZzIiLCJtYWMiOiJmZDM1YTUzNDcxYTg3MjhlZGIxNTkzMTE2NWE4MTA0Yjc1NDAzODZkZGVkMmQ0MDM2MDgyZjAzZWQ5MmJjZDRmIn0%3D; booking_fleet_session=eyJpdiI6Ilc4ZWhQNkkrNjBjaFJRdlZZcHQybEE9PSIsInZhbHVlIjoiMGFMTXpzajU0aDJCV2V3WFRiVkVpVW1UNFMwOUVOSmVxdVlEeEZFdXE0Zlk2RjRxbndpUFBQZk9NYTdaNDBRVlFZSVR6T0twMzJ0cU1nTTV6NjFJVWQzcS9NVVVwN005cVVFQTJBQjZYczBweGkxMlMzSFpDelBzRlo3Z21LZDkiLCJtYWMiOiJlMmJkYThjOTgzZmY5MDlhMWNiZDliOTU0Njg0OWNhOWI3OTlmZTg5Mjg0ODlmNGZjNTkxMDU1ZTg1NjQ2MDdjIn0%3D<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>host<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"16 characters\">bookingfleet.com<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>referer<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"76 characters\">https:\/\/bookingfleet.com\/BookingFleet\/public\/admin\/module\/user\/wallet\/report<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>user-agent<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"116 characters\">Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/100.0.4896.127 Safari\/537.36<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-ch-ua<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"73 characters\">&quot; Not A;Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;100&quot;, &quot;Avast Secure Browser&quot;;v=&quot;100&quot;<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-ch-ua-mobile<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"2 characters\">?0<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-ch-ua-platform<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"9 characters\">&quot;Windows&quot;<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>upgrade-insecure-requests<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>dnt<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-site<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"11 characters\">same-origin<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-mode<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-user<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>sec-fetch-dest<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>x-https<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str>1<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-939126628\", {\"maxDepth\":0})<\/script>\n","request_server":"<pre class=sf-dump id=sf-dump-774831811 data-indent-pad=\"  \"><span class=sf-dump-note>array:75<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>LSPHP_ENABLE_USER_INI<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>PATH<\/span>\" => \"<span class=sf-dump-str title=\"28 characters\">\/usr\/local\/bin:\/usr\/bin:\/bin<\/span>\"\n  \"<span class=sf-dump-key>TEMP<\/span>\" => \"<span class=sf-dump-str title=\"4 characters\">\/tmp<\/span>\"\n  \"<span class=sf-dump-key>TMP<\/span>\" => \"<span class=sf-dump-str title=\"4 characters\">\/tmp<\/span>\"\n  \"<span class=sf-dump-key>TMPDIR<\/span>\" => \"<span class=sf-dump-str title=\"4 characters\">\/tmp<\/span>\"\n  \"<span class=sf-dump-key>PWD<\/span>\" => \"<span class=sf-dump-str>\/<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT<\/span>\" => \"<span class=sf-dump-str title=\"135 characters\">text\/html,application\/xhtml+xml,application\/xml;q=0.9,image\/avif,image\/webp,image\/apng,*\/*;q=0.8,application\/signed-exchange;v=b3;q=0.9<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_ENCODING<\/span>\" => \"<span class=sf-dump-str title=\"17 characters\">gzip, deflate, br<\/span>\"\n  \"<span class=sf-dump-key>HTTP_ACCEPT_LANGUAGE<\/span>\" => \"<span class=sf-dump-str title=\"14 characters\">en-US,en;q=0.9<\/span>\"\n  \"<span class=sf-dump-key>CONTENT_LENGTH<\/span>\" => \"<span class=sf-dump-str>0<\/span>\"\n  \"<span class=sf-dump-key>HTTP_COOKIE<\/span>\" => \"<span class=sf-dump-str title=\"1523 characters\">humans_21909=1; booking_cookie_agreement_enable=eyJpdiI6IkRiQXZqRVJWTVo1bUlaMi9yOGJ0MHc9PSIsInZhbHVlIjoiZUhnL0pSZlFaaHpqdnVkTGJlR1BOdDhyQ1VjeDZxOXZzWDlieUpxUXRjQW5XYmJNSkFkNzhCRnNsaHE4SUlJbSIsIm1hYyI6IjYyOWU5YmI1NjE0YTg4OGE1NTVmZWI1YjM2NTA2ZDVkZjViYzA3MzNjNTVhNDkzNTZiYzY4M2U0NGQ2YTE1ZjIifQ%3D%3D; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6ImhRbzdHbi9CS2ppMlFDelhiZkJhdUE9PSIsInZhbHVlIjoiM01WWlZqSmQybkZwYkZNNGR4VGljU0IxWmZzTWlYMXd5UWVnb2ZPMmhoRzd0MWhqeTM2TGN0dnpLL0ppQ0JCYWV2cmI5SFkra1NhdXVtUjFKUU9WZ0VGU3FLNzRsZVdDMlQ2OFdFTnNybE9uRkw3b2R2NmhsMENyMUNDck1rMEwwRW1FYjBDb3VxaXVmT1huNkZ2bjZzenFaUUFFTzFGM0JyVi9UK3NCVG9jeHcwOGdSRDFaKzBXTWpjMXltTnI1T1l0U292ZU94TWhmVDZBNXFlUjk2bm41d2daWG1DNXpHSzdETm9pMklSND0iLCJtYWMiOiI5ZWMwYmFkZjM2ODQ5MTQxNjkxMjY0ZDE5NzM5ZDczNGM0MTRiZjdjODkwNWY3ZDI4MWI5OWZjMTc2ZmY5YjMwIn0%3D; XSRF-TOKEN=eyJpdiI6IlIzWDZCdnoxMkhKdnZqK0pFVWF0Vnc9PSIsInZhbHVlIjoiR2hSZ1ZYTTB4SS9YbnVwWUt3TDg4ZE40cTIrcWlDUG4zTmZvK0U1ZWFjWlhaTXd5SmwxUUwzeXpuanJXa1lDN3piQXRRRU9URFNTQUp6U0xnV0hPeDkzS2hNMnNCUUpMYVNEeWozZG9JVHdTbDJPV0M3TGwzN3dUNVhNTnBDZzIiLCJtYWMiOiJmZDM1YTUzNDcxYTg3MjhlZGIxNTkzMTE2NWE4MTA0Yjc1NDAzODZkZGVkMmQ0MDM2MDgyZjAzZWQ5MmJjZDRmIn0%3D; booking_fleet_session=eyJpdiI6Ilc4ZWhQNkkrNjBjaFJRdlZZcHQybEE9PSIsInZhbHVlIjoiMGFMTXpzajU0aDJCV2V3WFRiVkVpVW1UNFMwOUVOSmVxdVlEeEZFdXE0Zlk2RjRxbndpUFBQZk9NYTdaNDBRVlFZSVR6T0twMzJ0cU1nTTV6NjFJVWQzcS9NVVVwN005cVVFQTJBQjZYczBweGkxMlMzSFpDelBzRlo3Z21LZDkiLCJtYWMiOiJlMmJkYThjOTgzZmY5MDlhMWNiZDliOTU0Njg0OWNhOWI3OTlmZTg5Mjg0ODlmNGZjNTkxMDU1ZTg1NjQ2MDdjIn0%3D<\/span>\"\n  \"<span class=sf-dump-key>HTTP_HOST<\/span>\" => \"<span class=sf-dump-str title=\"16 characters\">bookingfleet.com<\/span>\"\n  \"<span class=sf-dump-key>HTTP_REFERER<\/span>\" => \"<span class=sf-dump-str title=\"76 characters\">https:\/\/bookingfleet.com\/BookingFleet\/public\/admin\/module\/user\/wallet\/report<\/span>\"\n  \"<span class=sf-dump-key>HTTP_USER_AGENT<\/span>\" => \"<span class=sf-dump-str title=\"116 characters\">Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/100.0.4896.127 Safari\/537.36<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_CH_UA<\/span>\" => \"<span class=sf-dump-str title=\"73 characters\">&quot; Not A;Brand&quot;;v=&quot;99&quot;, &quot;Chromium&quot;;v=&quot;100&quot;, &quot;Avast Secure Browser&quot;;v=&quot;100&quot;<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_CH_UA_MOBILE<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">?0<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_CH_UA_PLATFORM<\/span>\" => \"<span class=sf-dump-str title=\"9 characters\">&quot;Windows&quot;<\/span>\"\n  \"<span class=sf-dump-key>HTTP_UPGRADE_INSECURE_REQUESTS<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_DNT<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_SITE<\/span>\" => \"<span class=sf-dump-str title=\"11 characters\">same-origin<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_MODE<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">navigate<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_USER<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">?1<\/span>\"\n  \"<span class=sf-dump-key>HTTP_SEC_FETCH_DEST<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">document<\/span>\"\n  \"<span class=sf-dump-key>HTTP_X_HTTPS<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_UNIQUE_ID<\/span>\" => \"<span class=sf-dump-str title=\"27 characters\">Ypn6spQ9cpuyi4Flw0Ca9QAAfgA<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_QS_ConnectionId<\/span>\" => \"<span class=sf-dump-str title=\"24 characters\">165425835420666756746403<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_SCRIPT_URL<\/span>\" => \"<span class=sf-dump-str title=\"52 characters\">\/BookingFleet\/public\/admin\/module\/core\/notifications<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_SCRIPT_URI<\/span>\" => \"<span class=sf-dump-str title=\"76 characters\">https:\/\/bookingfleet.com\/BookingFleet\/public\/admin\/module\/core\/notifications<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_HTTPS<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_SSL_TLS_SNI<\/span>\" => \"<span class=sf-dump-str title=\"16 characters\">bookingfleet.com<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_HTTP2<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_H2PUSH<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_H2_PUSH<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_H2_PUSHED<\/span>\" => \"\"\n  \"<span class=sf-dump-key>REDIRECT_H2_PUSHED_ON<\/span>\" => \"\"\n  \"<span class=sf-dump-key>REDIRECT_H2_STREAM_ID<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_H2_STREAM_TAG<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">112-1<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_STATUS<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">200<\/span>\"\n  \"<span class=sf-dump-key>UNIQUE_ID<\/span>\" => \"<span class=sf-dump-str title=\"27 characters\">Ypn6spQ9cpuyi4Flw0Ca9QAAfgA<\/span>\"\n  \"<span class=sf-dump-key>QS_ConnectionId<\/span>\" => \"<span class=sf-dump-str title=\"24 characters\">165425835420666756746403<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_URL<\/span>\" => \"<span class=sf-dump-str title=\"52 characters\">\/BookingFleet\/public\/admin\/module\/core\/notifications<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_URI<\/span>\" => \"<span class=sf-dump-str title=\"76 characters\">https:\/\/bookingfleet.com\/BookingFleet\/public\/admin\/module\/core\/notifications<\/span>\"\n  \"<span class=sf-dump-key>HTTPS<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>SSL_TLS_SNI<\/span>\" => \"<span class=sf-dump-str title=\"16 characters\">bookingfleet.com<\/span>\"\n  \"<span class=sf-dump-key>HTTP2<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>H2PUSH<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>H2_PUSH<\/span>\" => \"<span class=sf-dump-str title=\"2 characters\">on<\/span>\"\n  \"<span class=sf-dump-key>H2_PUSHED<\/span>\" => \"\"\n  \"<span class=sf-dump-key>H2_PUSHED_ON<\/span>\" => \"\"\n  \"<span class=sf-dump-key>H2_STREAM_ID<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>H2_STREAM_TAG<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">112-1<\/span>\"\n  \"<span class=sf-dump-key>SERVER_SIGNATURE<\/span>\" => \"\"\n  \"<span class=sf-dump-key>SERVER_SOFTWARE<\/span>\" => \"<span class=sf-dump-str title=\"6 characters\">Apache<\/span>\"\n  \"<span class=sf-dump-key>SERVER_NAME<\/span>\" => \"<span class=sf-dump-str title=\"16 characters\">bookingfleet.com<\/span>\"\n  \"<span class=sf-dump-key>SERVER_ADDR<\/span>\" => \"<span class=sf-dump-str title=\"13 characters\">50.87.253.191<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PORT<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">443<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_ADDR<\/span>\" => \"<span class=sf-dump-str title=\"14 characters\">111.119.183.25<\/span>\"\n  \"<span class=sf-dump-key>DOCUMENT_ROOT<\/span>\" => \"<span class=sf-dump-str title=\"27 characters\">\/home1\/bookinp7\/public_html<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_SCHEME<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">https<\/span>\"\n  \"<span class=sf-dump-key>CONTEXT_PREFIX<\/span>\" => \"\"\n  \"<span class=sf-dump-key>CONTEXT_DOCUMENT_ROOT<\/span>\" => \"<span class=sf-dump-str title=\"27 characters\">\/home1\/bookinp7\/public_html<\/span>\"\n  \"<span class=sf-dump-key>SERVER_ADMIN<\/span>\" => \"<span class=sf-dump-str title=\"26 characters\">webmaster@bookingfleet.com<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_FILENAME<\/span>\" => \"<span class=sf-dump-str title=\"57 characters\">\/home1\/bookinp7\/public_html\/BookingFleet\/public\/index.php<\/span>\"\n  \"<span class=sf-dump-key>REMOTE_PORT<\/span>\" => \"<span class=sf-dump-str title=\"5 characters\">35386<\/span>\"\n  \"<span class=sf-dump-key>REDIRECT_URL<\/span>\" => \"<span class=sf-dump-str title=\"52 characters\">\/BookingFleet\/public\/admin\/module\/core\/notifications<\/span>\"\n  \"<span class=sf-dump-key>SERVER_PROTOCOL<\/span>\" => \"<span class=sf-dump-str title=\"8 characters\">HTTP\/2.0<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_METHOD<\/span>\" => \"<span class=sf-dump-str title=\"3 characters\">GET<\/span>\"\n  \"<span class=sf-dump-key>QUERY_STRING<\/span>\" => \"\"\n  \"<span class=sf-dump-key>REQUEST_URI<\/span>\" => \"<span class=sf-dump-str title=\"52 characters\">\/BookingFleet\/public\/admin\/module\/core\/notifications<\/span>\"\n  \"<span class=sf-dump-key>SCRIPT_NAME<\/span>\" => \"<span class=sf-dump-str title=\"30 characters\">\/BookingFleet\/public\/index.php<\/span>\"\n  \"<span class=sf-dump-key>PHP_SELF<\/span>\" => \"<span class=sf-dump-str title=\"30 characters\">\/BookingFleet\/public\/index.php<\/span>\"\n  \"<span class=sf-dump-key>REQUEST_TIME_FLOAT<\/span>\" => <span class=sf-dump-num>1654258354.2349<\/span>\n  \"<span class=sf-dump-key>REQUEST_TIME<\/span>\" => <span class=sf-dump-num>1654258354<\/span>\n  \"<span class=sf-dump-key>argv<\/span>\" => []\n  \"<span class=sf-dump-key>argc<\/span>\" => <span class=sf-dump-num>0<\/span>\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-774831811\", {\"maxDepth\":0})<\/script>\n","request_cookies":"<pre class=sf-dump id=sf-dump-799281851 data-indent-pad=\"  \"><span class=sf-dump-note>array:5<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>humans_21909<\/span>\" => <span class=sf-dump-const>null<\/span>\n  \"<span class=sf-dump-key>booking_cookie_agreement_enable<\/span>\" => \"<span class=sf-dump-str>1<\/span>\"\n  \"<span class=sf-dump-key>remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d<\/span>\" => \"<span class=sf-dump-str title=\"124 characters\">63|I6tNZrkehGtCxyyxQvnP6CjNOpXxJq7SW7f5YtxTomG3K8CzbhBScP3ryFzB|$2y$10$CqedXktHtWDCcw5re7fGcuSH\/JdQvVLNhoEAGdNxGvw3izmN3aG4G<\/span>\"\n  \"<span class=sf-dump-key>XSRF-TOKEN<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ<\/span>\"\n  \"<span class=sf-dump-key>booking_fleet_session<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">AcEd3VxWihM6whWMG9XpsPCY3bJt7qUIscZEtAH9<\/span>\"\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-799281851\", {\"maxDepth\":0})<\/script>\n","response_headers":"<pre class=sf-dump id=sf-dump-771865342 data-indent-pad=\"  \"><span class=sf-dump-note>array:5<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>content-type<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"24 characters\">text\/html; charset=UTF-8<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>cache-control<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"17 characters\">no-cache, private<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>date<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"29 characters\">Fri, 03 Jun 2022 12:12:34 GMT<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>set-cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"402 characters\">XSRF-TOKEN=eyJpdiI6IkVVc1VHdVY5L21tcFQrZ3l6K2hFc0E9PSIsInZhbHVlIjoidDB1Q2Fpd2p0ZkVtUFVVcUdxQUFEUFRqUjFyT0dtdzNQNFovVTF4ajBtcXh6RFUvektmYWowbXZNNG1mb3ZUbkdRK1lvRGkvd2FXK3dIandoL2hpeHQxV0d3dnlVdjhLTUwrOFhzMmlkeDNmQS9UZitXRkZvRnVSMGRxOE9HYmEiLCJtYWMiOiI1MDRhNzBiYzVjMTMxMGUyNzk1YzcxMWUxODU0ZWFhODk1MTFjNzA1Y2ViNDljYzkxYTVmODEwNDE1NjgzZGMzIn0%3D; expires=Fri, 03-Jun-2022 14:12:34 GMT; Max-Age=7200; path=\/<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"423 characters\">booking_fleet_session=eyJpdiI6IktFYWtRSTR4NWFVNmdTTTRGZ0QwR1E9PSIsInZhbHVlIjoiT0JDT0x5NFMxbTlFZzZzcy8yaWRXSERWMkk4RnFHU0ZwdXdaV09lbUlaWDJOays1S3FxVW9ZMmMyYktid0wzWldYQjROU1JOOG93bGZ4QTJBYkNtL3ZvVjEzdExwTFk0eTlyRmZlVzU1UXVBNS9ZT0M0T3dGUmNQOTVMSURkYk4iLCJtYWMiOiJjMTM4NDEyMmNkY2MyNDUyM2ZjYWZhYmE0NDhlOWU3YWFhMmQ5OWQ3ZGZhZjA1NmE2MTFmZGMzMWVlNWM3NTM5In0%3D; expires=Fri, 03-Jun-2022 14:12:34 GMT; Max-Age=7200; path=\/; httponly<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>Set-Cookie<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    <span class=sf-dump-index>0<\/span> => \"<span class=sf-dump-str title=\"388 characters\">XSRF-TOKEN=eyJpdiI6IkVVc1VHdVY5L21tcFQrZ3l6K2hFc0E9PSIsInZhbHVlIjoidDB1Q2Fpd2p0ZkVtUFVVcUdxQUFEUFRqUjFyT0dtdzNQNFovVTF4ajBtcXh6RFUvektmYWowbXZNNG1mb3ZUbkdRK1lvRGkvd2FXK3dIandoL2hpeHQxV0d3dnlVdjhLTUwrOFhzMmlkeDNmQS9UZitXRkZvRnVSMGRxOE9HYmEiLCJtYWMiOiI1MDRhNzBiYzVjMTMxMGUyNzk1YzcxMWUxODU0ZWFhODk1MTFjNzA1Y2ViNDljYzkxYTVmODEwNDE1NjgzZGMzIn0%3D; expires=Fri, 03-Jun-2022 14:12:34 GMT; path=\/<\/span>\"\n    <span class=sf-dump-index>1<\/span> => \"<span class=sf-dump-str title=\"409 characters\">booking_fleet_session=eyJpdiI6IktFYWtRSTR4NWFVNmdTTTRGZ0QwR1E9PSIsInZhbHVlIjoiT0JDT0x5NFMxbTlFZzZzcy8yaWRXSERWMkk4RnFHU0ZwdXdaV09lbUlaWDJOays1S3FxVW9ZMmMyYktid0wzWldYQjROU1JOOG93bGZ4QTJBYkNtL3ZvVjEzdExwTFk0eTlyRmZlVzU1UXVBNS9ZT0M0T3dGUmNQOTVMSURkYk4iLCJtYWMiOiJjMTM4NDEyMmNkY2MyNDUyM2ZjYWZhYmE0NDhlOWU3YWFhMmQ5OWQ3ZGZhZjA1NmE2MTFmZGMzMWVlNWM3NTM5In0%3D; expires=Fri, 03-Jun-2022 14:12:34 GMT; path=\/; httponly<\/span>\"\n  <\/samp>]\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-771865342\", {\"maxDepth\":0})<\/script>\n","session_attributes":"<pre class=sf-dump id=sf-dump-603417590 data-indent-pad=\"  \"><span class=sf-dump-note>array:5<\/span> [<samp data-depth=1 class=sf-dump-expanded>\n  \"<span class=sf-dump-key>_token<\/span>\" => \"<span class=sf-dump-str title=\"40 characters\">NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ<\/span>\"\n  \"<span class=sf-dump-key>login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d<\/span>\" => <span class=sf-dump-num>63<\/span>\n  \"<span class=sf-dump-key>_previous<\/span>\" => <span class=sf-dump-note>array:1<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>url<\/span>\" => \"<span class=sf-dump-str title=\"76 characters\">https:\/\/bookingfleet.com\/BookingFleet\/public\/admin\/module\/core\/notifications<\/span>\"\n  <\/samp>]\n  \"<span class=sf-dump-key>_flash<\/span>\" => <span class=sf-dump-note>array:2<\/span> [<samp data-depth=2 class=sf-dump-compact>\n    \"<span class=sf-dump-key>old<\/span>\" => []\n    \"<span class=sf-dump-key>new<\/span>\" => []\n  <\/samp>]\n  \"<span class=sf-dump-key>PHPDEBUGBAR_STACK_DATA<\/span>\" => []\n<\/samp>]\n<\/pre><script>Sfdump(\"sf-dump-603417590\", {\"maxDepth\":0})<\/script>\n"}}, "Xb4b4fe6ae9e56162fc15081eb9ecb87f");
+
+</script>
+</body>
+</html>

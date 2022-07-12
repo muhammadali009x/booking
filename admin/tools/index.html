@@ -1,0 +1,1690 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="9iskTOJbSwAPkKcLRWvXzaIMEZm42xnZYhjAQacR">
+
+    <title>Dashboard - bookingfleet</title>
+
+    <link rel="icon" type="image/png"
+        href="https://bookingfleet.com/BookingFleet/public/uploads/0000/1/2021/08/13/finallogo.png" />
+
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../libs/font-awesome/css/font-awesome.css">
+    <link href="../../css/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../../css/ionicons/icofont.min.css" rel="stylesheet">
+    <link href="../../libs/select2/css/select2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/admin/vendors.css">
+    <link rel="stylesheet" href="../../css/admin/app.css">
+    <link rel="stylesheet" href="../../css/font-face.css">
+    <link href="https://bookingfleet.com/BookingFleet/public/libs/flags/css/flag-icon.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" property="stylesheet"
+        href="https://bookingfleet.com/BookingFleet/public/_debugbar/assets/stylesheets?v=1625121810&amp;theme=auto">
+    <script type="text/javascript"
+        src="https://bookingfleet.com/BookingFleet/public/_debugbar/assets/javascript?v=1625121810"></script>
+    <script type="text/javascript">jQuery.noConflict(true);</script>
+    <script src="../../libs/jquery-3.3.1.min.js"></script>
+    <script src="../../js/app.js"></script>
+    <link rel="stylesheet" href="../../css/phpdebugbar.css">
+</head>
+
+<body class=" ">
+    <div id="app">
+        <div class="main-header d-flex">
+            <div class="header-logo flex-shrink-0">
+                <h3 class="logo-text"><a href="https://bookingfleet.com/BookingFleet/public/admin">Booking Core <span
+                            class="app-version">2.0.0</span></a></h3>
+            </div>
+            <div class="header-widgets d-flex flex-grow-1">
+                <div class="widgets-left d-flex flex-grow-1 align-items-center">
+                    <div class="header-widget">
+                        <span class="btn-toggle-admin-menu btn btn-sm btn-link"><i class="icon ion-ios-menu"></i></span>
+                    </div>
+                    <div class="header-widget search-widget">
+
+                        <a href="https://bookingfleet.com/BookingFleet/public" class="btn btn-link" target="_blank"><i
+                                class="fa fa-eye"></i> Home
+                        </a>
+                    </div>
+                </div>
+                <div class="widgets-right flex-shrink-0 d-flex">
+                    <div class="dropdown header-widget widget-user pt-2 dropdown-notifications flex-shrink-0"
+                        style="min-width: 0">
+                        <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa fa-lg fa-bell m-1 p-1"></i>
+                            <span class="badge badge-danger notification-icon">2</span>
+                        </div>
+                        <div class="dropdown-menu overflow-auto notify-items dropdown-container dropdown-menu-right dropdown-large"
+                            aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-toolbar">
+                                <div class="dropdown-toolbar-actions">
+                                    <a href="#" class="markAllAsRead">Mark all as read</a>
+                                </div>
+                                <h3 class="dropdown-toolbar-title">Notifications (<span class="notif-count">2</span>)
+                                </h3>
+                            </div>
+                            <ul class="dropdown-list-items p-0">
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://www.bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="saad khan">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="8f4c97f9-464a-42a5-8915-542324580005"
+                                                href="https://www.bookingfleet.com/BookingFleet/public/admin/module/hotel?id=78">
+                                                was updated to Draft by saad khan</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">2 days 19 hours 39 minutes 31 seconds </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://www.bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="saad khan">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="50310a0d-edc7-43b7-98c9-8cd138508aab"
+                                                href="https://www.bookingfleet.com/BookingFleet/public/admin/module/hotel/edit/78">saad
+                                                khan has created hotel </a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">2 days 19 hours 39 minutes 39 seconds </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification ">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="bookingFleet">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="" data-id="66352cb0-240a-4c8a-badf-5131b60d27f4"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel?id=77">dawn
+                                                was updated to Publish by bookingFleet</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 14 days 20 hours 47 minutes 24 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification ">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="bookingFleet">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="" data-id="1138f283-e42c-43bb-a79b-f6c103c27be4"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/edit/77">bookingFleet
+                                                has created hotel dawn</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 14 days 21 hours 22 minutes 26 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification ">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="ds">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="" data-id="0d4b882b-9545-43cb-ad9b-e3da9b0bcadb"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">ds
+                                                has requested to become a vendor</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 19 days 5 hours 26 minutes 23 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="dropdown-footer text-center">
+                                <a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown header-widget widget-user flex-shrink-0">
+                        <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="user-avatar flex-shrink-0">
+                                <div class="avatar avatar-cover"
+                                    style="background-image: url('https://bookingfleet.com/BookingFleet/public/images/avatar.png')">
+                                </div>
+                            </span>
+                            <div class="user-info flex-grow-1">
+                                <div class="user-name">Front end Developer</div>
+                                <div class="user-role">Administrator</div>
+                            </div>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item"
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/edit/63">Edit
+                                Profile</a>
+                            <a class="dropdown-item"
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/password/63">Change
+                                Password</a>
+                            <a class="dropdown-item" href="#"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                                    class="fa fa-sign-out"></i> Logout
+                            </a>
+                        </div>
+                        <form id="logout-form" action="https://bookingfleet.com/BookingFleet/public/logout"
+                            method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="9iskTOJbSwAPkKcLRWvXzaIMEZm42xnZYhjAQacR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-sidebar">
+            <ul class="main-menu">
+                <li class=" admin"><a href="https://bookingfleet.com/BookingFleet/public/admin">
+                        <span class="icon text-center"><i class="icon ion-ios-desktop"></i></span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class=" has-children admin_module_news"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/news">
+                        <span class="icon text-center"><i class="ion-md-bookmarks"></i></span>
+                        News
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_news"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/news">
+                                All News</a>
+                        </li>
+                        <li class=" has-children admin_module_news"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/news/create">
+                                Add News</a>
+                        </li>
+                        <li class=" has-children admin_module_news"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/news/category">
+                                Categories</a>
+                        </li>
+                        <li class=" has-children admin_module_news"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/news/tag">
+                                Tags</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" admin_module_page"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/page">
+                        <span class="icon text-center"><i class="icon ion-ios-bookmarks"></i></span>
+                        Page
+                    </a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/location">
+                        <span class="icon text-center"><i class="icon ion-md-compass"></i></span>
+                        Location
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/location">
+                                <i class="icon ion-md-compass"></i>
+                                All Location</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/location/category">
+                                <i class="icon ion-md-compass"></i>
+                                All Category</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_hotel"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel">
+                        <span class="icon text-center"><i class="fa fa-building-o"></i></span>
+                        Hotel
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel">
+                                All Hotels</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/create">
+                                Add new Hotel</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/room/attribute">
+                                Room Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_tour"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/tour">
+                        <span class="icon text-center"><i class="icon ion-md-umbrella"></i></span>
+                        Tour
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour">
+                                All Tours</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/create">
+                                Add Tour</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/category">
+                                Categories</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/availability">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/booking">
+                                Booking Calendar</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_space"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/space">
+                        <span class="icon text-center"><i class="ion ion-md-home"></i></span>
+                        Space
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space">
+                                All Spaces</a>
+                        </li>
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space/create">
+                                Add new Space</a>
+                        </li>
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space/availability">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_car"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                        <span class="icon text-center"><i class="ion-logo-model-s"></i></span>
+                        Car
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                                All Cars</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/create">
+                                Add new Car</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/availability">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" admin_module_review"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/review">
+                        <span class="icon text-center"><i class="icon ion-ios-text"></i></span>
+                        Reviews
+                    </a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/event">
+                        <span class="icon text-center"><i class="ion-ios-calendar"></i></span>
+                        Event
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event">
+                                All Events</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event/create">
+                                Add new Event</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event/availability">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" https:__bookingfleet.com_BookingFleet_public_admin_module_media"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/media">
+                        <span class="icon text-center"><i class="fa fa-picture-o"></i></span>
+                        Media
+                    </a>
+                </li>
+                <li class=" admin_module_core_menu"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/core/menu">
+                        <span class="icon text-center"><i class="icon ion-ios-apps"></i></span>
+                        Menu
+                    </a>
+                </li>
+                <li class=" admin_module_core_emailsetting"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/core/emailsetting">
+                        <span class="icon text-center"><i class="fa fa-envelope"></i></span>
+                        Email Setting
+                    </a>
+                </li>
+                <li class=" admin_module_template"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/template">
+                        <span class="icon text-center"><i class="icon ion-logo-html5"></i></span>
+                        Templates
+                    </a>
+                </li>
+                <li class=" admin_module_vendor_payout"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/vendor/payout">
+                        <span class="icon text-center"><i class="icon ion-md-card"></i></span>
+                        Payouts
+                    </a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/general">
+                        <span class="icon text-center"><i class="icon ion-ios-cog"></i></span>
+                        Setting
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/general">
+                                General Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/car">
+                                Car Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/event">
+                                Event Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/hotel">
+                                Hotel Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/space">
+                                Space Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/tour">
+                                Tour Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/news">
+                                News Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/booking">
+                                Booking Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/enquiry">
+                                Enquiry Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/user">
+                                User Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/wallet">
+                                Wallet Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/vendor">
+                                Vendor Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/payment">
+                                Payment Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/style">
+                                Style Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/advance">
+                                Advance Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/email">
+                                Email Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/sms">
+                                Sms Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/api">
+                                Mobile App Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/review">
+                                Review Advance Settings</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active has-children admin_module_core_tools"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/core/tools">
+                        <span class="icon text-center"><i class="icon ion-ios-hammer"></i></span>
+                        Tools
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/language">
+                                <i class="icon ion-ios-globe"></i>
+                                Languages</a>
+                        </li>
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/language/translations">
+                                <i class="icon ion-ios-globe"></i>
+                                Translation Manager</a>
+                        </li>
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/logs">
+                                <i class="icon ion-ios-nuclear"></i>
+                                System Logs</a>
+                        </li>
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/updater">
+                                <i class="icon ion-md-download"></i>
+                                Updater</a>
+                        </li>
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/plugins">
+                                <i class="icon ion-md-color-wand"></i>
+                                Plugins</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_user"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/user">
+                        <span class="icon text-center"><i class="icon ion-ios-contacts"></i></span>
+                        Users <span class="badge badge-warning">1</span>
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user">
+                                <i class="fa fa-user"></i>
+                                All Users</a>
+                        </li>
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/role">
+                                <i class="fa fa-lock"></i>
+                                Role Manager</a>
+                        </li>
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/subscriber">
+                                Subscribers</a>
+                        </li>
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">
+                                Upgrade Request <span class="badge badge-warning">4</span></a>
+                        </li>
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/verification">
+                                Verification Request <span class="badge badge-warning">1</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_report_booking"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">
+                        <span class="icon text-center"><i class="icon ion-ios-pie"></i></span>
+                        Reports <span class="badge badge-warning">2</span>
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/report/enquiry">
+                                <i class="icon ion-ios-pricetags"></i>
+                                Enquiry Reports</a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">
+                                <i class="icon ion-ios-pricetags"></i>
+                                Booking Reports</a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/report/statistic">
+                                <i class="icon ion ion-md-podium"></i>
+                                Booking Statistic</a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/contact">
+                                <i class="icon ion ion-md-mail"></i>
+                                Contact Submissions</a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/wallet/report">
+                                <i class="fa fa-money"></i>
+                                Credit Purchase Report <span class="badge badge-warning">2</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <nav class="main-breadcrumb" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="https://bookingfleet.com/BookingFleet/public/admin"><i
+                                class="fa fa-home"></i> Dashboard</a></li>
+
+                    <li class="breadcrumb-item active">
+                        Language Management
+                    </li>
+
+                </ol>
+            </nav>
+            <div class="container-fluid">
+                <div class="d-flex justify-content-between mb20">
+                    <h1 class="title-bar">Languages</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb40">
+                        <div class="panel">
+                            <div class="panel-title">Add Language</div>
+                            <div class="panel-body">
+                                <form action="" class="needs-validation" novalidate="" method="post">
+                                    <input type="hidden" name="_token" value="jCFiUvbqPK0BmYLl9rhanNMePk01bfbb6FSysSMG">
+                                    <div class="form-group">
+                                        <label>Locale</label>
+                                        <div>
+                                            <select name="locale"
+                                                class="form-control select2 dungdt_input_locale"
+                                                data-options="{&quot;allowClear&quot;:true}" data-id=""
+                                                data-select2-id="1" tabindex="-1">
+                                                <option value="" data-select2-id="3">-- Please select --</option>
+                                                <option data-name="Abkhazian" value="ab">Abkhazian - (ab)</option>
+                                                <option data-name="Achinese" value="ace">Achinese - (ace)</option>
+                                                <option data-name="Acoli" value="ach">Acoli - (ach)</option>
+                                                <option data-name="Adangme" value="ada">Adangme - (ada)</option>
+                                                <option data-name="Adyghe" value="ady">Adyghe - (ady)</option>
+                                                <option data-name="Afar" value="aa">Afar - (aa)</option>
+                                                <option data-name="Afrihili" value="afh">Afrihili - (afh)</option>
+                                                <option data-name="Afrikaans" value="af">Afrikaans - (af)</option>
+                                                <option data-name="Aghem" value="agq">Aghem - (agq)</option>
+                                                <option data-name="Ainu" value="ain">Ainu - (ain)</option>
+                                                <option data-name="Akan" value="ak">Akan - (ak)</option>
+                                                <option data-name="Akkadian" value="akk">Akkadian - (akk)</option>
+                                                <option data-name="Akoose" value="bss">Akoose - (bss)</option>
+                                                <option data-name="Alabama" value="akz">Alabama - (akz)</option>
+                                                <option data-name="Albanian" value="sq">Albanian - (sq)</option>
+                                                <option data-name="Aleut" value="ale">Aleut - (ale)</option>
+                                                <option data-name="Algerian Arabic" value="arq">Algerian Arabic - (arq)
+                                                </option>
+                                                <option data-name="English" value="en">English - (en)</option>
+                                                <option data-name="American English" value="en_US">American English -
+                                                    (en_US)</option>
+                                                <option data-name="American Sign Language" value="ase">American Sign
+                                                    Language - (ase)</option>
+                                                <option data-name="Amharic" value="am">Amharic - (am)</option>
+                                                <option data-name="Ancient Egyptian" value="egy">Ancient Egyptian -
+                                                    (egy)</option>
+                                                <option data-name="Ancient Greek" value="grc">Ancient Greek - (grc)
+                                                </option>
+                                                <option data-name="Angika" value="anp">Angika - (anp)</option>
+                                                <option data-name="Ao Naga" value="njo">Ao Naga - (njo)</option>
+                                                <option data-name="Arabic" value="ar">Arabic - (ar)</option>
+                                                <option data-name="Aragonese" value="an">Aragonese - (an)</option>
+                                                <option data-name="Aramaic" value="arc">Aramaic - (arc)</option>
+                                                <option data-name="Araona" value="aro">Araona - (aro)</option>
+                                                <option data-name="Arapaho" value="arp">Arapaho - (arp)</option>
+                                                <option data-name="Arawak" value="arw">Arawak - (arw)</option>
+                                                <option data-name="Armenian" value="hy">Armenian - (hy)</option>
+                                                <option data-name="Aromanian" value="rup">Aromanian - (rup)</option>
+                                                <option data-name="Arpitan" value="frp">Arpitan - (frp)</option>
+                                                <option data-name="Assamese" value="as">Assamese - (as)</option>
+                                                <option data-name="Asturian" value="ast">Asturian - (ast)</option>
+                                                <option data-name="Asu" value="asa">Asu - (asa)</option>
+                                                <option data-name="Atsam" value="cch">Atsam - (cch)</option>
+                                                <option data-name="Australian English" value="en_AU">Australian English
+                                                    - (en_AU)</option>
+                                                <option data-name="Austrian German" value="de_AT">Austrian German -
+                                                    (de_AT)</option>
+                                                <option data-name="Avaric" value="av">Avaric - (av)</option>
+                                                <option data-name="Avestan" value="ae">Avestan - (ae)</option>
+                                                <option data-name="Awadhi" value="awa">Awadhi - (awa)</option>
+                                                <option data-name="Aymara" value="ay">Aymara - (ay)</option>
+                                                <option data-name="Azerbaijani" value="az">Azerbaijani - (az)</option>
+                                                <option data-name="Badaga" value="bfq">Badaga - (bfq)</option>
+                                                <option data-name="Bafia" value="ksf">Bafia - (ksf)</option>
+                                                <option data-name="Bafut" value="bfd">Bafut - (bfd)</option>
+                                                <option data-name="Bakhtiari" value="bqi">Bakhtiari - (bqi)</option>
+                                                <option data-name="Balinese" value="ban">Balinese - (ban)</option>
+                                                <option data-name="Baluchi" value="bal">Baluchi - (bal)</option>
+                                                <option data-name="Bambara" value="bm">Bambara - (bm)</option>
+                                                <option data-name="Bamun" value="bax">Bamun - (bax)</option>
+                                                <option data-name="Banjar" value="bjn">Banjar - (bjn)</option>
+                                                <option data-name="Basaa" value="bas">Basaa - (bas)</option>
+                                                <option data-name="Bashkir" value="ba">Bashkir - (ba)</option>
+                                                <option data-name="Basque" value="eu">Basque - (eu)</option>
+                                                <option data-name="Batak Toba" value="bbc">Batak Toba - (bbc)</option>
+                                                <option data-name="Bavarian" value="bar">Bavarian - (bar)</option>
+                                                <option data-name="Beja" value="bej">Beja - (bej)</option>
+                                                <option data-name="Belarusian" value="be">Belarusian - (be)</option>
+                                                <option data-name="Bemba" value="bem">Bemba - (bem)</option>
+                                                <option data-name="Bena" value="bez">Bena - (bez)</option>
+                                                <option data-name="Bengali" value="bn">Bengali - (bn)</option>
+                                                <option data-name="Betawi" value="bew">Betawi - (bew)</option>
+                                                <option data-name="Bhojpuri" value="bho">Bhojpuri - (bho)</option>
+                                                <option data-name="Bikol" value="bik">Bikol - (bik)</option>
+                                                <option data-name="Bini" value="bin">Bini - (bin)</option>
+                                                <option data-name="Bishnupriya" value="bpy">Bishnupriya - (bpy)</option>
+                                                <option data-name="Bislama" value="bi">Bislama - (bi)</option>
+                                                <option data-name="Blin" value="byn">Blin - (byn)</option>
+                                                <option data-name="Blissymbols" value="zbl">Blissymbols - (zbl)</option>
+                                                <option data-name="Bodo" value="brx">Bodo - (brx)</option>
+                                                <option data-name="Bosnian" value="bs">Bosnian - (bs)</option>
+                                                <option data-name="Brahui" value="brh">Brahui - (brh)</option>
+                                                <option data-name="Braj" value="bra">Braj - (bra)</option>
+                                                <option data-name="Brazilian Portuguese" value="pt_BR">Brazilian
+                                                    Portuguese - (pt_BR)</option>
+                                                <option data-name="Breton" value="br">Breton - (br)</option>
+                                                <option data-name="British English" value="en_GB">British English -
+                                                    (en_GB)</option>
+                                                <option data-name="Buginese" value="bug">Buginese - (bug)</option>
+                                                <option data-name="Bulgarian" value="bg">Bulgarian - (bg)</option>
+                                                <option data-name="Bulu" value="bum">Bulu - (bum)</option>
+                                                <option data-name="Buriat" value="bua">Buriat - (bua)</option>
+                                                <option data-name="Burmese" value="my">Burmese - (my)</option>
+                                                <option data-name="Caddo" value="cad">Caddo - (cad)</option>
+                                                <option data-name="Cajun French" value="frc">Cajun French - (frc)
+                                                </option>
+                                                <option data-name="Canadian English" value="en_CA">Canadian English -
+                                                    (en_CA)</option>
+                                                <option data-name="Canadian French" value="fr_CA">Canadian French -
+                                                    (fr_CA)</option>
+                                                <option data-name="Cantonese" value="yue">Cantonese - (yue)</option>
+                                                <option data-name="Capiznon" value="cps">Capiznon - (cps)</option>
+                                                <option data-name="Carib" value="car">Carib - (car)</option>
+                                                <option data-name="Catalan" value="ca">Catalan - (ca)</option>
+                                                <option data-name="Cayuga" value="cay">Cayuga - (cay)</option>
+                                                <option data-name="Cebuano" value="ceb">Cebuano - (ceb)</option>
+                                                <option data-name="Central Atlas Tamazight" value="tzm">Central Atlas
+                                                    Tamazight - (tzm)</option>
+                                                <option data-name="Central Dusun" value="dtp">Central Dusun - (dtp)
+                                                </option>
+                                                <option data-name="Central Kurdish" value="ckb">Central Kurdish - (ckb)
+                                                </option>
+                                                <option data-name="Central Yupik" value="esu">Central Yupik - (esu)
+                                                </option>
+                                                <option data-name="Chadian Arabic" value="shu">Chadian Arabic - (shu)
+                                                </option>
+                                                <option data-name="Chagatai" value="chg">Chagatai - (chg)</option>
+                                                <option data-name="Chamorro" value="ch">Chamorro - (ch)</option>
+                                                <option data-name="Chechen" value="ce">Chechen - (ce)</option>
+                                                <option data-name="Cherokee" value="chr">Cherokee - (chr)</option>
+                                                <option data-name="Cheyenne" value="chy">Cheyenne - (chy)</option>
+                                                <option data-name="Chibcha" value="chb">Chibcha - (chb)</option>
+                                                <option data-name="Chiga" value="cgg">Chiga - (cgg)</option>
+                                                <option data-name="Chimborazo Highland Quichua" value="qug">Chimborazo
+                                                    Highland Quichua - (qug)</option>
+                                                <option data-name="Chinese" value="zh">Chinese - (zh)</option>
+                                                <option data-name="Chinook Jargon" value="chn">Chinook Jargon - (chn)
+                                                </option>
+                                                <option data-name="Chipewyan" value="chp">Chipewyan - (chp)</option>
+                                                <option data-name="Choctaw" value="cho">Choctaw - (cho)</option>
+                                                <option data-name="Church Slavic" value="cu">Church Slavic - (cu)
+                                                </option>
+                                                <option data-name="Chuukese" value="chk">Chuukese - (chk)</option>
+                                                <option data-name="Chuvash" value="cv">Chuvash - (cv)</option>
+                                                <option data-name="Classical Newari" value="nwc">Classical Newari -
+                                                    (nwc)</option>
+                                                <option data-name="Classical Syriac" value="syc">Classical Syriac -
+                                                    (syc)</option>
+                                                <option data-name="Colognian" value="ksh">Colognian - (ksh)</option>
+                                                <option data-name="Comorian" value="swb">Comorian - (swb)</option>
+                                                <option data-name="Congo Swahili" value="swc">Congo Swahili - (swc)
+                                                </option>
+                                                <option data-name="Coptic" value="cop">Coptic - (cop)</option>
+                                                <option data-name="Cornish" value="kw">Cornish - (kw)</option>
+                                                <option data-name="Corsican" value="co">Corsican - (co)</option>
+                                                <option data-name="Cree" value="cr">Cree - (cr)</option>
+                                                <option data-name="Creek" value="mus">Creek - (mus)</option>
+                                                <option data-name="Crimean Turkish" value="crh">Crimean Turkish - (crh)
+                                                </option>
+                                                <option data-name="Croatian" value="hr">Croatian - (hr)</option>
+                                                <option data-name="Czech" value="cs">Czech - (cs)</option>
+                                                <option data-name="Dakota" value="dak">Dakota - (dak)</option>
+                                                <option data-name="Danish" value="da">Danish - (da)</option>
+                                                <option data-name="Dargwa" value="dar">Dargwa - (dar)</option>
+                                                <option data-name="Dazaga" value="dzg">Dazaga - (dzg)</option>
+                                                <option data-name="Delaware" value="del">Delaware - (del)</option>
+                                                <option data-name="Dinka" value="din">Dinka - (din)</option>
+                                                <option data-name="Divehi" value="dv">Divehi - (dv)</option>
+                                                <option data-name="Dogri" value="doi">Dogri - (doi)</option>
+                                                <option data-name="Dogrib" value="dgr">Dogrib - (dgr)</option>
+                                                <option data-name="Duala" value="dua">Duala - (dua)</option>
+                                                <option data-name="Dutch" value="nl">Dutch - (nl)</option>
+                                                <option data-name="Dyula" value="dyu">Dyula - (dyu)</option>
+                                                <option data-name="Dzongkha" value="dz">Dzongkha - (dz)</option>
+                                                <option data-name="Eastern Frisian" value="frs">Eastern Frisian - (frs)
+                                                </option>
+                                                <option data-name="Efik" value="efi">Efik - (efi)</option>
+                                                <option data-name="Egyptian Arabic" value="arz">Egyptian Arabic - (arz)
+                                                </option>
+                                                <option data-name="Ekajuk" value="eka">Ekajuk - (eka)</option>
+                                                <option data-name="Elamite" value="elx">Elamite - (elx)</option>
+                                                <option data-name="Embu" value="ebu">Embu - (ebu)</option>
+                                                <option data-name="Emilian" value="egl">Emilian - (egl)</option>
+                                                <option data-name="Erzya" value="myv">Erzya - (myv)</option>
+                                                <option data-name="Esperanto" value="eo">Esperanto - (eo)</option>
+                                                <option data-name="Estonian" value="et">Estonian - (et)</option>
+                                                <option data-name="European Portuguese" value="pt_PT">European
+                                                    Portuguese - (pt_PT)</option>
+                                                <option data-name="European Spanish" value="es_ES">European Spanish -
+                                                    (es_ES)</option>
+                                                <option data-name="Ewe" value="ee">Ewe - (ee)</option>
+                                                <option data-name="Ewondo" value="ewo">Ewondo - (ewo)</option>
+                                                <option data-name="Extremaduran" value="ext">Extremaduran - (ext)
+                                                </option>
+                                                <option data-name="Fang" value="fan">Fang - (fan)</option>
+                                                <option data-name="Fanti" value="fat">Fanti - (fat)</option>
+                                                <option data-name="Faroese" value="fo">Faroese - (fo)</option>
+                                                <option data-name="Fiji Hindi" value="hif">Fiji Hindi - (hif)</option>
+                                                <option data-name="Fijian" value="fj">Fijian - (fj)</option>
+                                                <option data-name="Filipino" value="fil">Filipino - (fil)</option>
+                                                <option data-name="Finnish" value="fi">Finnish - (fi)</option>
+                                                <option data-name="Flemish" value="nl_BE">Flemish - (nl_BE)</option>
+                                                <option data-name="Fon" value="fon">Fon - (fon)</option>
+                                                <option data-name="Frafra" value="gur">Frafra - (gur)</option>
+                                                <option data-name="French" value="fr">French - (fr)</option>
+                                                <option data-name="Friulian" value="fur">Friulian - (fur)</option>
+                                                <option data-name="Fulah" value="ff">Fulah - (ff)</option>
+                                                <option data-name="Ga" value="gaa">Ga - (gaa)</option>
+                                                <option data-name="Gagauz" value="gag">Gagauz - (gag)</option>
+                                                <option data-name="Galician" value="gl">Galician - (gl)</option>
+                                                <option data-name="Gan Chinese" value="gan">Gan Chinese - (gan)</option>
+                                                <option data-name="Ganda" value="lg">Ganda - (lg)</option>
+                                                <option data-name="Gayo" value="gay">Gayo - (gay)</option>
+                                                <option data-name="Gbaya" value="gba">Gbaya - (gba)</option>
+                                                <option data-name="Geez" value="gez">Geez - (gez)</option>
+                                                <option data-name="Georgian" value="ka">Georgian - (ka)</option>
+                                                <option data-name="German" value="de">German - (de)</option>
+                                                <option data-name="Gheg Albanian" value="aln">Gheg Albanian - (aln)
+                                                </option>
+                                                <option data-name="Ghomala" value="bbj">Ghomala - (bbj)</option>
+                                                <option data-name="Gilaki" value="glk">Gilaki - (glk)</option>
+                                                <option data-name="Gilbertese" value="gil">Gilbertese - (gil)</option>
+                                                <option data-name="Goan Konkani" value="gom">Goan Konkani - (gom)
+                                                </option>
+                                                <option data-name="Gondi" value="gon">Gondi - (gon)</option>
+                                                <option data-name="Gorontalo" value="gor">Gorontalo - (gor)</option>
+                                                <option data-name="Gothic" value="got">Gothic - (got)</option>
+                                                <option data-name="Grebo" value="grb">Grebo - (grb)</option>
+                                                <option data-name="Greek" value="el">Greek - (el)</option>
+                                                <option data-name="Guarani" value="gn">Guarani - (gn)</option>
+                                                <option data-name="Gujarati" value="gu">Gujarati - (gu)</option>
+                                                <option data-name="Gusii" value="guz">Gusii - (guz)</option>
+                                                <option data-name="Gwichʼin" value="gwi">Gwichʼin - (gwi)</option>
+                                                <option data-name="Haida" value="hai">Haida - (hai)</option>
+                                                <option data-name="Haitian" value="ht">Haitian - (ht)</option>
+                                                <option data-name="Hakka Chinese" value="hak">Hakka Chinese - (hak)
+                                                </option>
+                                                <option data-name="Hausa" value="ha">Hausa - (ha)</option>
+                                                <option data-name="Hawaiian" value="haw">Hawaiian - (haw)</option>
+                                                <option data-name="Hebrew" value="he">Hebrew - (he)</option>
+                                                <option data-name="Herero" value="hz">Herero - (hz)</option>
+                                                <option data-name="Hiligaynon" value="hil">Hiligaynon - (hil)</option>
+                                                <option data-name="Hindi" value="hi">Hindi - (hi)</option>
+                                                <option data-name="Hiri Motu" value="ho">Hiri Motu - (ho)</option>
+                                                <option data-name="Hittite" value="hit">Hittite - (hit)</option>
+                                                <option data-name="Hmong" value="hmn">Hmong - (hmn)</option>
+                                                <option data-name="Hungarian" value="hu">Hungarian - (hu)</option>
+                                                <option data-name="Hupa" value="hup">Hupa - (hup)</option>
+                                                <option data-name="Iban" value="iba">Iban - (iba)</option>
+                                                <option data-name="Ibibio" value="ibb">Ibibio - (ibb)</option>
+                                                <option data-name="Icelandic" value="is">Icelandic - (is)</option>
+                                                <option data-name="Ido" value="io">Ido - (io)</option>
+                                                <option data-name="Igbo" value="ig">Igbo - (ig)</option>
+                                                <option data-name="Iloko" value="ilo">Iloko - (ilo)</option>
+                                                <option data-name="Inari Sami" value="smn">Inari Sami - (smn)</option>
+                                                <option data-name="Indonesian" value="id">Indonesian - (id)</option>
+                                                <option data-name="Ingrian" value="izh">Ingrian - (izh)</option>
+                                                <option data-name="Ingush" value="inh">Ingush - (inh)</option>
+                                                <option data-name="Interlingua" value="ia">Interlingua - (ia)</option>
+                                                <option data-name="Interlingue" value="ie">Interlingue - (ie)</option>
+                                                <option data-name="Inuktitut" value="iu">Inuktitut - (iu)</option>
+                                                <option data-name="Inupiaq" value="ik">Inupiaq - (ik)</option>
+                                                <option data-name="Irish" value="ga">Irish - (ga)</option>
+                                                <option data-name="Italian" value="it">Italian - (it)</option>
+                                                <option data-name="Jamaican Creole English" value="jam">Jamaican Creole
+                                                    English - (jam)</option>
+                                                <option data-name="Japanese" value="ja">Japanese - (ja)</option>
+                                                <option data-name="Javanese" value="jv">Javanese - (jv)</option>
+                                                <option data-name="Jju" value="kaj">Jju - (kaj)</option>
+                                                <option data-name="Jola-Fonyi" value="dyo">Jola-Fonyi - (dyo)</option>
+                                                <option data-name="Judeo-Arabic" value="jrb">Judeo-Arabic - (jrb)
+                                                </option>
+                                                <option data-name="Judeo-Persian" value="jpr">Judeo-Persian - (jpr)
+                                                </option>
+                                                <option data-name="Jutish" value="jut">Jutish - (jut)</option>
+                                                <option data-name="Kabardian" value="kbd">Kabardian - (kbd)</option>
+                                                <option data-name="Kabuverdianu" value="kea">Kabuverdianu - (kea)
+                                                </option>
+                                                <option data-name="Kabyle" value="kab">Kabyle - (kab)</option>
+                                                <option data-name="Kachin" value="kac">Kachin - (kac)</option>
+                                                <option data-name="Kaingang" value="kgp">Kaingang - (kgp)</option>
+                                                <option data-name="Kako" value="kkj">Kako - (kkj)</option>
+                                                <option data-name="Kalaallisut" value="kl">Kalaallisut - (kl)</option>
+                                                <option data-name="Kalenjin" value="kln">Kalenjin - (kln)</option>
+                                                <option data-name="Kalmyk" value="xal">Kalmyk - (xal)</option>
+                                                <option data-name="Kamba" value="kam">Kamba - (kam)</option>
+                                                <option data-name="Kanembu" value="kbl">Kanembu - (kbl)</option>
+                                                <option data-name="Kannada" value="kn">Kannada - (kn)</option>
+                                                <option data-name="Kanuri" value="kr">Kanuri - (kr)</option>
+                                                <option data-name="Kara-Kalpak" value="kaa">Kara-Kalpak - (kaa)</option>
+                                                <option data-name="Karachay-Balkar" value="krc">Karachay-Balkar - (krc)
+                                                </option>
+                                                <option data-name="Karelian" value="krl">Karelian - (krl)</option>
+                                                <option data-name="Kashmiri" value="ks">Kashmiri - (ks)</option>
+                                                <option data-name="Kashubian" value="csb">Kashubian - (csb)</option>
+                                                <option data-name="Kawi" value="kaw">Kawi - (kaw)</option>
+                                                <option data-name="Kazakh" value="kk">Kazakh - (kk)</option>
+                                                <option data-name="Kenyang" value="ken">Kenyang - (ken)</option>
+                                                <option data-name="Khasi" value="kha">Khasi - (kha)</option>
+                                                <option data-name="Khmer" value="km">Khmer - (km)</option>
+                                                <option data-name="Khotanese" value="kho">Khotanese - (kho)</option>
+                                                <option data-name="Khowar" value="khw">Khowar - (khw)</option>
+                                                <option data-name="Kikuyu" value="ki">Kikuyu - (ki)</option>
+                                                <option data-name="Kimbundu" value="kmb">Kimbundu - (kmb)</option>
+                                                <option data-name="Kinaray-a" value="krj">Kinaray-a - (krj)</option>
+                                                <option data-name="Kinyarwanda" value="rw">Kinyarwanda - (rw)</option>
+                                                <option data-name="Kirmanjki" value="kiu">Kirmanjki - (kiu)</option>
+                                                <option data-name="Klingon" value="tlh">Klingon - (tlh)</option>
+                                                <option data-name="Kom" value="bkm">Kom - (bkm)</option>
+                                                <option data-name="Komi" value="kv">Komi - (kv)</option>
+                                                <option data-name="Komi-Permyak" value="koi">Komi-Permyak - (koi)
+                                                </option>
+                                                <option data-name="Kongo" value="kg">Kongo - (kg)</option>
+                                                <option data-name="Konkani" value="kok">Konkani - (kok)</option>
+                                                <option data-name="Korean" value="ko">Korean - (ko)</option>
+                                                <option data-name="Koro" value="kfo">Koro - (kfo)</option>
+                                                <option data-name="Kosraean" value="kos">Kosraean - (kos)</option>
+                                                <option data-name="Kotava" value="avk">Kotava - (avk)</option>
+                                                <option data-name="Koyra Chiini" value="khq">Koyra Chiini - (khq)
+                                                </option>
+                                                <option data-name="Koyraboro Senni" value="ses">Koyraboro Senni - (ses)
+                                                </option>
+                                                <option data-name="Kpelle" value="kpe">Kpelle - (kpe)</option>
+                                                <option data-name="Krio" value="kri">Krio - (kri)</option>
+                                                <option data-name="Kuanyama" value="kj">Kuanyama - (kj)</option>
+                                                <option data-name="Kumyk" value="kum">Kumyk - (kum)</option>
+                                                <option data-name="Kurdish" value="ku">Kurdish - (ku)</option>
+                                                <option data-name="Kurukh" value="kru">Kurukh - (kru)</option>
+                                                <option data-name="Kutenai" value="kut">Kutenai - (kut)</option>
+                                                <option data-name="Kwasio" value="nmg">Kwasio - (nmg)</option>
+                                                <option data-name="Kyrgyz" value="ky">Kyrgyz - (ky)</option>
+                                                <option data-name="Kʼicheʼ" value="quc">Kʼicheʼ - (quc)</option>
+                                                <option data-name="Ladino" value="lad">Ladino - (lad)</option>
+                                                <option data-name="Lahnda" value="lah">Lahnda - (lah)</option>
+                                                <option data-name="Lakota" value="lkt">Lakota - (lkt)</option>
+                                                <option data-name="Lamba" value="lam">Lamba - (lam)</option>
+                                                <option data-name="Langi" value="lag">Langi - (lag)</option>
+                                                <option data-name="Lao" value="lo">Lao - (lo)</option>
+                                                <option data-name="Latgalian" value="ltg">Latgalian - (ltg)</option>
+                                                <option data-name="Latin" value="la">Latin - (la)</option>
+                                                <option data-name="Latin American Spanish" value="es_419">Latin American
+                                                    Spanish - (es_419)</option>
+                                                <option data-name="Latvian" value="lv">Latvian - (lv)</option>
+                                                <option data-name="Laz" value="lzz">Laz - (lzz)</option>
+                                                <option data-name="Lezghian" value="lez">Lezghian - (lez)</option>
+                                                <option data-name="Ligurian" value="lij">Ligurian - (lij)</option>
+                                                <option data-name="Limburgish" value="li">Limburgish - (li)</option>
+                                                <option data-name="Lingala" value="ln">Lingala - (ln)</option>
+                                                <option data-name="Lingua Franca Nova" value="lfn">Lingua Franca Nova -
+                                                    (lfn)</option>
+                                                <option data-name="Literary Chinese" value="lzh">Literary Chinese -
+                                                    (lzh)</option>
+                                                <option data-name="Lithuanian" value="lt">Lithuanian - (lt)</option>
+                                                <option data-name="Livonian" value="liv">Livonian - (liv)</option>
+                                                <option data-name="Lojban" value="jbo">Lojban - (jbo)</option>
+                                                <option data-name="Lombard" value="lmo">Lombard - (lmo)</option>
+                                                <option data-name="Low German" value="nds">Low German - (nds)</option>
+                                                <option data-name="Lower Silesian" value="sli">Lower Silesian - (sli)
+                                                </option>
+                                                <option data-name="Lower Sorbian" value="dsb">Lower Sorbian - (dsb)
+                                                </option>
+                                                <option data-name="Lozi" value="loz">Lozi - (loz)</option>
+                                                <option data-name="Luba-Katanga" value="lu">Luba-Katanga - (lu)</option>
+                                                <option data-name="Luba-Lulua" value="lua">Luba-Lulua - (lua)</option>
+                                                <option data-name="Luiseno" value="lui">Luiseno - (lui)</option>
+                                                <option data-name="Lule Sami" value="smj">Lule Sami - (smj)</option>
+                                                <option data-name="Lunda" value="lun">Lunda - (lun)</option>
+                                                <option data-name="Luo" value="luo">Luo - (luo)</option>
+                                                <option data-name="Luxembourgish" value="lb">Luxembourgish - (lb)
+                                                </option>
+                                                <option data-name="Luyia" value="luy">Luyia - (luy)</option>
+                                                <option data-name="Maba" value="mde">Maba - (mde)</option>
+                                                <option data-name="Macedonian" value="mk">Macedonian - (mk)</option>
+                                                <option data-name="Machame" value="jmc">Machame - (jmc)</option>
+                                                <option data-name="Madurese" value="mad">Madurese - (mad)</option>
+                                                <option data-name="Mafa" value="maf">Mafa - (maf)</option>
+                                                <option data-name="Magahi" value="mag">Magahi - (mag)</option>
+                                                <option data-name="Main-Franconian" value="vmf">Main-Franconian - (vmf)
+                                                </option>
+                                                <option data-name="Maithili" value="mai">Maithili - (mai)</option>
+                                                <option data-name="Makasar" value="mak">Makasar - (mak)</option>
+                                                <option data-name="Makhuwa-Meetto" value="mgh">Makhuwa-Meetto - (mgh)
+                                                </option>
+                                                <option data-name="Makonde" value="kde">Makonde - (kde)</option>
+                                                <option data-name="Malagasy" value="mg">Malagasy - (mg)</option>
+                                                <option data-name="Malay" value="ms">Malay - (ms)</option>
+                                                <option data-name="Malayalam" value="ml">Malayalam - (ml)</option>
+                                                <option data-name="Maltese" value="mt">Maltese - (mt)</option>
+                                                <option data-name="Manchu" value="mnc">Manchu - (mnc)</option>
+                                                <option data-name="Mandar" value="mdr">Mandar - (mdr)</option>
+                                                <option data-name="Mandingo" value="man">Mandingo - (man)</option>
+                                                <option data-name="Manipuri" value="mni">Manipuri - (mni)</option>
+                                                <option data-name="Manx" value="gv">Manx - (gv)</option>
+                                                <option data-name="Maori" value="mi">Maori - (mi)</option>
+                                                <option data-name="Mapuche" value="arn">Mapuche - (arn)</option>
+                                                <option data-name="Marathi" value="mr">Marathi - (mr)</option>
+                                                <option data-name="Mari" value="chm">Mari - (chm)</option>
+                                                <option data-name="Marshallese" value="mh">Marshallese - (mh)</option>
+                                                <option data-name="Marwari" value="mwr">Marwari - (mwr)</option>
+                                                <option data-name="Masai" value="mas">Masai - (mas)</option>
+                                                <option data-name="Mazanderani" value="mzn">Mazanderani - (mzn)</option>
+                                                <option data-name="Medumba" value="byv">Medumba - (byv)</option>
+                                                <option data-name="Mende" value="men">Mende - (men)</option>
+                                                <option data-name="Mentawai" value="mwv">Mentawai - (mwv)</option>
+                                                <option data-name="Meru" value="mer">Meru - (mer)</option>
+                                                <option data-name="Metaʼ" value="mgo">Metaʼ - (mgo)</option>
+                                                <option data-name="Mexican Spanish" value="es_MX">Mexican Spanish -
+                                                    (es_MX)</option>
+                                                <option data-name="Micmac" value="mic">Micmac - (mic)</option>
+                                                <option data-name="Middle Dutch" value="dum">Middle Dutch - (dum)
+                                                </option>
+                                                <option data-name="Middle English" value="enm">Middle English - (enm)
+                                                </option>
+                                                <option data-name="Middle French" value="frm">Middle French - (frm)
+                                                </option>
+                                                <option data-name="Middle High German" value="gmh">Middle High German -
+                                                    (gmh)</option>
+                                                <option data-name="Middle Irish" value="mga">Middle Irish - (mga)
+                                                </option>
+                                                <option data-name="Min Nan Chinese" value="nan">Min Nan Chinese - (nan)
+                                                </option>
+                                                <option data-name="Minangkabau" value="min">Minangkabau - (min)</option>
+                                                <option data-name="Mingrelian" value="xmf">Mingrelian - (xmf)</option>
+                                                <option data-name="Mirandese" value="mwl">Mirandese - (mwl)</option>
+                                                <option data-name="Mizo" value="lus">Mizo - (lus)</option>
+                                                <option data-name="Modern Standard Arabic" value="ar_001">Modern
+                                                    Standard Arabic - (ar_001)</option>
+                                                <option data-name="Mohawk" value="moh">Mohawk - (moh)</option>
+                                                <option data-name="Moksha" value="mdf">Moksha - (mdf)</option>
+                                                <option data-name="Moldavian" value="ro_MD">Moldavian - (ro_MD)</option>
+                                                <option data-name="Mongo" value="lol">Mongo - (lol)</option>
+                                                <option data-name="Mongolian" value="mn">Mongolian - (mn)</option>
+                                                <option data-name="Morisyen" value="mfe">Morisyen - (mfe)</option>
+                                                <option data-name="Moroccan Arabic" value="ary">Moroccan Arabic - (ary)
+                                                </option>
+                                                <option data-name="Mossi" value="mos">Mossi - (mos)</option>
+                                                <option data-name="Multiple Languages" value="mul">Multiple Languages -
+                                                    (mul)</option>
+                                                <option data-name="Mundang" value="mua">Mundang - (mua)</option>
+                                                <option data-name="Muslim Tat" value="ttt">Muslim Tat - (ttt)</option>
+                                                <option data-name="Myene" value="mye">Myene - (mye)</option>
+                                                <option data-name="Nama" value="naq">Nama - (naq)</option>
+                                                <option data-name="Nauru" value="na">Nauru - (na)</option>
+                                                <option data-name="Navajo" value="nv">Navajo - (nv)</option>
+                                                <option data-name="Ndonga" value="ng">Ndonga - (ng)</option>
+                                                <option data-name="Neapolitan" value="nap">Neapolitan - (nap)</option>
+                                                <option data-name="Nepali" value="ne">Nepali - (ne)</option>
+                                                <option data-name="Newari" value="new">Newari - (new)</option>
+                                                <option data-name="Ngambay" value="sba">Ngambay - (sba)</option>
+                                                <option data-name="Ngiemboon" value="nnh">Ngiemboon - (nnh)</option>
+                                                <option data-name="Ngomba" value="jgo">Ngomba - (jgo)</option>
+                                                <option data-name="Nheengatu" value="yrl">Nheengatu - (yrl)</option>
+                                                <option data-name="Nias" value="nia">Nias - (nia)</option>
+                                                <option data-name="Niuean" value="niu">Niuean - (niu)</option>
+                                                <option data-name="No linguistic content" value="zxx">No linguistic
+                                                    content - (zxx)</option>
+                                                <option data-name="Nogai" value="nog">Nogai - (nog)</option>
+                                                <option data-name="North Ndebele" value="nd">North Ndebele - (nd)
+                                                </option>
+                                                <option data-name="Northern Frisian" value="frr">Northern Frisian -
+                                                    (frr)</option>
+                                                <option data-name="Northern Sami" value="se">Northern Sami - (se)
+                                                </option>
+                                                <option data-name="Northern Sotho" value="nso">Northern Sotho - (nso)
+                                                </option>
+                                                <option data-name="Norwegian" value="no">Norwegian - (no)</option>
+                                                <option data-name="Norwegian Bokmål" value="nb">Norwegian Bokmål - (nb)
+                                                </option>
+                                                <option data-name="Norwegian Nynorsk" value="nn">Norwegian Nynorsk -
+                                                    (nn)</option>
+                                                <option data-name="Novial" value="nov">Novial - (nov)</option>
+                                                <option data-name="Nuer" value="nus">Nuer - (nus)</option>
+                                                <option data-name="Nyamwezi" value="nym">Nyamwezi - (nym)</option>
+                                                <option data-name="Nyanja" value="ny">Nyanja - (ny)</option>
+                                                <option data-name="Nyankole" value="nyn">Nyankole - (nyn)</option>
+                                                <option data-name="Nyasa Tonga" value="tog">Nyasa Tonga - (tog)</option>
+                                                <option data-name="Nyoro" value="nyo">Nyoro - (nyo)</option>
+                                                <option data-name="Nzima" value="nzi">Nzima - (nzi)</option>
+                                                <option data-name="NʼKo" value="nqo">NʼKo - (nqo)</option>
+                                                <option data-name="Occitan" value="oc">Occitan - (oc)</option>
+                                                <option data-name="Ojibwa" value="oj">Ojibwa - (oj)</option>
+                                                <option data-name="Old English" value="ang">Old English - (ang)</option>
+                                                <option data-name="Old French" value="fro">Old French - (fro)</option>
+                                                <option data-name="Old High German" value="goh">Old High German - (goh)
+                                                </option>
+                                                <option data-name="Old Irish" value="sga">Old Irish - (sga)</option>
+                                                <option data-name="Old Norse" value="non">Old Norse - (non)</option>
+                                                <option data-name="Old Persian" value="peo">Old Persian - (peo)</option>
+                                                <option data-name="Old Provençal" value="pro">Old Provençal - (pro)
+                                                </option>
+                                                <option data-name="Oriya" value="or">Oriya - (or)</option>
+                                                <option data-name="Oromo" value="om">Oromo - (om)</option>
+                                                <option data-name="Osage" value="osa">Osage - (osa)</option>
+                                                <option data-name="Ossetic" value="os">Ossetic - (os)</option>
+                                                <option data-name="Ottoman Turkish" value="ota">Ottoman Turkish - (ota)
+                                                </option>
+                                                <option data-name="Pahlavi" value="pal">Pahlavi - (pal)</option>
+                                                <option data-name="Palatine German" value="pfl">Palatine German - (pfl)
+                                                </option>
+                                                <option data-name="Palauan" value="pau">Palauan - (pau)</option>
+                                                <option data-name="Pali" value="pi">Pali - (pi)</option>
+                                                <option data-name="Pampanga" value="pam">Pampanga - (pam)</option>
+                                                <option data-name="Pangasinan" value="pag">Pangasinan - (pag)</option>
+                                                <option data-name="Papiamento" value="pap">Papiamento - (pap)</option>
+                                                <option data-name="Pashto" value="ps">Pashto - (ps)</option>
+                                                <option data-name="Pennsylvania German" value="pdc">Pennsylvania German
+                                                    - (pdc)</option>
+                                                <option data-name="Persian" value="fa">Persian - (fa)</option>
+                                                <option data-name="Phoenician" value="phn">Phoenician - (phn)</option>
+                                                <option data-name="Picard" value="pcd">Picard - (pcd)</option>
+                                                <option data-name="Piedmontese" value="pms">Piedmontese - (pms)</option>
+                                                <option data-name="Plautdietsch" value="pdt">Plautdietsch - (pdt)
+                                                </option>
+                                                <option data-name="Pohnpeian" value="pon">Pohnpeian - (pon)</option>
+                                                <option data-name="Polish" value="pl">Polish - (pl)</option>
+                                                <option data-name="Pontic" value="pnt">Pontic - (pnt)</option>
+                                                <option data-name="Portuguese" value="pt">Portuguese - (pt)</option>
+                                                <option data-name="Prussian" value="prg">Prussian - (prg)</option>
+                                                <option data-name="Punjabi" value="pa">Punjabi - (pa)</option>
+                                                <option data-name="Quechua" value="qu">Quechua - (qu)</option>
+                                                <option data-name="Rajasthani" value="raj">Rajasthani - (raj)</option>
+                                                <option data-name="Rapanui" value="rap">Rapanui - (rap)</option>
+                                                <option data-name="Rarotongan" value="rar">Rarotongan - (rar)</option>
+                                                <option data-name="Riffian" value="rif">Riffian - (rif)</option>
+                                                <option data-name="Romagnol" value="rgn">Romagnol - (rgn)</option>
+                                                <option data-name="Romanian" value="ro">Romanian - (ro)</option>
+                                                <option data-name="Romansh" value="rm">Romansh - (rm)</option>
+                                                <option data-name="Romany" value="rom">Romany - (rom)</option>
+                                                <option data-name="Rombo" value="rof">Rombo - (rof)</option>
+                                                <option data-name="Root" value="root">Root - (root)</option>
+                                                <option data-name="Rotuman" value="rtm">Rotuman - (rtm)</option>
+                                                <option data-name="Roviana" value="rug">Roviana - (rug)</option>
+                                                <option data-name="Rundi" value="rn">Rundi - (rn)</option>
+                                                <option data-name="Russian" value="ru">Russian - (ru)</option>
+                                                <option data-name="Rusyn" value="rue">Rusyn - (rue)</option>
+                                                <option data-name="Rwa" value="rwk">Rwa - (rwk)</option>
+                                                <option data-name="Saho" value="ssy">Saho - (ssy)</option>
+                                                <option data-name="Sakha" value="sah">Sakha - (sah)</option>
+                                                <option data-name="Samaritan Aramaic" value="sam">Samaritan Aramaic -
+                                                    (sam)</option>
+                                                <option data-name="Samburu" value="saq">Samburu - (saq)</option>
+                                                <option data-name="Samoan" value="sm">Samoan - (sm)</option>
+                                                <option data-name="Samogitian" value="sgs">Samogitian - (sgs)</option>
+                                                <option data-name="Sandawe" value="sad">Sandawe - (sad)</option>
+                                                <option data-name="Sango" value="sg">Sango - (sg)</option>
+                                                <option data-name="Sangu" value="sbp">Sangu - (sbp)</option>
+                                                <option data-name="Sanskrit" value="sa">Sanskrit - (sa)</option>
+                                                <option data-name="Santali" value="sat">Santali - (sat)</option>
+                                                <option data-name="Sardinian" value="sc">Sardinian - (sc)</option>
+                                                <option data-name="Sasak" value="sas">Sasak - (sas)</option>
+                                                <option data-name="Sassarese Sardinian" value="sdc">Sassarese Sardinian
+                                                    - (sdc)</option>
+                                                <option data-name="Saterland Frisian" value="stq">Saterland Frisian -
+                                                    (stq)</option>
+                                                <option data-name="Saurashtra" value="saz">Saurashtra - (saz)</option>
+                                                <option data-name="Scots" value="sco">Scots - (sco)</option>
+                                                <option data-name="Scottish Gaelic" value="gd">Scottish Gaelic - (gd)
+                                                </option>
+                                                <option data-name="Selayar" value="sly">Selayar - (sly)</option>
+                                                <option data-name="Selkup" value="sel">Selkup - (sel)</option>
+                                                <option data-name="Sena" value="seh">Sena - (seh)</option>
+                                                <option data-name="Seneca" value="see">Seneca - (see)</option>
+                                                <option data-name="Serbian" value="sr">Serbian - (sr)</option>
+                                                <option data-name="Serbo-Croatian" value="sh">Serbo-Croatian - (sh)
+                                                </option>
+                                                <option data-name="Serer" value="srr">Serer - (srr)</option>
+                                                <option data-name="Seri" value="sei">Seri - (sei)</option>
+                                                <option data-name="Shambala" value="ksb">Shambala - (ksb)</option>
+                                                <option data-name="Shan" value="shn">Shan - (shn)</option>
+                                                <option data-name="Shona" value="sn">Shona - (sn)</option>
+                                                <option data-name="Sichuan Yi" value="ii">Sichuan Yi - (ii)</option>
+                                                <option data-name="Sicilian" value="scn">Sicilian - (scn)</option>
+                                                <option data-name="Sidamo" value="sid">Sidamo - (sid)</option>
+                                                <option data-name="Siksika" value="bla">Siksika - (bla)</option>
+                                                <option data-name="Silesian" value="szl">Silesian - (szl)</option>
+                                                <option data-name="Simplified Chinese" value="zh_Hans">Simplified
+                                                    Chinese - (zh_Hans)</option>
+                                                <option data-name="Sindhi" value="sd">Sindhi - (sd)</option>
+                                                <option data-name="Sinhala" value="si">Sinhala - (si)</option>
+                                                <option data-name="Skolt Sami" value="sms">Skolt Sami - (sms)</option>
+                                                <option data-name="Slave" value="den">Slave - (den)</option>
+                                                <option data-name="Slovak" value="sk">Slovak - (sk)</option>
+                                                <option data-name="Slovenian" value="sl">Slovenian - (sl)</option>
+                                                <option data-name="Soga" value="xog">Soga - (xog)</option>
+                                                <option data-name="Sogdien" value="sog">Sogdien - (sog)</option>
+                                                <option data-name="Somali" value="so">Somali - (so)</option>
+                                                <option data-name="Soninke" value="snk">Soninke - (snk)</option>
+                                                <option data-name="South Azerbaijani" value="azb">South Azerbaijani -
+                                                    (azb)</option>
+                                                <option data-name="South Ndebele" value="nr">South Ndebele - (nr)
+                                                </option>
+                                                <option data-name="Southern Altai" value="alt">Southern Altai - (alt)
+                                                </option>
+                                                <option data-name="Southern Sami" value="sma">Southern Sami - (sma)
+                                                </option>
+                                                <option data-name="Southern Sotho" value="st">Southern Sotho - (st)
+                                                </option>
+                                                <option data-name="Spanish" value="es">Spanish - (es)</option>
+                                                <option data-name="Sranan Tongo" value="srn">Sranan Tongo - (srn)
+                                                </option>
+                                                <option data-name="Standard Moroccan Tamazight" value="zgh">Standard
+                                                    Moroccan Tamazight - (zgh)</option>
+                                                <option data-name="Sukuma" value="suk">Sukuma - (suk)</option>
+                                                <option data-name="Sumerian" value="sux">Sumerian - (sux)</option>
+                                                <option data-name="Sundanese" value="su">Sundanese - (su)</option>
+                                                <option data-name="Susu" value="sus">Susu - (sus)</option>
+                                                <option data-name="Swahili" value="sw">Swahili - (sw)</option>
+                                                <option data-name="Swati" value="ss">Swati - (ss)</option>
+                                                <option data-name="Swedish" value="sv">Swedish - (sv)</option>
+                                                <option data-name="Swiss French" value="fr_CH">Swiss French - (fr_CH)
+                                                </option>
+                                                <option data-name="Swiss German" value="gsw">Swiss German - (gsw)
+                                                </option>
+                                                <option data-name="Swiss High German" value="de_CH">Swiss High German -
+                                                    (de_CH)</option>
+                                                <option data-name="Syriac" value="syr">Syriac - (syr)</option>
+                                                <option data-name="Tachelhit" value="shi">Tachelhit - (shi)</option>
+                                                <option data-name="Tagalog" value="tl">Tagalog - (tl)</option>
+                                                <option data-name="Tahitian" value="ty">Tahitian - (ty)</option>
+                                                <option data-name="Taita" value="dav">Taita - (dav)</option>
+                                                <option data-name="Tajik" value="tg">Tajik - (tg)</option>
+                                                <option data-name="Talysh" value="tly">Talysh - (tly)</option>
+                                                <option data-name="Tamashek" value="tmh">Tamashek - (tmh)</option>
+                                                <option data-name="Tamil" value="ta">Tamil - (ta)</option>
+                                                <option data-name="Taroko" value="trv">Taroko - (trv)</option>
+                                                <option data-name="Tasawaq" value="twq">Tasawaq - (twq)</option>
+                                                <option data-name="Tatar" value="tt">Tatar - (tt)</option>
+                                                <option data-name="Telugu" value="te">Telugu - (te)</option>
+                                                <option data-name="Tereno" value="ter">Tereno - (ter)</option>
+                                                <option data-name="Teso" value="teo">Teso - (teo)</option>
+                                                <option data-name="Tetum" value="tet">Tetum - (tet)</option>
+                                                <option data-name="Thai" value="th">Thai - (th)</option>
+                                                <option data-name="Tibetan" value="bo">Tibetan - (bo)</option>
+                                                <option data-name="Tigre" value="tig">Tigre - (tig)</option>
+                                                <option data-name="Tigrinya" value="ti">Tigrinya - (ti)</option>
+                                                <option data-name="Timne" value="tem">Timne - (tem)</option>
+                                                <option data-name="Tiv" value="tiv">Tiv - (tiv)</option>
+                                                <option data-name="Tlingit" value="tli">Tlingit - (tli)</option>
+                                                <option data-name="Tok Pisin" value="tpi">Tok Pisin - (tpi)</option>
+                                                <option data-name="Tokelau" value="tkl">Tokelau - (tkl)</option>
+                                                <option data-name="Tongan" value="to">Tongan - (to)</option>
+                                                <option data-name="Tornedalen Finnish" value="fit">Tornedalen Finnish -
+                                                    (fit)</option>
+                                                <option data-name="Traditional Chinese" value="zh_Hant">Traditional
+                                                    Chinese - (zh_Hant)</option>
+                                                <option data-name="Tsakhur" value="tkr">Tsakhur - (tkr)</option>
+                                                <option data-name="Tsakonian" value="tsd">Tsakonian - (tsd)</option>
+                                                <option data-name="Tsimshian" value="tsi">Tsimshian - (tsi)</option>
+                                                <option data-name="Tsonga" value="ts">Tsonga - (ts)</option>
+                                                <option data-name="Tswana" value="tn">Tswana - (tn)</option>
+                                                <option data-name="Tulu" value="tcy">Tulu - (tcy)</option>
+                                                <option data-name="Tumbuka" value="tum">Tumbuka - (tum)</option>
+                                                <option data-name="Tunisian Arabic" value="aeb">Tunisian Arabic - (aeb)
+                                                </option>
+                                                <option data-name="Turkish" value="tr">Turkish - (tr)</option>
+                                                <option data-name="Turkmen" value="tk">Turkmen - (tk)</option>
+                                                <option data-name="Turoyo" value="tru">Turoyo - (tru)</option>
+                                                <option data-name="Tuvalu" value="tvl">Tuvalu - (tvl)</option>
+                                                <option data-name="Tuvinian" value="tyv">Tuvinian - (tyv)</option>
+                                                <option data-name="Twi" value="tw">Twi - (tw)</option>
+                                                <option data-name="Tyap" value="kcg">Tyap - (kcg)</option>
+                                                <option data-name="Udmurt" value="udm">Udmurt - (udm)</option>
+                                                <option data-name="Ugaritic" value="uga">Ugaritic - (uga)</option>
+                                                <option data-name="Ukrainian" value="uk">Ukrainian - (uk)</option>
+                                                <option data-name="Umbundu" value="umb">Umbundu - (umb)</option>
+                                                <option data-name="Unknown Language" value="und">Unknown Language -
+                                                    (und)</option>
+                                                <option data-name="Upper Sorbian" value="hsb">Upper Sorbian - (hsb)
+                                                </option>
+                                                <option data-name="Urdu" value="ur">Urdu - (ur)</option>
+                                                <option data-name="Uyghur" value="ug">Uyghur - (ug)</option>
+                                                <option data-name="Uzbek" value="uz">Uzbek - (uz)</option>
+                                                <option data-name="Vai" value="vai">Vai - (vai)</option>
+                                                <option data-name="Venda" value="ve">Venda - (ve)</option>
+                                                <option data-name="Venetian" value="vec">Venetian - (vec)</option>
+                                                <option data-name="Veps" value="vep">Veps - (vep)</option>
+                                                <option data-name="Vietnamese" value="vi">Vietnamese - (vi)</option>
+                                                <option data-name="Volapük" value="vo">Volapük - (vo)</option>
+                                                <option data-name="Võro" value="vro">Võro - (vro)</option>
+                                                <option data-name="Votic" value="vot">Votic - (vot)</option>
+                                                <option data-name="Vunjo" value="vun">Vunjo - (vun)</option>
+                                                <option data-name="Walloon" value="wa">Walloon - (wa)</option>
+                                                <option data-name="Walser" value="wae">Walser - (wae)</option>
+                                                <option data-name="Waray" value="war">Waray - (war)</option>
+                                                <option data-name="Warlpiri" value="wbp">Warlpiri - (wbp)</option>
+                                                <option data-name="Washo" value="was">Washo - (was)</option>
+                                                <option data-name="Wayuu" value="guc">Wayuu - (guc)</option>
+                                                <option data-name="Welsh" value="cy">Welsh - (cy)</option>
+                                                <option data-name="West Flemish" value="vls">West Flemish - (vls)
+                                                </option>
+                                                <option data-name="Western Frisian" value="fy">Western Frisian - (fy)
+                                                </option>
+                                                <option data-name="Western Mari" value="mrj">Western Mari - (mrj)
+                                                </option>
+                                                <option data-name="Wolaytta" value="wal">Wolaytta - (wal)</option>
+                                                <option data-name="Wolof" value="wo">Wolof - (wo)</option>
+                                                <option data-name="Wu Chinese" value="wuu">Wu Chinese - (wuu)</option>
+                                                <option data-name="Xhosa" value="xh">Xhosa - (xh)</option>
+                                                <option data-name="Xiang Chinese" value="hsn">Xiang Chinese - (hsn)
+                                                </option>
+                                                <option data-name="Yangben" value="yav">Yangben - (yav)</option>
+                                                <option data-name="Yao" value="yao">Yao - (yao)</option>
+                                                <option data-name="Yapese" value="yap">Yapese - (yap)</option>
+                                                <option data-name="Yemba" value="ybb">Yemba - (ybb)</option>
+                                                <option data-name="Yiddish" value="yi">Yiddish - (yi)</option>
+                                                <option data-name="Yoruba" value="yo">Yoruba - (yo)</option>
+                                                <option data-name="Zapotec" value="zap">Zapotec - (zap)</option>
+                                                <option data-name="Zarma" value="dje">Zarma - (dje)</option>
+                                                <option data-name="Zaza" value="zza">Zaza - (zza)</option>
+                                                <option data-name="Zeelandic" value="zea">Zeelandic - (zea)</option>
+                                                <option data-name="Zenaga" value="zen">Zenaga - (zen)</option>
+                                                <option data-name="Zhuang" value="za">Zhuang - (za)</option>
+                                                <option data-name="Zoroastrian Dari" value="gbz">Zoroastrian Dari -
+                                                    (gbz)</option>
+                                                <option data-name="Zulu" value="zu">Zulu - (zu)</option>
+                                                <option data-name="Zuni" value="zun">Zuni - (zun)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Flag Icon</label>
+                                        <div class="input-group mb-3">
+                                            <input type="text" value="" placeholder="Eg: gb" name="flag"
+                                                class="form-control dungdt-input-flag-icon" required="">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text"><span class="flag-icon  flag-icon-"></span></span>
+                                            </div>
+
+                                            <div class="invalid-feedback">
+                                                Please input flag code
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Name</label>
+                                        <input type="text" value="" placeholder="Display Name" name="name"
+                                            class="form-control" required="">
+                                        <div class="invalid-feedback">
+                                            Please input language name
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Status</label>
+                                        <div class="">
+                                            <label>
+                                                <input type="radio" checked="" name="status" value="publish"> Publish
+                                            </label>
+                                        </div>
+                                        <div>
+                                            <label>
+                                                <input type="radio" name="status" value="draft"> Draft
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <button class="btn btn-primary" type="submit">Add new</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="filter-div d-flex justify-content-between ">
+                            <div class="col-left">
+                                <form method="post"
+                                    action="https://bookingfleet.com/BookingFleet/public/admin/module/language/editBulk"
+                                    class="filter-form filter-form-left d-flex justify-content-start">
+                                    <input type="hidden" name="_token" value="jCFiUvbqPK0BmYLl9rhanNMePk01bfbb6FSysSMG">
+
+                                    <select name="action" class="form-control">
+                                        <option value=""> Bulk Action </option>
+                                        <option value="publish"> Publish </option>
+                                        <option value="draft"> Move to Draft </option>
+                                        <option value="delete"> Delete </option>
+                                    </select>
+                                    <button data-confirm="Do you want to delete?"
+                                        class="btn-info btn btn-icon dungdt-apply-form-btn" type="button">Apply</button>
+                                </form>
+                            </div>
+                            <div class="col-left">
+                                <form method="get"
+                                    action="https://bookingfleet.com/BookingFleet/public/admin/module/language"
+                                    class="filter-form filter-form-right d-flex justify-content-end" role="search">
+                                    <input type="text" name="s" value="" class="form-control"
+                                        placeholder="Search by name">
+                                    <button class="btn-info btn btn-icon btn_search" id="search-submit"
+                                        type="submit">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="panel">
+                            <div class="panel-title">All Languages</div>
+                            <div class="panel-body">
+                                <form action="" class="bravo-form-item">
+                                    <div class="table-responsive">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th width="60px"><input type="checkbox" class="check-all"></th>
+                                                    <th>Name</th>
+                                                    <th>Locale</th>
+                                                    <th>Status</th>
+                                                    <th>Date</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><input type="checkbox" class="check-item" name="ids[]"
+                                                            value="1">
+                                                    </td>
+                                                    <td class="title">
+                                                        <a
+                                                            href="https://bookingfleet.com/BookingFleet/public/admin/module/language/edit/1">
+                                                            <span class="flag-icon flag-icon-gb"></span>
+                                                            English
+                                                        </a>
+                                                    </td>
+                                                    <td>en</td>
+                                                    <td><span class="badge badge-publish">publish</span></td>
+                                                    <td>06/03/2022</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="check-item" name="ids[]"
+                                                            value="2">
+                                                    </td>
+                                                    <td class="title">
+                                                        <a
+                                                            href="https://bookingfleet.com/BookingFleet/public/admin/module/language/edit/2">
+                                                            <span class="flag-icon flag-icon-jp"></span>
+                                                            Japanese
+                                                        </a>
+                                                    </td>
+                                                    <td>ja</td>
+                                                    <td><span class="badge badge-publish">publish</span></td>
+                                                    <td>06/15/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="check-item" name="ids[]"
+                                                            value="3">
+                                                    </td>
+                                                    <td class="title">
+                                                        <a
+                                                            href="https://bookingfleet.com/BookingFleet/public/admin/module/language/edit/3">
+                                                            <span class="flag-icon flag-icon-eg"></span>
+                                                            Egyptian
+                                                        </a>
+                                                    </td>
+                                                    <td>egy</td>
+                                                    <td><span class="badge badge-publish">publish</span></td>
+                                                    <td>06/15/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="check-item" name="ids[]"
+                                                            value="4">
+                                                    </td>
+                                                    <td class="title">
+                                                        <a
+                                                            href="https://bookingfleet.com/BookingFleet/public/admin/module/language/edit/4">
+                                                            <span class="flag-icon flag-icon-tr"></span>
+                                                            Turkish
+                                                        </a>
+                                                    </td>
+                                                    <td>tr</td>
+                                                    <td><span class="badge badge-publish">publish</span></td>
+                                                    <td>06/30/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="check-item" name="ids[]"
+                                                            value="5">
+                                                    </td>
+                                                    <td class="title">
+                                                        <a
+                                                            href="https://bookingfleet.com/BookingFleet/public/admin/module/language/edit/5">
+                                                            <span class="flag-icon flag-icon-sa"></span>
+                                                            Arabic
+                                                        </a>
+                                                    </td>
+                                                    <td>ar</td>
+                                                    <td><span class="badge badge-publish">publish</span></td>
+                                                    <td>06/30/2021</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><input type="checkbox" class="check-item" name="ids[]"
+                                                            value="6">
+                                                    </td>
+                                                    <td class="title">
+                                                        <a
+                                                            href="https://bookingfleet.com/BookingFleet/public/admin/module/language/edit/6">
+                                                            <span class="flag-icon flag-icon-cn"></span>
+                                                            Chinese
+                                                        </a>
+                                                    </td>
+                                                    <td>zh</td>
+                                                    <td><span class="badge badge-publish">publish</span></td>
+                                                    <td>06/30/2021</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </form>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="main-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 copy-right">
+                            2022 © Booking Core by <a href="https://www.bookingcore.org" target="_blank">BookingCore
+                                Team</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="https://www.bookingcore.org" target="_blank">About Us</a>
+                                <a href="https://m.me/bookingcore" target="_blank">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="backdrop-sidebar-mobile"></div>
+    </div>
+
+    <div id="cdn-browser-modal" class="modal fade">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div id="cdn-browser" class="cdn-browser d-flex flex-column" v-cloak :class="{is_loading:isLoading}">
+                    <div class="files-nav flex-shrink-0">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-left d-flex align-items-center">
+                                <div class="filter-item">
+                                    <input type="text" placeholder="Search file name...." class="form-control"
+                                        v-model="filter.s" @keyup.enter="filter.page = 1;reloadLists()">
+                                </div>
+                                <div class="filter-item">
+                                    <button class="btn btn-default" @click="filter.page = 1;reloadLists()">
+                                        <i class="fa fa-search"></i> Search</button>
+                                </div>
+                                <div class="filter-item">
+                                    <small><i>Total: {{total}} files</i></small>
+                                </div>
+                            </div>
+                            <div class="col-right">
+                                <i class="fa-spin fa fa-spinner icon-loading active" v-show="isLoading"></i>
+                                <button class="btn btn-success btn-pick-files">
+                                    <span><i class="fa fa-upload"></i> Upload</span>
+                                    <input multiple type="file" name="files[]" ref="files">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-new" v-show="showUploader" display="none">
+                        <input type="file" name="filepond[]" class="my-pond">
+                    </div>
+                    <div class="files-list">
+                        <div class="files-wraps " :class="'view-'+viewType">
+                            <file-item v-for="(file,index) in files" :key="index" :view-type="viewType"
+                                :selected="selected" :file="file" v-on:select-file="selectFile"></file-item>
+                        </div>
+                        <p class="no-files-text text-center" v-show="!total && apiFinished" style="display: none">No
+                            file found</p>
+                        <div class="text-center" v-if="totalPage > 1">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item" :class="{disabled:filter.page <= 1}">
+                                        <a class="page-link" v-if="filter.page <=1">Previous</a>
+                                        <a class="page-link" href="#" v-if="filter.page > 1"
+                                            v-on:click="changePage(filter.page-1,$event)">Previous</a>
+                                    </li>
+                                    <li class="page-item" v-if="p >= (filter.page-3) && p <= (filter.page+3)"
+                                        :class="{active: p == filter.page}" v-for="p in totalPage"
+                                        @click="changePage(p,$event)">
+                                        <a class="page-link" href="#">{{p}}</a>
+                                    </li>
+                                    <li class="page-item" :class="{disabled:filter.page >= totalPage}">
+                                        <a v-if="filter.page >= totalPage" class="page-link">Next</a>
+                                        <a href="#" class="page-link" v-if="filter.page < totalPage"
+                                            v-on:click="changePage(filter.page+1,$event)">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="browser-actions d-flex justify-content-between flex-shrink-0" v-if="selected.length">
+                        <div class="col-left" v-show="selected.length">
+                            <div class="control-remove" v-if="selected && selected.length">
+                                <button class="btn btn-danger" @click="removeFiles">Delete file</button>
+                            </div>
+                            <div class="control-info" v-if="selected && selected.length">
+                                <div class="count-selected">{{selected.length}} file selected</div>
+                                <div class="clear-selected" @click="selected=[]"><i>unselect</i></div>
+                            </div>
+                        </div>
+                        <div class="col-right" v-show="selected.length">
+                            <button class="btn btn-primary" :class="{disabled:!selected.length}" @click="sendFiles">Use
+                                file</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/pusher.min.js"></script>
+    <script src="https://bookingfleet.com/BookingFleet/public/dist/admin/js/manifest.js?_ver=2.0.0"></script>
+    <script src="https://bookingfleet.com/BookingFleet/public/dist/admin/js/vendor.js?_ver=2.0.0"></script>
+
+    <script src="https://bookingfleet.com/BookingFleet/public/dist/admin/js/app.js?_ver=2.0.0"></script>
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/vue/vue.js"></script>
+
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/select2/js/select2.min.js"></script>
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/bootbox/bootbox.min.js"></script>
+    <script src="../../js/phpdebugbar.js"></script>
+
+</body>
+
+</html>

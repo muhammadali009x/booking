@@ -1,0 +1,2668 @@
+<html lang="">
+<link type="text/css" rel="stylesheet" id="dark-mode-custom-link">
+<link type="text/css" rel="stylesheet" id="dark-mode-general-link">
+<style lang="en" type="text/css" id="dark-mode-custom-style"></style>
+<style lang="en" type="text/css" id="dark-mode-native-style"></style>
+<style lang="en" type="text/css" id="dark-mode-native-sheet"></style>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ">
+
+  <title>Dashboard - bookingfleet</title>
+
+  <link rel="icon" type="image/png" href="../../../uploads/finallogo.png">
+
+  <meta name="robots" content="noindex, nofollow">
+  <!-- Fonts -->
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="../../../libs/font-awesome/css/font-awesome.css">
+  <link href="../../../css/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../../../css/ionicons/icofont.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../../../css/admin/vendors.css">
+  <link rel="stylesheet" href="../../../css/admin/app.css">
+  <link rel="stylesheet" href="../../../css/font-face.css">
+
+  <link rel="stylesheet" type="text/css" property="stylesheet"
+    href="https://bookingfleet.com/BookingFleet/public/_debugbar/assets/stylesheets?v=1625121810&amp;theme=auto">
+  <script type="text/javascript"
+    src="https://bookingfleet.com/BookingFleet/public/_debugbar/assets/javascript?v=1625121810"></script>
+  <script type="text/javascript">jQuery.noConflict(true);</script>
+  <script src="../../../js/app.js"></script>
+  <link rel="stylesheet" href="../../../css/phpdebugbar.css">
+
+</head>
+
+<body class="enable_multi_lang">
+  <div id="app">
+    <div class="main-header d-flex">
+      <div class="header-logo flex-shrink-0">
+        <h3 class="logo-text"><a href="https://bookingfleet.com/BookingFleet/public/admin">Booking Core <span
+              class="app-version">2.0.0</span></a></h3>
+      </div>
+      <div class="header-widgets d-flex flex-grow-1">
+        <div class="widgets-left d-flex flex-grow-1 align-items-center">
+          <div class="header-widget">
+            <span class="btn-toggle-admin-menu btn btn-sm btn-link"><i class="icon ion-ios-menu"></i></span>
+          </div>
+          <div class="header-widget search-widget">
+
+            <a href="https://bookingfleet.com/BookingFleet/public" class="btn btn-link" target="_blank"><i
+                class="fa fa-eye"></i> Home
+            </a>
+          </div>
+        </div>
+        <div class="widgets-right flex-shrink-0 d-flex">
+          <div class="dropdown header-widget widget-user pt-2 dropdown-notifications flex-shrink-0"
+            style="min-width: 0">
+            <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+              aria-expanded="false">
+              <i class="fa fa-lg fa-bell m-1 p-1"></i>
+              <span class="badge badge-danger notification-icon">1156</span>
+            </div>
+            <div class="dropdown-menu overflow-auto notify-items dropdown-container dropdown-menu-right dropdown-large"
+              aria-labelledby="dropdownMenuButton">
+              <div class="dropdown-toolbar">
+                <div class="dropdown-toolbar-actions">
+                  <a href="#" class="markAllAsRead">Mark all as read</a>
+                </div>
+                <h3 class="dropdown-toolbar-title">Notifications (<span class="notif-count">1156</span>)</h3>
+              </div>
+              <ul class="dropdown-list-items p-0">
+                <li class="notification active">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="media-object">
+                        <img class="image-responsive"
+                          src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="bookingFleet">
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <a class="markAsRead" data-id="66352cb0-240a-4c8a-badf-5131b60d27f4"
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel?id=77">dawn was updated to
+                        Publish by bookingFleet</a>
+                      <div class="notification-meta">
+                        <small class="timestamp">1 months 10 days 16 hours 50 minutes 2 seconds </small>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="notification active">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="media-object">
+                        <img class="image-responsive"
+                          src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="bookingFleet">
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <a class="markAsRead" data-id="1138f283-e42c-43bb-a79b-f6c103c27be4"
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/edit/77">bookingFleet has
+                        created hotel dawn</a>
+                      <div class="notification-meta">
+                        <small class="timestamp">1 months 10 days 17 hours 25 minutes 4 seconds </small>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="notification active">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="media-object">
+                        <img class="image-responsive"
+                          src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="ds">
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <a class="markAsRead" data-id="0d4b882b-9545-43cb-ad9b-e3da9b0bcadb"
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">ds has
+                        requested to become a vendor</a>
+                      <div class="notification-meta">
+                        <small class="timestamp">1 months 15 days 1 hours 29 minutes 1 seconds </small>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="notification active">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="media-object">
+                        <img class="image-responsive"
+                          src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <a class="markAsRead" data-id="075bd3ee-6174-4d61-bf92-c817a4041909"
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed
+                        has created new Booking</a>
+                      <div class="notification-meta">
+                        <small class="timestamp">1 months 22 days 23 hours 13 minutes 31 seconds </small>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="notification active">
+                  <div class="media">
+                    <div class="media-left">
+                      <div class="media-object">
+                        <img class="image-responsive"
+                          src="https://bookingfleet.com/BookingFleet/public/images/avatar.png" alt="waqas khursheed">
+                      </div>
+                    </div>
+                    <div class="media-body">
+                      <a class="markAsRead" data-id="f0118f76-5ff5-4c3e-b628-2ae1453be2d2"
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas khursheed
+                        has created new Booking</a>
+                      <div class="notification-meta">
+                        <small class="timestamp">1 months 22 days 23 hours 17 minutes 42 seconds </small>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="dropdown-footer text-center">
+                <a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications">View More</a>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown header-widget widget-user flex-shrink-0">
+            <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+              aria-expanded="false">
+              <span class="user-avatar flex-shrink-0">
+                <div class="avatar avatar-cover"
+                  style="background-image: url('https://bookingfleet.com/BookingFleet/public/images/avatar.png')"></div>
+              </span>
+              <div class="user-info flex-grow-1">
+                <div class="user-name">Front end Developer</div>
+                <div class="user-role">Administrator</div>
+              </div>
+              <i class="fa fa-angle-down"></i>
+            </div>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item"
+                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/edit/63">Edit Profile</a>
+              <a class="dropdown-item"
+                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/password/63">Change Password</a>
+              <a class="dropdown-item" href="#"
+                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                  class="fa fa-sign-out"></i> Logout
+              </a>
+            </div>
+            <form id="logout-form" action="https://bookingfleet.com/BookingFleet/public/logout" method="POST"
+              style="display: none;">
+              <input type="hidden" name="_token" value="NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="main-sidebar">
+      <ul class="main-menu">
+        <li class=" admin"><a href="../../index.html">
+            <span class="icon text-center"><i class="icon ion-ios-desktop"></i></span>
+            Dashboard
+          </a>
+        </li>
+        <li class=" has-children admin_module_news">
+          <a href="../../news/index.html">
+            <span class="icon text-center"><i class="ion-md-bookmarks"></i></span>
+            News
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class="has-children admin_module_news"><a href="../../news/index.html"> All News</a> </li>
+            <li class="has-children admin_module_news"><a href="../../news/create/index.html"> Add News</a>
+            </li>
+            <li class="has-children admin_module_news"><a href="../../news/category/index.html">Categories</a>
+            </li>
+            <li class="has-children admin_module_news"><a href="../../news/tags/index.html"> Tags</a></li>
+          </ul>
+        </li>
+        <li class=" admin_module_page">
+          <a href="../../pages/index.html">
+            <span class="icon text-center"><i class="icon ion-ios-bookmarks"></i></span>
+            Page
+          </a>
+        </li>
+        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location">
+          <a href="../../location/index.html">
+            <span class="icon text-center"><i class="icon ion-md-compass"></i></span>
+            Location
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class="has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location">
+              <a href="../../location/index.html">
+                <i class="icon ion-md-compass"></i>
+                All Location
+              </a>
+            </li>
+            <li class="has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location">
+              <a href="../../location/category/index.html">
+                <i class="icon ion-md-compass"></i>
+                All Category
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" has-children admin_module_hotel">
+          <a href="../../hotel/index.html">
+            <span class="icon text-center"><i class="fa fa-building-o"></i></span>
+            Hotel
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class="has-children admin_module_hotel">
+              <a href="../../hotel/index.html">All Hotels</a>
+            </li>
+            <li class="has-children admin_module_hotel">
+              <a href="../../hotel/add/index.html">Add new Hotel</a>
+            </li>
+            <li class="has-children admin_module_hotel">
+              <a href="../../hotel/attribute/index.html">Attributes</a>
+            </li>
+            <li class="has-children admin_module_hotel">
+              <a href="../../hotel/room/index.html">Room Attributes</a>
+            </li>
+            <li class="has-children admin_module_hotel">
+              <a href="../../hotel/recovery.html">Recovery</a>
+            </li>
+          </ul>
+        </li>
+        <li class=" has-children admin_module_tour">
+          <a href="../../tour/index.html">
+            <span class="icon text-center"><i class="icon ion-md-umbrella"></i></span>
+            Tour
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class="active has-children admin_module_tour">
+              <a href="../../tour/index.html">All Tours</a>
+            </li>
+            <li class="active has-children admin_module_tour">
+              <a href="../../tour/add/index.html">Add Tour</a>
+            </li>
+            <li class="active has-children admin_module_tour">
+              <a href="../../tour/categories/index.html">Categories</a>
+            </li>
+            <li class="active has-children admin_module_tour">
+              <a href="../../tour/attribute/index.html">Attributes</a>
+            </li>
+            <li class="active has-children admin_module_tour">
+              <a href="../../tour/availability/index.html">Availability</a>
+            </li>
+            <li class=" has-children admin_module_tour">
+              <a href="../../tour/bookingCalendar.html">Booking
+                Calendar</a>
+            </li>
+            <li class=" has-children admin_module_tour">
+              <a href="../../tour/recovery">Recovery</a>
+            </li>
+          </ul>
+        </li>
+        <li class=" has-children admin_module_space">
+          <a href="../../space/index.html">
+            <span class="icon text-center"><i class="ion ion-md-home"></i></span>
+            Space
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class=" has-children admin_module_space">
+              <a href="../../space/index.html">
+                All Spaces</a>
+            </li>
+            <li class=" has-children admin_module_space">
+              <a href="../../space/add/index.html">
+                Add new Space</a>
+            </li>
+            <li class=" has-children admin_module_space">
+              <a href="../../space/attribute/index.html">
+                Attributes</a>
+            </li>
+            <li class=" has-children admin_module_space">
+              <a href="../../space/availability/index.html">
+                Availability</a>
+            </li>
+            <li class=" has-children admin_module_space">
+              <a href="../../space/recovery/index.html">
+                Recovery</a>
+            </li>
+          </ul>
+        </li>
+        <li class=" has-children admin_module_car">
+          <a href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+            <span class="icon text-center"><i class="ion-logo-model-s"></i></span>
+            Car
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class=" has-children admin_module_car"><a
+                href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                All Cars</a>
+            </li>
+            <li class=" has-children admin_module_car"><a
+                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/create">
+                Add new Car</a>
+            </li>
+            <li class=" has-children admin_module_car"><a
+                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/attribute">
+                Attributes</a>
+            </li>
+            <li class=" has-children admin_module_car"><a
+                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/availability">
+                Availability</a>
+            </li>
+            <li class=" has-children admin_module_car"><a
+                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/recovery">
+                Recovery</a>
+            </li>
+          </ul>
+        </li>
+        <li class=" admin_module_review">
+          <a href="../../review/index.html">
+            <span class="icon text-center"><i class="icon ion-ios-text"></i></span>
+            Reviews
+          </a>
+        </li>
+        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+          <a href="../../event/index.html">
+            <span class="icon text-center"><i class="ion-ios-calendar"></i></span>
+            Event
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+              <a href="../../event/index.html">
+                All Events</a>
+            </li>
+            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+              <a href="../../event/add/index.html">
+                Add new Event</a>
+            </li>
+            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+              <a href="../../event/attribute/index.html">
+                Attributes</a>
+            </li>
+            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+              <a href="../../event/availability/index.html">
+                Availability</a>
+            </li>
+            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+              <a href="../../event/recovery.html">
+                Recovery</a>
+            </li>
+          </ul>
+        </li>
+        <li class=" https:__bookingfleet.com_BookingFleet_public_admin_module_media">
+          <a href="../../media/index.html">
+            <span class="icon text-center"><i class="fa fa-picture-o"></i></span>
+            Media
+          </a>
+        </li>
+        <li class=" admin_module_core_menu">
+          <a href="../../menu/index.html">
+            <span class="icon text-center"><i class="icon ion-ios-apps"></i></span>
+            Menu
+          </a>
+        </li>
+        <li class=" admin_module_core_emailsetting">
+          <a href="../../emailsetting/index.html">
+            <span class="icon text-center"><i class="fa fa-envelope"></i></span>
+            Email Setting
+          </a>
+        </li>
+        <li class=" admin_module_template">
+          <a href="../../templates/index.html">
+            <span class="icon text-center"><i class="icon ion-logo-html5"></i></span>
+            Templates
+          </a>
+        </li>
+        <li class=" admin_module_vendor_payout">
+          <a href="../../payout/index.html">
+            <span class="icon text-center"><i class="icon ion-md-card"></i></span>
+            Payouts
+          </a>
+        </li>
+        <li class=" has-children admin_module_core_settings_index_general">
+          <a href="../../setting/index.html">
+            <span class="icon text-center"><i class="icon ion-ios-cog"></i></span>
+            Setting
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/index.html"> General Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/car/index.html"> Car Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/event/index.html"> Event Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/hotel/index.html"> Hotel Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/space/index.html"> Space Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/tour/index.html"> Tour Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/news/index.html"> News Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/booking/index.html"> Booking Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/enquiry/index.html"> Enquiry Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/user/index.html"> User Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/wallet/index.html"> Wallet Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/vendor/index.html"> Vendor Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/payment/index.html"> Payment Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/style/index.html"> Style Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/advance/index.html"> Advance Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/email/index.html"> Email Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/sms/index.html"> Sms Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/mobile/index.html"> Mobile App Settings</a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/review/index.html"> Review Advance Settings</a>
+            </li>
+          </ul>
+        </li>
+        <li class=" has-children admin_module_core_tools">
+          <a href="../../tools/index.html">
+            <span class="icon text-center"><i class="icon ion-ios-hammer"></i></span>
+            Tools
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class=" has-children admin_module_core_tools">
+              <a href="../../tools/index.html">
+                <i class="icon ion-ios-globe"></i>
+                Languages
+              </a>
+            </li>
+            <li class=" has-children admin_module_core_tools">
+              <a href="../../tools/translation/index.html">
+                <i class="icon ion-ios-globe"></i>
+                Translation Manager
+              </a>
+            </li>
+            <li class=" has-children admin_module_core_tools">
+              <a href="../../logs/index.html">
+                <i class="icon ion-ios-nuclear"></i>
+                System Logs
+              </a>
+            </li>
+            <li class=" has-children admin_module_core_tools">
+              <a href="../../tools/updater/index.html">
+                <i class="icon ion-md-download"></i>
+                Updater
+              </a>
+            </li>
+            <li class=" has-children admin_module_core_tools">
+              <a href="../../tools/plugins/index.html">
+                <i class="icon ion-md-color-wand"></i>
+                Plugins
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class=" has-children admin_module_user">
+          <a href="../../users/all/index.html">
+            <span class="icon text-center"><i class="icon ion-ios-contacts"></i></span>
+            Users <span class="badge badge-warning">1</span>
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class=" has-children admin_module_user">
+              <a href="../../users/all/index.html">
+                <i class="fa fa-user"></i>
+                All Users</a>
+            </li>
+            <li class=" has-children admin_module_user">
+              <a href="../../users/role/index.html">
+                <i class="fa fa-lock"></i>
+                Role Manager</a>
+            </li>
+            <li class=" has-children admin_module_user">
+              <a href="../../users/subscribers/index.html">
+                Subscribers</a>
+            </li>
+            <li class=" has-children admin_module_user">
+              <a href="../../users/upgradeRequest/index.html">
+                Upgrade Request <span class="badge badge-warning">4</span></a>
+            </li>
+            <li class=" has-children admin_module_user">
+              <a href="../../users/verification/index.html">
+                Verification Request <span class="badge badge-warning">1</span></a>
+            </li>
+          </ul>
+        </li>
+        <li class=" has-children admin_module_report_booking">
+          <a href="report/enquiry/index.html">
+            <span class="icon text-center"><i class="icon ion-ios-pie"></i></span>
+            Reports <span class="badge badge-warning">2</span>
+          </a>
+          <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+          <ul class="children">
+            <li class=" has-children admin_module_report_booking">
+              <a href="../../report/enquiry/index.html">
+                <i class="icon ion-ios-pricetags"></i>
+                Enquiry Reports
+              </a>
+            </li>
+            <li class=" has-children admin_module_report_booking">
+              <a href="../../report/booking/index.html">
+                <i class="icon ion-ios-pricetags"></i>
+                Booking Reports
+              </a>
+            </li>
+            <li class=" has-children admin_module_report_booking">
+              <a href="../../report/statistic/index.html">
+                <i class="icon ion ion-md-podium"></i>
+                Booking Statistic
+              </a>
+            </li>
+            <li class=" has-children admin_module_report_booking">
+              <a href="../../report/contact/index.html">
+                <i class="icon ion ion-md-mail"></i>
+                Contact Submissions
+              </a>
+            </li>
+            <li class=" has-children admin_module_report_booking">
+              <a href="../../report/credit-purchase/index.html">
+                <i class="fa fa-money"></i>
+                Credit Purchase Report <span class="badge badge-warning">2</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="main-content">
+      <nav class="main-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="https://bookingfleet.com/BookingFleet/public/admin"><i
+                class="fa fa-home"></i> Dashboard</a></li>
+
+          <li class="breadcrumb-item ">
+            <a href="https://bookingfleet.com/BookingFleet/public/admin/module/tour">Tour</a>
+          </li>
+          <li class="breadcrumb-item active">
+            Category
+          </li>
+
+        </ol>
+      </nav>
+      <form action="https://bookingfleet.com/BookingFleet/public/admin/module/tour/category/store/1" method="post">
+        <input type="hidden" name="_token" value="NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ">
+        <div class="container-fluid">
+          <div class="d-flex justify-content-between mb20">
+            <div class="">
+              <h1 class="title-bar">Edit: City trips</h1>
+            </div>
+            <div class="">
+
+            </div>
+          </div>
+          <div class="lang-content-box">
+            <div class="row">
+              <div class="col-md-9">
+                <div class="panel">
+                  <div class="panel-body">
+                    <h3 class="panel-body-title">Category Content</h3>
+                    <div class="form-group">
+                      <label>Name</label>
+                      <input type="text" value="City trips" placeholder="Category name" name="name"
+                        class="form-control">
+                    </div>
+                    <div class="form-group">
+                      <label>Parent</label>
+                      <select name="parent_id" class="form-control">
+                        <option value="">-- Please Select --</option>
+                        <option value="2"> Ecotourism</option>
+                        <option value="3"> Escorted tour</option>
+                        <option value="4"> Ligula</option>
+                      </select>
+                    </div>
+
+
+
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="panel">
+                  <div class="panel-title"><strong>Publish</strong></div>
+                  <div class="panel-body">
+                    <div>
+                      <label><input checked="" type="radio" name="status" value="publish"> Publish</label>
+                    </div>
+                    <div>
+                      <label><input type="radio" name="status" value="draft"> Draft</label>
+                    </div>
+                    <div class="text-right">
+                      <button class="btn btn-primary" type="submit"><i class="fa fa-save"></i> Save Changes</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <footer class="main-footer">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-6 copy-right">
+              2022 © Booking Core by <a href="https://www.bookingcore.org" target="_blank">BookingCore Team</a>
+            </div>
+            <div class="col-md-6">
+              <div class="text-md-right footer-links d-none d-sm-block">
+                <a href="https://www.bookingcore.org" target="_blank">About Us</a>
+                <a href="https://m.me/bookingcore" target="_blank">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="backdrop-sidebar-mobile"></div>
+  </div>
+
+  <div id="cdn-browser-modal" class="modal fade">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div id="cdn-browser" class="cdn-browser d-flex flex-column">
+          <div class="files-nav flex-shrink-0">
+            <div class="d-flex justify-content-between">
+              <div class="col-left d-flex align-items-center">
+                <div class="filter-item"><input type="text" placeholder="Search file name...." class="form-control">
+                </div>
+                <div class="filter-item"><button class="btn btn-default"><i class="fa fa-search"></i> Search</button>
+                </div>
+                <div class="filter-item"><small><i>Total: 0 files</i></small></div>
+              </div>
+              <div class="col-right"><i class="fa-spin fa fa-spinner icon-loading active" style="display: none;"></i>
+                <button class="btn btn-success btn-pick-files"><span><i class="fa fa-upload"></i> Upload</span> <input
+                    multiple="multiple" type="file" name="files[]"></button>
+              </div>
+            </div>
+          </div>
+          <div display="none" class="upload-new" style="display: none;"><input type="file" name="filepond[]"
+              class="my-pond"></div>
+          <div class="files-list">
+            <div class="files-wraps  view-grid"></div>
+            <p class="no-files-text text-center" style="display: none;">No file found</p>
+            <!---->
+          </div>
+          <!---->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="phpdebugbar phpdebugbar-minimized phpdebugbar-closed">
+    <div class="phpdebugbar-drag-capture"></div>
+    <div class="phpdebugbar-resize-handle" style="display: none;"></div>
+    <div class="phpdebugbar-header" style="display: none;">
+      <div class="phpdebugbar-header-left"><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-list-alt"></i><span class="phpdebugbar-text">Messages</span><span
+            class="phpdebugbar-badge"></span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-tasks"></i><span class="phpdebugbar-text">Timeline</span><span
+            class="phpdebugbar-badge"></span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-bug"></i><span class="phpdebugbar-text">Exceptions</span><span
+            class="phpdebugbar-badge"></span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-leaf"></i><span class="phpdebugbar-text">Views</span><span
+            class="phpdebugbar-badge phpdebugbar-visible">10</span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-share"></i><span class="phpdebugbar-text">Route</span><span
+            class="phpdebugbar-badge"></span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-database"></i><span class="phpdebugbar-text">Queries</span><span
+            class="phpdebugbar-badge phpdebugbar-visible">15</span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-cubes"></i><span class="phpdebugbar-text">Models</span><span
+            class="phpdebugbar-badge phpdebugbar-visible">12</span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-inbox"></i><span class="phpdebugbar-text">Mails</span><span
+            class="phpdebugbar-badge"></span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-lock"></i><span class="phpdebugbar-text">Auth</span><span
+            class="phpdebugbar-badge"></span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-list-alt"></i><span class="phpdebugbar-text">Gate</span><span
+            class="phpdebugbar-badge"></span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-archive"></i><span class="phpdebugbar-text">Session</span><span
+            class="phpdebugbar-badge"></span></a><a class="phpdebugbar-tab"><i
+            class="phpdebugbar-fa phpdebugbar-fa-tags"></i><span class="phpdebugbar-text">Request</span><span
+            class="phpdebugbar-badge"></span></a></div>
+      <div class="phpdebugbar-header-right"><a class="phpdebugbar-close-btn"></a><a
+          class="phpdebugbar-minimize-btn"></a><a class="phpdebugbar-maximize-btn"></a><a class="phpdebugbar-open-btn"
+          style=""></a><select class="phpdebugbar-datasets-switcher">
+          <option value="X9e9d5fe2625e4d6449d2a7168bc6d714">#1 1 (10:21:32)</option>
+        </select><span class="phpdebugbar-indicator"><i class="phpdebugbar-fa phpdebugbar-fa-code"></i><span
+            class="phpdebugbar-text">8.0.16</span><span class="phpdebugbar-tooltip">PHP Version</span></span><span
+          class="phpdebugbar-indicator"><i class="phpdebugbar-fa phpdebugbar-fa-clock-o"></i><span
+            class="phpdebugbar-text">390ms</span><span class="phpdebugbar-tooltip">Request Duration</span></span><span
+          class="phpdebugbar-indicator"><i class="phpdebugbar-fa phpdebugbar-fa-cogs"></i><span
+            class="phpdebugbar-text">11MB</span><span class="phpdebugbar-tooltip">Memory Usage</span></span><span
+          class="phpdebugbar-indicator"><i class="phpdebugbar-fa phpdebugbar-fa-share"></i><span
+            class="phpdebugbar-text">GET admin/module/tour/category/edit/{id}</span><span
+            class="phpdebugbar-tooltip">Route</span></span><span class="phpdebugbar-indicator"><i
+            class="phpdebugbar-fa phpdebugbar-fa-user"></i><span class="phpdebugbar-text">web:
+            frontend@gmail.com</span><span class="phpdebugbar-tooltip">Auth status</span></span></div>
+    </div>
+    <div class="phpdebugbar-body" style="height: 183px; display: none;">
+      <div class="phpdebugbar-panel">
+        <div class="phpdebugbar-widgets-messages">
+          <ul class="phpdebugbar-widgets-list"></ul>
+          <div class="phpdebugbar-widgets-toolbar"><i class="phpdebugbar-fa phpdebugbar-fa-search"></i><input
+              type="text"></div>
+        </div>
+      </div>
+      <div class="phpdebugbar-panel">
+        <ul class="phpdebugbar-widgets-timeline">
+          <li>
+            <div class="phpdebugbar-widgets-measure"><span class="phpdebugbar-widgets-value"
+                style="left: 0%; width: 13.82%;"></span><span class="phpdebugbar-widgets-label">Booting (53.91ms)</span>
+            </div>
+          </li>
+          <li>
+            <div class="phpdebugbar-widgets-measure"><span class="phpdebugbar-widgets-value"
+                style="left: 13.89%; width: 86.11%;"></span><span class="phpdebugbar-widgets-label">Application
+                (336ms)</span></div>
+          </li>
+          <li>
+            <table style="display: table; border: 0; width: 99%" class="phpdebugbar-widgets-params">
+              <tr>
+                <td class="phpdebugbar-widgets-name">1 x Application (86.11%)</td>
+                <td class="phpdebugbar-widgets-value">
+                  <div class="phpdebugbar-widgets-measure"><span class="phpdebugbar-widgets-value"
+                      style="width:86.11%"></span><span class="phpdebugbar-widgets-label">335.96ms</span></div>
+                </td>
+              </tr>
+              <tr>
+                <td class="phpdebugbar-widgets-name">1 x Booting (13.82%)</td>
+                <td class="phpdebugbar-widgets-value">
+                  <div class="phpdebugbar-widgets-measure"><span class="phpdebugbar-widgets-value"
+                      style="width:13.82%"></span><span class="phpdebugbar-widgets-label">53.91ms</span></div>
+                </td>
+              </tr>
+            </table>
+          </li>
+        </ul>
+      </div>
+      <div class="phpdebugbar-panel">
+        <div class="phpdebugbar-widgets-exceptions">
+          <ul class="phpdebugbar-widgets-list"></ul>
+        </div>
+      </div>
+      <div class="phpdebugbar-panel">
+        <div class="phpdebugbar-widgets-templates">
+          <div class="phpdebugbar-widgets-status"><span>10 templates were rendered</span></div>
+          <ul class="phpdebugbar-widgets-list">
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">Tour::admin.category.detail
+                (modules/Tour/Views/admin/category/detail.blade.php)</span><span title="Parameter count"
+                class="phpdebugbar-widgets-param-count">5</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">admin.message (resources/views/admin/message.blade.php)</span><span
+                title="Parameter count" class="phpdebugbar-widgets-param-count">9</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>obLevel</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>__env</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>app</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>errors</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">5</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">6</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">7</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">8</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">Language::admin.navigation
+                (modules/Language/Views/admin/navigation.blade.php)</span><span title="Parameter count"
+                class="phpdebugbar-widgets-param-count">9</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>obLevel</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>__env</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>app</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>errors</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">5</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">6</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">7</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">8</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">Tour::admin.category.form
+                (modules/Tour/Views/admin/category/form.blade.php)</span><span title="Parameter count"
+                class="phpdebugbar-widgets-param-count">9</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>obLevel</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>__env</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>app</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>errors</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">5</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">6</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">7</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">8</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">admin.layouts.app
+                (resources/views/admin/layouts/app.blade.php)</span><span title="Parameter count"
+                class="phpdebugbar-widgets-param-count">9</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>obLevel</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>__env</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>app</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>errors</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">5</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">6</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">7</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">8</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">Layout::admin.app (modules/Layout/admin/app.blade.php)</span><span
+                title="Parameter count" class="phpdebugbar-widgets-param-count">9</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>obLevel</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>__env</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>app</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>errors</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">5</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">6</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">7</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">8</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">Layout::admin.parts.header
+                (modules/Layout/admin/parts/header.blade.php)</span><span title="Parameter count"
+                class="phpdebugbar-widgets-param-count">11</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>obLevel</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>__env</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>app</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>errors</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">5</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">6</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">7</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">8</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">9</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>favicon</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">10</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>file</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">Layout::admin.parts.sidebar
+                (modules/Layout/admin/parts/sidebar.blade.php)</span><span title="Parameter count"
+                class="phpdebugbar-widgets-param-count">11</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>obLevel</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>__env</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>app</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>errors</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">5</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">6</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">7</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">8</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">9</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>favicon</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">10</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>file</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">Layout::admin.parts.bc
+                (modules/Layout/admin/parts/bc.blade.php)</span><span title="Parameter count"
+                class="phpdebugbar-widgets-param-count">11</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>obLevel</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>__env</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>app</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>errors</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">5</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">6</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">7</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">8</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">9</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>favicon</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">10</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>file</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" style="cursor: pointer;"><span
+                class="phpdebugbar-widgets-name">Media::browser (modules/Media/Views/browser.blade.php)</span><span
+                title="Parameter count" class="phpdebugbar-widgets-param-count">11</span><span title="Type"
+                class="phpdebugbar-widgets-type">blade</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Params</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">0</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>obLevel</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">1</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>__env</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">2</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>app</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">3</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>errors</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">4</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>translation</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">5</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>enable_multi_lang</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">6</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>row</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">7</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>parents</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">8</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>breadcrumbs</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">9</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>favicon</code></pre>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">10</td>
+                    <td class="phpdebugbar-widgets-value">
+                      <pre><code>file</code></pre>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+          <div class="phpdebugbar-widgets-callgraph"></div>
+        </div>
+      </div>
+      <div class="phpdebugbar-panel">
+        <dl class="phpdebugbar-widgets-kvlist phpdebugbar-widgets-varlist">
+          <dt class="phpdebugbar-widgets-key"><span title="uri">uri</span></dt>
+          <dd class="phpdebugbar-widgets-value">GET admin/module/tour/category/edit/{id}</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="middleware">middleware</span></dt>
+          <dd class="phpdebugbar-widgets-value">web, dashboard</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="controller">controller</span></dt>
+          <dd class="phpdebugbar-widgets-value">Modules\Tour\Admin\CategoryController@edit</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="namespace">namespace</span></dt>
+          <dd class="phpdebugbar-widgets-value">Modules\Tour\Admin</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="prefix">prefix</span></dt>
+          <dd class="phpdebugbar-widgets-value">admin/module/tour</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="where">where</span></dt>
+          <dd class="phpdebugbar-widgets-value"></dd>
+          <dt class="phpdebugbar-widgets-key"><span title="as">as</span></dt>
+          <dd class="phpdebugbar-widgets-value">tour.admin.category.edit</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="file">file</span></dt>
+          <dd class="phpdebugbar-widgets-value">modules/Tour/Admin/CategoryController.php:45-70</dd>
+        </dl>
+      </div>
+      <div class="phpdebugbar-panel">
+        <div class="phpdebugbar-widgets-sqlqueries">
+          <div class="phpdebugbar-widgets-status"><span>15 statements were executed, 2 of which were duplicated, 13
+              unique</span><span title="Accumulated duration" class="phpdebugbar-widgets-duration">20.01ms</span></div>
+          <div class="phpdebugbar-widgets-toolbar"><a class="phpdebugbar-widgets-filter"
+              rel="bookinp7_bookingfleet">bookinp7_bookingfleet</a></div>
+          <ul class="phpdebugbar-widgets-list">
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">`users`</span> <span class="hljs-keyword">where</span> <span class="hljs-string">`id`</span> = <span class="hljs-number">63</span> <span class="hljs-keyword">and</span> <span class="hljs-string">`users`</span>.<span class="hljs-string">`deleted_at`</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">null</span> limit <span class="hljs-number">1</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">4.18ms</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php:52</span><span
+                title="Connection" class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;63</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Hints <i
+                        class="phpdebugbar-fa phpdebugbar-fa-question-circle phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item">Use <code>SELECT *</code> only if you need all
+                          columns from table</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><code>LIMIT</code> without <code>ORDER BY</code>
+                          causes non-deterministic results, depending on the query execution plan</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">15.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Auth/EloquentUserProvider.php<span
+                            class="phpdebugbar-text-muted">:52</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">16.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Auth/SessionGuard.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Auth/GuardHelpers.php<span
+                            class="phpdebugbar-text-muted">:60</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">18.</span>&nbsp;middleware::auth<span
+                            class="phpdebugbar-text-muted">:63</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;middleware::auth<span
+                            class="phpdebugbar-text-muted">:28</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> column_name <span class="hljs-keyword">as</span> <span class="hljs-string">`column_name`</span> <span class="hljs-keyword">from</span> information_schema.columns <span class="hljs-keyword">where</span> table_schema = <span class="hljs-string">'bookinp7_bookingfleet'</span> <span class="hljs-keyword">and</span> table_name = <span class="hljs-string">'core_permissions'</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">940μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/vendor/spatie/laravel-permission/src/Models/Permission.php:27</span><span
+                title="Connection" class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;bookinp7_bookingfleet</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;core_permissions</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">14.</span>&nbsp;/vendor/spatie/laravel-permission/src/Models/Permission.php<span
+                            class="phpdebugbar-text-muted">:27</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">16.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Container/Container.php<span
+                            class="phpdebugbar-text-muted">:849</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Container/Container.php<span
+                            class="phpdebugbar-text-muted">:691</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">18.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Foundation/Application.php<span
+                            class="phpdebugbar-text-muted">:796</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Container/Container.php<span
+                            class="phpdebugbar-text-muted">:637</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-string">`core_permissions`</span>.*, <span class="hljs-string">`core_model_has_permissions`</span>.<span class="hljs-string">`model_id`</span> <span class="hljs-keyword">as</span> <span class="hljs-string">`pivot_model_id`</span>, <span class="hljs-string">`core_model_has_permissions`</span>.<span class="hljs-string">`permission_id`</span> <span class="hljs-keyword">as</span> <span class="hljs-string">`pivot_permission_id`</span>, <span class="hljs-string">`core_model_has_permissions`</span>.<span class="hljs-string">`model_type`</span> <span class="hljs-keyword">as</span> <span class="hljs-string">`pivot_model_type`</span> <span class="hljs-keyword">from</span> <span class="hljs-string">`core_permissions`</span> <span class="hljs-keyword">inner</span> <span class="hljs-keyword">join</span> <span class="hljs-string">`core_model_has_permissions`</span> <span class="hljs-keyword">on</span> <span class="hljs-string">`core_permissions`</span>.<span class="hljs-string">`id`</span> = <span class="hljs-string">`core_model_has_permissions`</span>.<span class="hljs-string">`permission_id`</span> <span class="hljs-keyword">where</span> <span class="hljs-string">`core_model_has_permissions`</span>.<span class="hljs-string">`model_id`</span> = <span class="hljs-number">63</span> <span class="hljs-keyword">and</span> <span class="hljs-string">`core_model_has_permissions`</span>.<span class="hljs-string">`model_type`</span> = <span class="hljs-string">'App\User'</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">770μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/vendor/spatie/laravel-permission/src/Traits/HasPermissions.php:285</span><span
+                title="Connection" class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;63</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;App\User</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/spatie/laravel-permission/src/Traits/HasPermissions.php<span
+                            class="phpdebugbar-text-muted">:285</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">20.</span>&nbsp;/vendor/spatie/laravel-permission/src/Traits/HasPermissions.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">21.</span>&nbsp;/app/Http/Middleware/HideDebugbar.php<span
+                            class="phpdebugbar-text-muted">:21</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">22.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php<span
+                            class="phpdebugbar-text-muted">:167</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">23.</span>&nbsp;/app/Http/Middleware/RedirectForMultiLanguage.php<span
+                            class="phpdebugbar-text-muted">:58</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> column_name <span class="hljs-keyword">as</span> <span class="hljs-string">`column_name`</span> <span class="hljs-keyword">from</span> information_schema.columns <span class="hljs-keyword">where</span> table_schema = <span class="hljs-string">'bookinp7_bookingfleet'</span> <span class="hljs-keyword">and</span> table_name = <span class="hljs-string">'core_roles'</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">700μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/vendor/spatie/laravel-permission/src/Models/Role.php:26</span><span
+                title="Connection" class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;bookinp7_bookingfleet</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;core_roles</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">14.</span>&nbsp;/vendor/spatie/laravel-permission/src/Models/Role.php<span
+                            class="phpdebugbar-text-muted">:26</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;/vendor/spatie/laravel-permission/src/Traits/HasRoles.php<span
+                            class="phpdebugbar-text-muted">:47</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">22.</span>&nbsp;/vendor/spatie/laravel-permission/src/Traits/HasRoles.php<span
+                            class="phpdebugbar-text-muted">:208</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">23.</span>&nbsp;/vendor/spatie/laravel-permission/src/Traits/HasPermissions.php<span
+                            class="phpdebugbar-text-muted">:258</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">24.</span>&nbsp;/vendor/spatie/laravel-permission/src/Traits/HasPermissions.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-string">`core_roles`</span>.*, <span class="hljs-string">`core_model_has_roles`</span>.<span class="hljs-string">`model_id`</span> <span class="hljs-keyword">as</span> <span class="hljs-string">`pivot_model_id`</span>, <span class="hljs-string">`core_model_has_roles`</span>.<span class="hljs-string">`role_id`</span> <span class="hljs-keyword">as</span> <span class="hljs-string">`pivot_role_id`</span>, <span class="hljs-string">`core_model_has_roles`</span>.<span class="hljs-string">`model_type`</span> <span class="hljs-keyword">as</span> <span class="hljs-string">`pivot_model_type`</span> <span class="hljs-keyword">from</span> <span class="hljs-string">`core_roles`</span> <span class="hljs-keyword">inner</span> <span class="hljs-keyword">join</span> <span class="hljs-string">`core_model_has_roles`</span> <span class="hljs-keyword">on</span> <span class="hljs-string">`core_roles`</span>.<span class="hljs-string">`id`</span> = <span class="hljs-string">`core_model_has_roles`</span>.<span class="hljs-string">`role_id`</span> <span class="hljs-keyword">where</span> <span class="hljs-string">`core_model_has_roles`</span>.<span class="hljs-string">`model_id`</span> = <span class="hljs-number">63</span> <span class="hljs-keyword">and</span> <span class="hljs-string">`core_model_has_roles`</span>.<span class="hljs-string">`model_type`</span> = <span class="hljs-string">'App\User'</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">650μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/vendor/spatie/laravel-permission/src/Traits/HasRoles.php:208</span><span
+                title="Connection" class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;63</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;App\User</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/spatie/laravel-permission/src/Traits/HasRoles.php<span
+                            class="phpdebugbar-text-muted">:208</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">20.</span>&nbsp;/vendor/spatie/laravel-permission/src/Traits/HasPermissions.php<span
+                            class="phpdebugbar-text-muted">:258</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">21.</span>&nbsp;/vendor/spatie/laravel-permission/src/Traits/HasPermissions.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">22.</span>&nbsp;/app/Http/Middleware/HideDebugbar.php<span
+                            class="phpdebugbar-text-muted">:21</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">23.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php<span
+                            class="phpdebugbar-text-muted">:167</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">`bravo_tour_category`</span> <span class="hljs-keyword">where</span> <span class="hljs-string">`bravo_tour_category`</span>.<span class="hljs-string">`id`</span> = <span class="hljs-string">'1'</span> <span class="hljs-keyword">and</span> <span class="hljs-string">`bravo_tour_category`</span>.<span class="hljs-string">`deleted_at`</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">null</span> limit <span class="hljs-number">1</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">520μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:23</span><span
+                title="Connection" class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;1</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Hints <i
+                        class="phpdebugbar-fa phpdebugbar-fa-question-circle phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item">Use <code>SELECT *</code> only if you need all
+                          columns from table</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><code>LIMIT</code> without <code>ORDER BY</code>
+                          causes non-deterministic results, depending on the query execution plan</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">16.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php<span
+                            class="phpdebugbar-text-muted">:23</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/modules/Tour/Admin/CategoryController.php<span
+                            class="phpdebugbar-text-muted">:48</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">20.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Routing/Controller.php<span
+                            class="phpdebugbar-text-muted">:54</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">21.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php<span
+                            class="phpdebugbar-text-muted">:45</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">22.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Routing/Route.php<span
+                            class="phpdebugbar-text-muted">:239</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">`bravo_tour_category`</span> <span class="hljs-keyword">where</span> <span class="hljs-string">`bravo_tour_category`</span>.<span class="hljs-string">`deleted_at`</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">null</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">560μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php:23</span><span
+                title="Connection" class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Hints <i
+                        class="phpdebugbar-fa phpdebugbar-fa-question-circle phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item">Use <code>SELECT *</code> only if you need all
+                          columns from table</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">14.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Support/Traits/ForwardsCalls.php<span
+                            class="phpdebugbar-text-muted">:23</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;/modules/Tour/Admin/CategoryController.php<span
+                            class="phpdebugbar-text-muted">:57</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">18.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Routing/Controller.php<span
+                            class="phpdebugbar-text-muted">:54</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php<span
+                            class="phpdebugbar-text-muted">:45</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">20.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/Routing/Route.php<span
+                            class="phpdebugbar-text-muted">:239</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">`notifications`</span> <span class="hljs-keyword">where</span> (<span class="hljs-string">`data`</span> <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%\"for_admin\":1%'</span> <span class="hljs-keyword">or</span> <span class="hljs-string">`notifiable_id`</span> = <span class="hljs-number">63</span>) <span class="hljs-keyword">order</span> <span class="hljs-keyword">by</span> <span class="hljs-string">`created_at`</span> <span class="hljs-keyword">desc</span> limit <span class="hljs-number">5</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">4.66ms</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">view::Layout::admin.parts.header:9</span><span title="Connection"
+                class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;%"for_admin":1%</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;63</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Hints <i
+                        class="phpdebugbar-fa phpdebugbar-fa-question-circle phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item">Use <code>SELECT *</code> only if you need all
+                          columns from table</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">14.</span>&nbsp;view::Layout::admin.parts.header<span
+                            class="phpdebugbar-text-muted">:9</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">16.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php<span
+                            class="phpdebugbar-text-muted">:57</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">18.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:122</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:91</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-aggregate">count</span>(*) <span class="hljs-keyword">as</span> aggregate <span class="hljs-keyword">from</span> <span class="hljs-string">`notifications`</span> <span class="hljs-keyword">where</span> (<span class="hljs-string">`data`</span> <span class="hljs-keyword">LIKE</span> <span class="hljs-string">'%\"for_admin\":1%'</span> <span class="hljs-keyword">or</span> <span class="hljs-string">`notifiable_id`</span> = <span class="hljs-number">63</span>) <span class="hljs-keyword">and</span> <span class="hljs-string">`read_at`</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">null</span> limit <span class="hljs-number">5</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">3.68ms</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">view::Layout::admin.parts.header:10</span><span title="Connection"
+                class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;%"for_admin":1%</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;63</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Hints <i
+                        class="phpdebugbar-fa phpdebugbar-fa-question-circle phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><code>LIMIT</code> without <code>ORDER BY</code>
+                          causes non-deterministic results, depending on the query execution plan</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">15.</span>&nbsp;view::Layout::admin.parts.header<span
+                            class="phpdebugbar-text-muted">:10</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php<span
+                            class="phpdebugbar-text-muted">:57</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">18.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:122</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">20.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:91</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li
+              class="phpdebugbar-widgets-list-item phpdebugbar-widgets-sql-duplicate phpdebugbar-widgets-sql-duplicate-2"
+              connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">`user_meta`</span> <span class="hljs-keyword">where</span> (<span class="hljs-string">`user_id`</span> = <span class="hljs-number">63</span> <span class="hljs-keyword">and</span> <span class="hljs-string">`name`</span> = <span class="hljs-string">'social_meta_avatar'</span>) limit <span class="hljs-number">1</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">560μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/app/User.php:89</span><span title="Connection"
+                class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;63</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;social_meta_avatar</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Hints <i
+                        class="phpdebugbar-fa phpdebugbar-fa-question-circle phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item">Use <code>SELECT *</code> only if you need all
+                          columns from table</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><code>LIMIT</code> without <code>ORDER BY</code>
+                          causes non-deterministic results, depending on the query execution plan</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">13.</span>&nbsp;/app/User.php<span
+                            class="phpdebugbar-text-muted">:89</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">14.</span>&nbsp;/app/User.php<span
+                            class="phpdebugbar-text-muted">:187</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">15.</span>&nbsp;view::Layout::admin.parts.header<span
+                            class="phpdebugbar-text-muted">:129</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php<span
+                            class="phpdebugbar-text-muted">:57</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">18.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li
+              class="phpdebugbar-widgets-list-item phpdebugbar-widgets-sql-duplicate phpdebugbar-widgets-sql-duplicate-2"
+              connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> * <span class="hljs-keyword">from</span> <span class="hljs-string">`user_meta`</span> <span class="hljs-keyword">where</span> (<span class="hljs-string">`user_id`</span> = <span class="hljs-number">63</span> <span class="hljs-keyword">and</span> <span class="hljs-string">`name`</span> = <span class="hljs-string">'social_meta_avatar'</span>) limit <span class="hljs-number">1</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">360μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/app/User.php:89</span><span title="Connection"
+                class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;63</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;social_meta_avatar</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Hints <i
+                        class="phpdebugbar-fa phpdebugbar-fa-question-circle phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item">Use <code>SELECT *</code> only if you need all
+                          columns from table</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><code>LIMIT</code> without <code>ORDER BY</code>
+                          causes non-deterministic results, depending on the query execution plan</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">13.</span>&nbsp;/app/User.php<span
+                            class="phpdebugbar-text-muted">:89</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">14.</span>&nbsp;/app/User.php<span
+                            class="phpdebugbar-text-muted">:187</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">15.</span>&nbsp;view::Layout::admin.parts.header<span
+                            class="phpdebugbar-text-muted">:130</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php<span
+                            class="phpdebugbar-text-muted">:57</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">18.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-aggregate">count</span>(<span class="hljs-string">`id`</span>) <span class="hljs-keyword">as</span> aggregate <span class="hljs-keyword">from</span> <span class="hljs-string">`bravo_booking_payments`</span> <span class="hljs-keyword">where</span> <span class="hljs-string">`object_model`</span> = <span class="hljs-string">'wallet_deposit'</span> <span class="hljs-keyword">and</span> <span class="hljs-string">`status`</span> = <span class="hljs-string">'processing'</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">920μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/modules/User/Models/Wallet/DepositPayment.php:15</span><span
+                title="Connection" class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;wallet_deposit</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;processing</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">15.</span>&nbsp;/modules/User/Models/Wallet/DepositPayment.php<span
+                            class="phpdebugbar-text-muted">:15</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">16.</span>&nbsp;/modules/Report/ModuleProvider.php<span
+                            class="phpdebugbar-text-muted">:18</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;view::Layout::admin.parts.sidebar<span
+                            class="phpdebugbar-text-muted">:80</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php<span
+                            class="phpdebugbar-text-muted">:57</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">20.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-aggregate">count</span>(<span class="hljs-string">`id`</span>) <span class="hljs-keyword">as</span> aggregate <span class="hljs-keyword">from</span> <span class="hljs-string">`users`</span> <span class="hljs-keyword">where</span> <span class="hljs-string">`verify_submit_status`</span> <span class="hljs-keyword">in</span> (<span class="hljs-string">'new'</span>, <span class="hljs-string">'partial'</span>) <span class="hljs-keyword">and</span> <span class="hljs-string">`users`</span>.<span class="hljs-string">`deleted_at`</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">null</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">440μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/app/User.php:395</span><span title="Connection"
+                class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;new</li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">1.</span>&nbsp;partial</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">15.</span>&nbsp;/app/User.php<span
+                            class="phpdebugbar-text-muted">:395</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">16.</span>&nbsp;/modules/User/ModuleProvider.php<span
+                            class="phpdebugbar-text-muted">:29</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;view::Layout::admin.parts.sidebar<span
+                            class="phpdebugbar-text-muted">:80</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php<span
+                            class="phpdebugbar-text-muted">:57</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">20.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-aggregate">count</span>(*) <span class="hljs-keyword">as</span> aggregate <span class="hljs-keyword">from</span> <span class="hljs-string">`user_upgrade_request`</span> <span class="hljs-keyword">where</span> <span class="hljs-string">`status`</span> = <span class="hljs-string">'pending'</span> <span class="hljs-keyword">and</span> <span class="hljs-string">`user_upgrade_request`</span>.<span class="hljs-string">`deleted_at`</span> <span class="hljs-keyword">is</span> <span class="hljs-keyword">null</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">480μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/modules/User/ModuleProvider.php:30</span><span title="Connection"
+                class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;pending</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">15.</span>&nbsp;/modules/User/ModuleProvider.php<span
+                            class="phpdebugbar-text-muted">:30</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">16.</span>&nbsp;view::Layout::admin.parts.sidebar<span
+                            class="phpdebugbar-text-muted">:80</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">18.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php<span
+                            class="phpdebugbar-text-muted">:57</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">20.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:122</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+            <li class="phpdebugbar-widgets-list-item" connection="bookinp7_bookingfleet" style="cursor: pointer;"><code
+                class="phpdebugbar-widgets-sql"><span class="hljs-operator"><span class="hljs-keyword">select</span> <span class="hljs-aggregate">count</span>(<span class="hljs-string">`id`</span>) <span class="hljs-keyword">as</span> aggregate <span class="hljs-keyword">from</span> <span class="hljs-string">`bravo_payouts`</span> <span class="hljs-keyword">where</span> <span class="hljs-string">`status`</span> = <span class="hljs-string">'initial'</span></span></code><span
+                title="Duration" class="phpdebugbar-widgets-duration">590μs</span><span title="Prepared statement ID"
+                class="phpdebugbar-widgets-stmt-id">/modules/Vendor/Models/VendorPayout.php:63</span><span
+                title="Connection" class="phpdebugbar-widgets-database">bookinp7_bookingfleet</span>
+              <table class="phpdebugbar-widgets-params">
+                <tbody>
+                  <tr>
+                    <th colspan="2">Metadata</th>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Bindings <i
+                        class="phpdebugbar-fa phpdebugbar-fa-thumb-tack phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">0.</span>&nbsp;initial</li>
+                      </ul>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="phpdebugbar-widgets-name">Backtrace <i
+                        class="phpdebugbar-fa phpdebugbar-fa-list-ul phpdebugbar-text-muted"></i></td>
+                    <td class="phpdebugbar-widgets-value">
+                      <ul class="phpdebugbar-widgets-table-list">
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">15.</span>&nbsp;/modules/Vendor/Models/VendorPayout.php<span
+                            class="phpdebugbar-text-muted">:63</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">16.</span>&nbsp;/modules/Vendor/ModuleProvider.php<span
+                            class="phpdebugbar-text-muted">:26</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">17.</span>&nbsp;view::Layout::admin.parts.sidebar<span
+                            class="phpdebugbar-text-muted">:80</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">19.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php<span
+                            class="phpdebugbar-text-muted">:57</span></li>
+                        <li class="phpdebugbar-widgets-table-list-item"><span
+                            class="phpdebugbar-text-muted">20.</span>&nbsp;/vendor/laravel/framework/src/Illuminate/View/View.php<span
+                            class="phpdebugbar-text-muted">:139</span></li>
+                      </ul>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="phpdebugbar-panel">
+        <dl class="phpdebugbar-widgets-kvlist phpdebugbar-widgets-htmlvarlist">
+          <dt class="phpdebugbar-widgets-key"><span
+              title="Modules\Core\Models\NotificationPush">Modules\Core\Models\NotificationPush</span></dt>
+          <dd class="phpdebugbar-widgets-value">5</dd>
+          <dt class="phpdebugbar-widgets-key"><span
+              title="Modules\Tour\Models\TourCategory">Modules\Tour\Models\TourCategory</span></dt>
+          <dd class="phpdebugbar-widgets-value">5</dd>
+          <dt class="phpdebugbar-widgets-key"><span
+              title="Spatie\Permission\Models\Role">Spatie\Permission\Models\Role</span></dt>
+          <dd class="phpdebugbar-widgets-value">1</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="App\User">App\User</span></dt>
+          <dd class="phpdebugbar-widgets-value">1</dd>
+        </dl>
+      </div>
+      <div class="phpdebugbar-panel">
+        <div class="phpdebugbar-widgets-mails">
+          <ul class="phpdebugbar-widgets-list"></ul>
+        </div>
+      </div>
+      <div class="phpdebugbar-panel">
+        <dl class="phpdebugbar-widgets-kvlist phpdebugbar-widgets-varlist">
+          <dt class="phpdebugbar-widgets-key"><span title="web">web</span></dt>
+          <dd class="phpdebugbar-widgets-value">array:2 [
+            "name" =&gt; "frontend@gmail.com"
+            "user" =&gt; array:38 [
+            "id" =&gt; 63
+            "name" =&gt; "Fron...</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="api">api</span></dt>
+          <dd class="phpdebugbar-widgets-value">null</dd>
+        </dl>
+      </div>
+      <div class="phpdebugbar-panel">
+        <div class="phpdebugbar-widgets-messages">
+          <ul class="phpdebugbar-widgets-list"></ul>
+          <div class="phpdebugbar-widgets-toolbar"><i class="phpdebugbar-fa phpdebugbar-fa-search"></i><input
+              type="text"></div>
+        </div>
+      </div>
+      <div class="phpdebugbar-panel">
+        <dl class="phpdebugbar-widgets-kvlist phpdebugbar-widgets-varlist">
+          <dt class="phpdebugbar-widgets-key"><span title="_token">_token</span></dt>
+          <dd class="phpdebugbar-widgets-value">NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ</dd>
+          <dt class="phpdebugbar-widgets-key"><span
+              title="login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d">login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d</span>
+          </dt>
+          <dd class="phpdebugbar-widgets-value">63</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="_previous">_previous</span></dt>
+          <dd class="phpdebugbar-widgets-value">array:1 [
+            "url" =&gt; "https://bookingfleet.com/BookingFleet/public/admin/module/tour/category/edit/1...</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="_flash">_flash</span></dt>
+          <dd class="phpdebugbar-widgets-value">array:2 [
+            "old" =&gt; []
+            "new" =&gt; []
+            ]</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="PHPDEBUGBAR_STACK_DATA">PHPDEBUGBAR_STACK_DATA</span></dt>
+          <dd class="phpdebugbar-widgets-value">[]</dd>
+        </dl>
+      </div>
+      <div class="phpdebugbar-panel">
+        <dl class="phpdebugbar-widgets-kvlist phpdebugbar-widgets-htmlvarlist">
+          <dt class="phpdebugbar-widgets-key"><span title="path_info">path_info</span></dt>
+          <dd class="phpdebugbar-widgets-value">/admin/module/tour/category/edit/1</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="status_code">status_code</span></dt>
+          <dd class="phpdebugbar-widgets-value">
+            <pre class="sf-dump" id="sf-dump-1658178350" data-indent-pad="  "><span class="sf-dump-num">200</span>
+</pre>
+            <script>Sfdump("sf-dump-1658178350", { "maxDepth": 0 })</script>
+          </dd>
+          <dt class="phpdebugbar-widgets-key"><span title="status_text">status_text</span></dt>
+          <dd class="phpdebugbar-widgets-value">OK</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="format">format</span></dt>
+          <dd class="phpdebugbar-widgets-value">html</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="content_type">content_type</span></dt>
+          <dd class="phpdebugbar-widgets-value">text/html; charset=UTF-8</dd>
+          <dt class="phpdebugbar-widgets-key"><span title="request_query">request_query</span></dt>
+          <dd class="phpdebugbar-widgets-value">
+            <pre class="sf-dump" id="sf-dump-2017246878" data-indent-pad="  ">[]
+</pre>
+            <script>Sfdump("sf-dump-2017246878", { "maxDepth": 0 })</script>
+          </dd>
+          <dt class="phpdebugbar-widgets-key"><span title="request_request">request_request</span></dt>
+          <dd class="phpdebugbar-widgets-value">
+            <pre class="sf-dump" id="sf-dump-997386157" data-indent-pad="  ">[]
+</pre>
+            <script>Sfdump("sf-dump-997386157", { "maxDepth": 0 })</script>
+          </dd>
+          <dt class="phpdebugbar-widgets-key"><span title="request_headers">request_headers</span></dt>
+          <dd class="phpdebugbar-widgets-value">
+            <pre class="sf-dump" id="sf-dump-1923015910" data-indent-pad="  " tabindex="0"><div class="sf-dump-search-wrapper sf-dump-search-hidden"> <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0</span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"></path></svg> </button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"></path></svg> </button> </div><span class="sf-dump-note">array:18</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▼</span></a><samp data-depth="1" class="sf-dump-expanded">
+  "<span class="sf-dump-key">accept</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="135 characters">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</span>"
+  </samp>]
+  "<span class="sf-dump-key">accept-encoding</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="17 characters">gzip, deflate, br</span>"
+  </samp>]
+  "<span class="sf-dump-key">accept-language</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="14 characters">en-US,en;q=0.9</span>"
+  </samp>]
+  "<span class="sf-dump-key">content-length</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str">0</span>"
+  </samp>]
+  "<span class="sf-dump-key">cookie</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str sf-dump-str-collapse" title="1507 characters"><span class="sf-dump-str-collapse">booking_cookie_agreement_enable=eyJpdiI6IkRiQXZqRVJWTVo1bUlaMi9yOGJ0MHc9PSIsInZhbHVlIjoiZUhnL0pSZlFaaHpqdnVkTGJlR1BOdDhyQ1VjeDZxOXZzWDlieUpxUXRjQW5XYmJNSkFkNzhCRnNsaHE4SUlJbSIsIm1hYyI6IjYyOWU5YmI1NjE0YTg4OGE1NTVmZWI1YjM2NTA2ZDVkZjViYzA3MzNjNTVhNDkzNTZiYzY4M2U0NGQ2YTE1ZjIifQ%3D%3D; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6ImhRbzdHbi9CS2ppMlFDelhiZkJhdUE9PSIsInZhbHVlIjoiM01WWlZqSmQybkZwYkZNNGR4VGljU0IxWmZzTWlYMXd5UWVnb2ZPMmhoRzd0MWhqeTM2TGN0dnpLL0ppQ0JCYWV2cmI5SFkra1NhdXVtUjFKUU9WZ0VGU3FLNzRsZVdDMlQ2OFdFTnNybE9uRkw3b2R2NmhsMENyMUNDck1rMEwwRW1FYjBDb3VxaXVmT1huNkZ2bjZzenFaUUFFTzFGM0JyVi9UK3NCVG9jeHcwOGdSRDFaKzBXTWpjMXltTnI1T1l0U292ZU94TWhmVDZBNXFlUjk2bm41d2daWG1DNXpHSzdETm9pMklSND0iLCJtYWMiOiI5ZWMwYmFkZjM2ODQ5MTQxNjkxMjY0ZDE5NzM5ZDczNGM0MTRiZjdjODkwNWY3ZDI4MWI5OWZjMTc2ZmY5YjMwIn0%3D; XSRF-TOKEN=eyJpdiI6IjcyTmZ2YnJNMm5WeGJCNEN4QVBiSlE9PSIsInZhbHVlIjoiejU2UFdNbWp1aWJ3Z0wwMUowWWJBaGhwcVpwa2k0RGN5bWdQYjZGM0c4dDlBM2NpUzR5M1o4aW92dzUyUFVXRmRvb0hISy93bDhPV3NjYndJWUtVQW51WnVnSmF5dlJuMG0rd0RmU0hzeklKWFRrMW5KQWRpV1VPaE15OUZWU3ciLCJtYWMiOiJhMjUxNDA3NjBlMDgyMDAyMDI3YTJlMTUxN2Q4ZjQ4MjE2N2I4MGE4ZDc1NzNiZDFhOTEzYWFjMTgyNDVmZDE5In0%3D; booking_fleet_session=eyJpdiI6IjNlUUhKRjV5Vk1iT1NxcjBVaXBRWXc9PSIsInZhbHVlIjoiRFZyeEJmMU83dnZmREV4UTFYOHlzek95U2ZQN1NUSWMyazFKL3NobTUvL3ZVM05zcDRDSFFGUFRva09NR0tVUHhpdWJ5djUvUFhXSlZCQkdwRkVVUC8zRmlRRTF4dWk0OVVxNWxSL2JBNFI4R0h0bHVkandENkJLWGMzSEF2aXAiLCJtYWMiOiI3ZjljNGUzMDY4ODJiNjZlNjBhNjYzZDc3N2Q2OTM5NmExNjM2NmM4M2IwZWRhYzQ2MDA1Y2RlYzZlYWM2MzFiIn0%3D<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span><span class="sf-dump-str-expand">booking_cookie_agreement_enable=eyJpdiI6IkRiQXZqRVJWTVo1bUlaMi9yOGJ0MHc9PSIsInZhbHVlIjoiZUhnL0pSZlFaaHpqdnVkTGJlR1BOdDhyQ1VjeDZxOXZzWDlieUpxUXRjQW5XYmJNSkFkNzhC<a class="sf-dump-ref sf-dump-str-toggle" title="1347 remaining characters"> ▶</a></span></span>"
+  </samp>]
+  "<span class="sf-dump-key">host</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="16 characters">bookingfleet.com</span>"
+  </samp>]
+  "<span class="sf-dump-key">referer</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="71 characters">https://bookingfleet.com/BookingFleet/public/admin/module/tour/category</span>"
+  </samp>]
+  "<span class="sf-dump-key">user-agent</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="116 characters">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36</span>"
+  </samp>]
+  "<span class="sf-dump-key">sec-ch-ua</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="73 characters">" Not A;Brand";v="99", "Chromium";v="100", "Avast Secure Browser";v="100"</span>"
+  </samp>]
+  "<span class="sf-dump-key">sec-ch-ua-mobile</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="2 characters">?0</span>"
+  </samp>]
+  "<span class="sf-dump-key">sec-ch-ua-platform</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="9 characters">"Windows"</span>"
+  </samp>]
+  "<span class="sf-dump-key">upgrade-insecure-requests</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str">1</span>"
+  </samp>]
+  "<span class="sf-dump-key">dnt</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str">1</span>"
+  </samp>]
+  "<span class="sf-dump-key">sec-fetch-site</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="11 characters">same-origin</span>"
+  </samp>]
+  "<span class="sf-dump-key">sec-fetch-mode</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="8 characters">navigate</span>"
+  </samp>]
+  "<span class="sf-dump-key">sec-fetch-user</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="2 characters">?1</span>"
+  </samp>]
+  "<span class="sf-dump-key">sec-fetch-dest</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="8 characters">document</span>"
+  </samp>]
+  "<span class="sf-dump-key">x-https</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str">1</span>"
+  </samp>]
+</samp>]
+</pre>
+            <script>Sfdump("sf-dump-1923015910", { "maxDepth": 0 })</script>
+          </dd>
+          <dt class="phpdebugbar-widgets-key"><span title="request_server">request_server</span></dt>
+          <dd class="phpdebugbar-widgets-value">
+            <pre class="sf-dump" id="sf-dump-223837192" data-indent-pad="  " tabindex="0"><div class="sf-dump-search-wrapper sf-dump-search-hidden"> <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0</span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"></path></svg> </button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"></path></svg> </button> </div><span class="sf-dump-note">array:75</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▼</span></a><samp data-depth="1" class="sf-dump-expanded">
+  "<span class="sf-dump-key">LSPHP_ENABLE_USER_INI</span>" =&gt; "<span class="sf-dump-str" title="2 characters">on</span>"
+  "<span class="sf-dump-key">PATH</span>" =&gt; "<span class="sf-dump-str" title="28 characters">/usr/local/bin:/usr/bin:/bin</span>"
+  "<span class="sf-dump-key">TEMP</span>" =&gt; "<span class="sf-dump-str" title="4 characters">/tmp</span>"
+  "<span class="sf-dump-key">TMP</span>" =&gt; "<span class="sf-dump-str" title="4 characters">/tmp</span>"
+  "<span class="sf-dump-key">TMPDIR</span>" =&gt; "<span class="sf-dump-str" title="4 characters">/tmp</span>"
+  "<span class="sf-dump-key">PWD</span>" =&gt; "<span class="sf-dump-str">/</span>"
+  "<span class="sf-dump-key">HTTP_ACCEPT</span>" =&gt; "<span class="sf-dump-str" title="135 characters">text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9</span>"
+  "<span class="sf-dump-key">HTTP_ACCEPT_ENCODING</span>" =&gt; "<span class="sf-dump-str" title="17 characters">gzip, deflate, br</span>"
+  "<span class="sf-dump-key">HTTP_ACCEPT_LANGUAGE</span>" =&gt; "<span class="sf-dump-str" title="14 characters">en-US,en;q=0.9</span>"
+  "<span class="sf-dump-key">CONTENT_LENGTH</span>" =&gt; "<span class="sf-dump-str">0</span>"
+  "<span class="sf-dump-key">HTTP_COOKIE</span>" =&gt; "<span class="sf-dump-str sf-dump-str-collapse" title="1507 characters"><span class="sf-dump-str-collapse">booking_cookie_agreement_enable=eyJpdiI6IkRiQXZqRVJWTVo1bUlaMi9yOGJ0MHc9PSIsInZhbHVlIjoiZUhnL0pSZlFaaHpqdnVkTGJlR1BOdDhyQ1VjeDZxOXZzWDlieUpxUXRjQW5XYmJNSkFkNzhCRnNsaHE4SUlJbSIsIm1hYyI6IjYyOWU5YmI1NjE0YTg4OGE1NTVmZWI1YjM2NTA2ZDVkZjViYzA3MzNjNTVhNDkzNTZiYzY4M2U0NGQ2YTE1ZjIifQ%3D%3D; remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d=eyJpdiI6ImhRbzdHbi9CS2ppMlFDelhiZkJhdUE9PSIsInZhbHVlIjoiM01WWlZqSmQybkZwYkZNNGR4VGljU0IxWmZzTWlYMXd5UWVnb2ZPMmhoRzd0MWhqeTM2TGN0dnpLL0ppQ0JCYWV2cmI5SFkra1NhdXVtUjFKUU9WZ0VGU3FLNzRsZVdDMlQ2OFdFTnNybE9uRkw3b2R2NmhsMENyMUNDck1rMEwwRW1FYjBDb3VxaXVmT1huNkZ2bjZzenFaUUFFTzFGM0JyVi9UK3NCVG9jeHcwOGdSRDFaKzBXTWpjMXltTnI1T1l0U292ZU94TWhmVDZBNXFlUjk2bm41d2daWG1DNXpHSzdETm9pMklSND0iLCJtYWMiOiI5ZWMwYmFkZjM2ODQ5MTQxNjkxMjY0ZDE5NzM5ZDczNGM0MTRiZjdjODkwNWY3ZDI4MWI5OWZjMTc2ZmY5YjMwIn0%3D; XSRF-TOKEN=eyJpdiI6IjcyTmZ2YnJNMm5WeGJCNEN4QVBiSlE9PSIsInZhbHVlIjoiejU2UFdNbWp1aWJ3Z0wwMUowWWJBaGhwcVpwa2k0RGN5bWdQYjZGM0c4dDlBM2NpUzR5M1o4aW92dzUyUFVXRmRvb0hISy93bDhPV3NjYndJWUtVQW51WnVnSmF5dlJuMG0rd0RmU0hzeklKWFRrMW5KQWRpV1VPaE15OUZWU3ciLCJtYWMiOiJhMjUxNDA3NjBlMDgyMDAyMDI3YTJlMTUxN2Q4ZjQ4MjE2N2I4MGE4ZDc1NzNiZDFhOTEzYWFjMTgyNDVmZDE5In0%3D; booking_fleet_session=eyJpdiI6IjNlUUhKRjV5Vk1iT1NxcjBVaXBRWXc9PSIsInZhbHVlIjoiRFZyeEJmMU83dnZmREV4UTFYOHlzek95U2ZQN1NUSWMyazFKL3NobTUvL3ZVM05zcDRDSFFGUFRva09NR0tVUHhpdWJ5djUvUFhXSlZCQkdwRkVVUC8zRmlRRTF4dWk0OVVxNWxSL2JBNFI4R0h0bHVkandENkJLWGMzSEF2aXAiLCJtYWMiOiI3ZjljNGUzMDY4ODJiNjZlNjBhNjYzZDc3N2Q2OTM5NmExNjM2NmM4M2IwZWRhYzQ2MDA1Y2RlYzZlYWM2MzFiIn0%3D<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span><span class="sf-dump-str-expand">booking_cookie_agreement_enable=eyJpdiI6IkRiQXZqRVJWTVo1bUlaMi9yOGJ0MHc9PSIsInZhbHVlIjoiZUhnL0pSZlFaaHpqdnVkTGJlR1BOdDhyQ1VjeDZxOXZzWDlieUpxUXRjQW5XYmJNSkFkNzhC<a class="sf-dump-ref sf-dump-str-toggle" title="1347 remaining characters"> ▶</a></span></span>"
+  "<span class="sf-dump-key">HTTP_HOST</span>" =&gt; "<span class="sf-dump-str" title="16 characters">bookingfleet.com</span>"
+  "<span class="sf-dump-key">HTTP_REFERER</span>" =&gt; "<span class="sf-dump-str" title="71 characters">https://bookingfleet.com/BookingFleet/public/admin/module/tour/category</span>"
+  "<span class="sf-dump-key">HTTP_USER_AGENT</span>" =&gt; "<span class="sf-dump-str" title="116 characters">Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.127 Safari/537.36</span>"
+  "<span class="sf-dump-key">HTTP_SEC_CH_UA</span>" =&gt; "<span class="sf-dump-str" title="73 characters">" Not A;Brand";v="99", "Chromium";v="100", "Avast Secure Browser";v="100"</span>"
+  "<span class="sf-dump-key">HTTP_SEC_CH_UA_MOBILE</span>" =&gt; "<span class="sf-dump-str" title="2 characters">?0</span>"
+  "<span class="sf-dump-key">HTTP_SEC_CH_UA_PLATFORM</span>" =&gt; "<span class="sf-dump-str" title="9 characters">"Windows"</span>"
+  "<span class="sf-dump-key">HTTP_UPGRADE_INSECURE_REQUESTS</span>" =&gt; "<span class="sf-dump-str">1</span>"
+  "<span class="sf-dump-key">HTTP_DNT</span>" =&gt; "<span class="sf-dump-str">1</span>"
+  "<span class="sf-dump-key">HTTP_SEC_FETCH_SITE</span>" =&gt; "<span class="sf-dump-str" title="11 characters">same-origin</span>"
+  "<span class="sf-dump-key">HTTP_SEC_FETCH_MODE</span>" =&gt; "<span class="sf-dump-str" title="8 characters">navigate</span>"
+  "<span class="sf-dump-key">HTTP_SEC_FETCH_USER</span>" =&gt; "<span class="sf-dump-str" title="2 characters">?1</span>"
+  "<span class="sf-dump-key">HTTP_SEC_FETCH_DEST</span>" =&gt; "<span class="sf-dump-str" title="8 characters">document</span>"
+  "<span class="sf-dump-key">HTTP_X_HTTPS</span>" =&gt; "<span class="sf-dump-str">1</span>"
+  "<span class="sf-dump-key">REDIRECT_UNIQUE_ID</span>" =&gt; "<span class="sf-dump-str" title="27 characters">YpngrBIusCUC_dvQiMKXxAAAmws</span>"
+  "<span class="sf-dump-key">REDIRECT_QS_ConnectionId</span>" =&gt; "<span class="sf-dump-str" title="24 characters">165425169233207291384695</span>"
+  "<span class="sf-dump-key">REDIRECT_SCRIPT_URL</span>" =&gt; "<span class="sf-dump-str" title="54 characters">/BookingFleet/public/admin/module/tour/category/edit/1</span>"
+  "<span class="sf-dump-key">REDIRECT_SCRIPT_URI</span>" =&gt; "<span class="sf-dump-str" title="78 characters">https://bookingfleet.com/BookingFleet/public/admin/module/tour/category/edit/1</span>"
+  "<span class="sf-dump-key">REDIRECT_HTTPS</span>" =&gt; "<span class="sf-dump-str" title="2 characters">on</span>"
+  "<span class="sf-dump-key">REDIRECT_SSL_TLS_SNI</span>" =&gt; "<span class="sf-dump-str" title="16 characters">bookingfleet.com</span>"
+  "<span class="sf-dump-key">REDIRECT_HTTP2</span>" =&gt; "<span class="sf-dump-str" title="2 characters">on</span>"
+  "<span class="sf-dump-key">REDIRECT_H2PUSH</span>" =&gt; "<span class="sf-dump-str" title="2 characters">on</span>"
+  "<span class="sf-dump-key">REDIRECT_H2_PUSH</span>" =&gt; "<span class="sf-dump-str" title="2 characters">on</span>"
+  "<span class="sf-dump-key">REDIRECT_H2_PUSHED</span>" =&gt; ""
+  "<span class="sf-dump-key">REDIRECT_H2_PUSHED_ON</span>" =&gt; ""
+  "<span class="sf-dump-key">REDIRECT_H2_STREAM_ID</span>" =&gt; "<span class="sf-dump-str">1</span>"
+  "<span class="sf-dump-key">REDIRECT_H2_STREAM_TAG</span>" =&gt; "<span class="sf-dump-str" title="5 characters">158-1</span>"
+  "<span class="sf-dump-key">REDIRECT_STATUS</span>" =&gt; "<span class="sf-dump-str" title="3 characters">200</span>"
+  "<span class="sf-dump-key">UNIQUE_ID</span>" =&gt; "<span class="sf-dump-str" title="27 characters">YpngrBIusCUC_dvQiMKXxAAAmws</span>"
+  "<span class="sf-dump-key">QS_ConnectionId</span>" =&gt; "<span class="sf-dump-str" title="24 characters">165425169233207291384695</span>"
+  "<span class="sf-dump-key">SCRIPT_URL</span>" =&gt; "<span class="sf-dump-str" title="54 characters">/BookingFleet/public/admin/module/tour/category/edit/1</span>"
+  "<span class="sf-dump-key">SCRIPT_URI</span>" =&gt; "<span class="sf-dump-str" title="78 characters">https://bookingfleet.com/BookingFleet/public/admin/module/tour/category/edit/1</span>"
+  "<span class="sf-dump-key">HTTPS</span>" =&gt; "<span class="sf-dump-str" title="2 characters">on</span>"
+  "<span class="sf-dump-key">SSL_TLS_SNI</span>" =&gt; "<span class="sf-dump-str" title="16 characters">bookingfleet.com</span>"
+  "<span class="sf-dump-key">HTTP2</span>" =&gt; "<span class="sf-dump-str" title="2 characters">on</span>"
+  "<span class="sf-dump-key">H2PUSH</span>" =&gt; "<span class="sf-dump-str" title="2 characters">on</span>"
+  "<span class="sf-dump-key">H2_PUSH</span>" =&gt; "<span class="sf-dump-str" title="2 characters">on</span>"
+  "<span class="sf-dump-key">H2_PUSHED</span>" =&gt; ""
+  "<span class="sf-dump-key">H2_PUSHED_ON</span>" =&gt; ""
+  "<span class="sf-dump-key">H2_STREAM_ID</span>" =&gt; "<span class="sf-dump-str">1</span>"
+  "<span class="sf-dump-key">H2_STREAM_TAG</span>" =&gt; "<span class="sf-dump-str" title="5 characters">158-1</span>"
+  "<span class="sf-dump-key">SERVER_SIGNATURE</span>" =&gt; ""
+  "<span class="sf-dump-key">SERVER_SOFTWARE</span>" =&gt; "<span class="sf-dump-str" title="6 characters">Apache</span>"
+  "<span class="sf-dump-key">SERVER_NAME</span>" =&gt; "<span class="sf-dump-str" title="16 characters">bookingfleet.com</span>"
+  "<span class="sf-dump-key">SERVER_ADDR</span>" =&gt; "<span class="sf-dump-str" title="13 characters">50.87.253.191</span>"
+  "<span class="sf-dump-key">SERVER_PORT</span>" =&gt; "<span class="sf-dump-str" title="3 characters">443</span>"
+  "<span class="sf-dump-key">REMOTE_ADDR</span>" =&gt; "<span class="sf-dump-str" title="14 characters">111.119.183.25</span>"
+  "<span class="sf-dump-key">DOCUMENT_ROOT</span>" =&gt; "<span class="sf-dump-str" title="27 characters">/home1/bookinp7/public_html</span>"
+  "<span class="sf-dump-key">REQUEST_SCHEME</span>" =&gt; "<span class="sf-dump-str" title="5 characters">https</span>"
+  "<span class="sf-dump-key">CONTEXT_PREFIX</span>" =&gt; ""
+  "<span class="sf-dump-key">CONTEXT_DOCUMENT_ROOT</span>" =&gt; "<span class="sf-dump-str" title="27 characters">/home1/bookinp7/public_html</span>"
+  "<span class="sf-dump-key">SERVER_ADMIN</span>" =&gt; "<span class="sf-dump-str" title="26 characters">webmaster@bookingfleet.com</span>"
+  "<span class="sf-dump-key">SCRIPT_FILENAME</span>" =&gt; "<span class="sf-dump-str" title="57 characters">/home1/bookinp7/public_html/BookingFleet/public/index.php</span>"
+  "<span class="sf-dump-key">REMOTE_PORT</span>" =&gt; "<span class="sf-dump-str" title="5 characters">31631</span>"
+  "<span class="sf-dump-key">REDIRECT_URL</span>" =&gt; "<span class="sf-dump-str" title="54 characters">/BookingFleet/public/admin/module/tour/category/edit/1</span>"
+  "<span class="sf-dump-key">SERVER_PROTOCOL</span>" =&gt; "<span class="sf-dump-str" title="8 characters">HTTP/2.0</span>"
+  "<span class="sf-dump-key">REQUEST_METHOD</span>" =&gt; "<span class="sf-dump-str" title="3 characters">GET</span>"
+  "<span class="sf-dump-key">QUERY_STRING</span>" =&gt; ""
+  "<span class="sf-dump-key">REQUEST_URI</span>" =&gt; "<span class="sf-dump-str" title="54 characters">/BookingFleet/public/admin/module/tour/category/edit/1</span>"
+  "<span class="sf-dump-key">SCRIPT_NAME</span>" =&gt; "<span class="sf-dump-str" title="30 characters">/BookingFleet/public/index.php</span>"
+  "<span class="sf-dump-key">PHP_SELF</span>" =&gt; "<span class="sf-dump-str" title="30 characters">/BookingFleet/public/index.php</span>"
+  "<span class="sf-dump-key">REQUEST_TIME_FLOAT</span>" =&gt; <span class="sf-dump-num">1654251692.3617</span>
+  "<span class="sf-dump-key">REQUEST_TIME</span>" =&gt; <span class="sf-dump-num">1654251692</span>
+  "<span class="sf-dump-key">argv</span>" =&gt; []
+  "<span class="sf-dump-key">argc</span>" =&gt; <span class="sf-dump-num">0</span>
+</samp>]
+</pre>
+            <script>Sfdump("sf-dump-223837192", { "maxDepth": 0 })</script>
+          </dd>
+          <dt class="phpdebugbar-widgets-key"><span title="request_cookies">request_cookies</span></dt>
+          <dd class="phpdebugbar-widgets-value">
+            <pre class="sf-dump" id="sf-dump-2067662523" data-indent-pad="  " tabindex="0"><div class="sf-dump-search-wrapper sf-dump-search-hidden"> <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0</span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"></path></svg> </button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"></path></svg> </button> </div><span class="sf-dump-note">array:4</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▼</span></a><samp data-depth="1" class="sf-dump-expanded">
+  "<span class="sf-dump-key">booking_cookie_agreement_enable</span>" =&gt; "<span class="sf-dump-str">1</span>"
+  "<span class="sf-dump-key">remember_web_59ba36addc2b2f9401580f014c7f58ea4e30989d</span>" =&gt; "<span class="sf-dump-str" title="124 characters">63|I6tNZrkehGtCxyyxQvnP6CjNOpXxJq7SW7f5YtxTomG3K8CzbhBScP3ryFzB|$2y$10$CqedXktHtWDCcw5re7fGcuSH/JdQvVLNhoEAGdNxGvw3izmN3aG4G</span>"
+  "<span class="sf-dump-key">XSRF-TOKEN</span>" =&gt; "<span class="sf-dump-str" title="40 characters">NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ</span>"
+  "<span class="sf-dump-key">booking_fleet_session</span>" =&gt; "<span class="sf-dump-str" title="40 characters">AcEd3VxWihM6whWMG9XpsPCY3bJt7qUIscZEtAH9</span>"
+</samp>]
+</pre>
+            <script>Sfdump("sf-dump-2067662523", { "maxDepth": 0 })</script>
+          </dd>
+          <dt class="phpdebugbar-widgets-key"><span title="response_headers">response_headers</span></dt>
+          <dd class="phpdebugbar-widgets-value">
+            <pre class="sf-dump" id="sf-dump-1811682647" data-indent-pad="  " tabindex="0"><div class="sf-dump-search-wrapper sf-dump-search-hidden"> <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0</span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"></path></svg> </button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"></path></svg> </button> </div><span class="sf-dump-note">array:5</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▼</span></a><samp data-depth="1" class="sf-dump-expanded">
+  "<span class="sf-dump-key">content-type</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="24 characters">text/html; charset=UTF-8</span>"
+  </samp>]
+  "<span class="sf-dump-key">cache-control</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="17 characters">no-cache, private</span>"
+  </samp>]
+  "<span class="sf-dump-key">date</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str" title="29 characters">Fri, 03 Jun 2022 10:21:32 GMT</span>"
+  </samp>]
+  "<span class="sf-dump-key">set-cookie</span>" =&gt; <span class="sf-dump-note">array:2</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str sf-dump-str-collapse" title="402 characters"><span class="sf-dump-str-collapse">XSRF-TOKEN=eyJpdiI6Im40WWFOZHJSUHBhUE5Tb082QVRscUE9PSIsInZhbHVlIjoiS3o2bzRjWFJicW9EczBzVHM0anJCb1ltVUM4cTBzL1JjdlBpMTR5WU5NYUkyb1hYN2M3Wnp6Mm1DanhPMlo1dFBnQVpjcHlEK0ZhYzFpbmwxUnFKZkkremZjZFFobkNPeVh3bmc3VWZJWUJwaUpSc2VqSWpuZUd1dmRMdzRIZnMiLCJtYWMiOiJlZmU5YzlmOTZlZDgyY2RjN2E1NjI3ZGYyODhhNTI4MGEwNTQyYjI2OGM1YTUyMThkNjBiZjgzYjkwYzkzZTE4In0%3D; expires=Fri, 03-Jun-2022 12:21:32 GMT; Max-Age=7200; path=/<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span><span class="sf-dump-str-expand">XSRF-TOKEN=eyJpdiI6Im40WWFOZHJSUHBhUE5Tb082QVRscUE9PSIsInZhbHVlIjoiS3o2bzRjWFJicW9EczBzVHM0anJCb1ltVUM4cTBzL1JjdlBpMTR5WU5NYUkyb1hYN2M3Wnp6Mm1DanhPMlo1dFBnQVpjc<a class="sf-dump-ref sf-dump-str-toggle" title="242 remaining characters"> ▶</a></span></span>"
+    <span class="sf-dump-index">1</span> =&gt; "<span class="sf-dump-str sf-dump-str-collapse" title="423 characters"><span class="sf-dump-str-collapse">booking_fleet_session=eyJpdiI6IlV0Z3RsZXJpa0NucDVIWHhoKzFqeWc9PSIsInZhbHVlIjoiQnZvczEyNXlPTUxUQm1lSkJCVkx5aXo3Q05hK2s0bUNVS2d4OFA3ZjBtNmhPMGlJdm8zUEdXSVBuOHNIZWJIUGp5NzZoVjVLWE5MWU02WCtxKzJ3STFzd0c1cE5xcURabHFDSHN3ZzNZY2Y0RWJmOGtxVDJyQWdwb2V3aHVZY0giLCJtYWMiOiIwNGZhZTcxZmZhM2E3OGNmNzI5MjE3NzhiZmIwNDBmMmM5NmRmMzk4NWE1MmU2OTZiMjg0YmI3ZmI3MzA2NzA0In0%3D; expires=Fri, 03-Jun-2022 12:21:32 GMT; Max-Age=7200; path=/; httponly<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span><span class="sf-dump-str-expand">booking_fleet_session=eyJpdiI6IlV0Z3RsZXJpa0NucDVIWHhoKzFqeWc9PSIsInZhbHVlIjoiQnZvczEyNXlPTUxUQm1lSkJCVkx5aXo3Q05hK2s0bUNVS2d4OFA3ZjBtNmhPMGlJdm8zUEdXSVBuOHNIZW<a class="sf-dump-ref sf-dump-str-toggle" title="263 remaining characters"> ▶</a></span></span>"
+  </samp>]
+  "<span class="sf-dump-key">Set-Cookie</span>" =&gt; <span class="sf-dump-note">array:2</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    <span class="sf-dump-index">0</span> =&gt; "<span class="sf-dump-str sf-dump-str-collapse" title="388 characters"><span class="sf-dump-str-collapse">XSRF-TOKEN=eyJpdiI6Im40WWFOZHJSUHBhUE5Tb082QVRscUE9PSIsInZhbHVlIjoiS3o2bzRjWFJicW9EczBzVHM0anJCb1ltVUM4cTBzL1JjdlBpMTR5WU5NYUkyb1hYN2M3Wnp6Mm1DanhPMlo1dFBnQVpjcHlEK0ZhYzFpbmwxUnFKZkkremZjZFFobkNPeVh3bmc3VWZJWUJwaUpSc2VqSWpuZUd1dmRMdzRIZnMiLCJtYWMiOiJlZmU5YzlmOTZlZDgyY2RjN2E1NjI3ZGYyODhhNTI4MGEwNTQyYjI2OGM1YTUyMThkNjBiZjgzYjkwYzkzZTE4In0%3D; expires=Fri, 03-Jun-2022 12:21:32 GMT; path=/<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span><span class="sf-dump-str-expand">XSRF-TOKEN=eyJpdiI6Im40WWFOZHJSUHBhUE5Tb082QVRscUE9PSIsInZhbHVlIjoiS3o2bzRjWFJicW9EczBzVHM0anJCb1ltVUM4cTBzL1JjdlBpMTR5WU5NYUkyb1hYN2M3Wnp6Mm1DanhPMlo1dFBnQVpjc<a class="sf-dump-ref sf-dump-str-toggle" title="228 remaining characters"> ▶</a></span></span>"
+    <span class="sf-dump-index">1</span> =&gt; "<span class="sf-dump-str sf-dump-str-collapse" title="409 characters"><span class="sf-dump-str-collapse">booking_fleet_session=eyJpdiI6IlV0Z3RsZXJpa0NucDVIWHhoKzFqeWc9PSIsInZhbHVlIjoiQnZvczEyNXlPTUxUQm1lSkJCVkx5aXo3Q05hK2s0bUNVS2d4OFA3ZjBtNmhPMGlJdm8zUEdXSVBuOHNIZWJIUGp5NzZoVjVLWE5MWU02WCtxKzJ3STFzd0c1cE5xcURabHFDSHN3ZzNZY2Y0RWJmOGtxVDJyQWdwb2V3aHVZY0giLCJtYWMiOiIwNGZhZTcxZmZhM2E3OGNmNzI5MjE3NzhiZmIwNDBmMmM5NmRmMzk4NWE1MmU2OTZiMjg0YmI3ZmI3MzA2NzA0In0%3D; expires=Fri, 03-Jun-2022 12:21:32 GMT; path=/; httponly<a class="sf-dump-ref sf-dump-str-toggle" title="Collapse"> ◀</a></span><span class="sf-dump-str-expand">booking_fleet_session=eyJpdiI6IlV0Z3RsZXJpa0NucDVIWHhoKzFqeWc9PSIsInZhbHVlIjoiQnZvczEyNXlPTUxUQm1lSkJCVkx5aXo3Q05hK2s0bUNVS2d4OFA3ZjBtNmhPMGlJdm8zUEdXSVBuOHNIZW<a class="sf-dump-ref sf-dump-str-toggle" title="249 remaining characters"> ▶</a></span></span>"
+  </samp>]
+</samp>]
+</pre>
+            <script>Sfdump("sf-dump-1811682647", { "maxDepth": 0 })</script>
+          </dd>
+          <dt class="phpdebugbar-widgets-key"><span title="session_attributes">session_attributes</span></dt>
+          <dd class="phpdebugbar-widgets-value">
+            <pre class="sf-dump" id="sf-dump-729515626" data-indent-pad="  " tabindex="0"><div class="sf-dump-search-wrapper sf-dump-search-hidden"> <input type="text" class="sf-dump-search-input"> <span class="sf-dump-search-count">0 of 0</span> <button type="button" class="sf-dump-search-input-previous" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 1331l-166 165q-19 19-45 19t-45-19L896 965l-531 531q-19 19-45 19t-45-19l-166-165q-19-19-19-45.5t19-45.5l742-741q19-19 45-19t45 19l742 741q19 19 19 45.5t-19 45.5z"></path></svg> </button> <button type="button" class="sf-dump-search-input-next" tabindex="-1"> <svg viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg"><path d="M1683 808l-742 741q-19 19-45 19t-45-19L109 808q-19-19-19-45.5t19-45.5l166-165q19-19 45-19t45 19l531 531 531-531q19-19 45-19t45 19l166 165q19 19 19 45.5t-19 45.5z"></path></svg> </button> </div><span class="sf-dump-note">array:5</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▼</span></a><samp data-depth="1" class="sf-dump-expanded">
+  "<span class="sf-dump-key">_token</span>" =&gt; "<span class="sf-dump-str" title="40 characters">NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ</span>"
+  "<span class="sf-dump-key">login_web_59ba36addc2b2f9401580f014c7f58ea4e30989d</span>" =&gt; <span class="sf-dump-num">63</span>
+  "<span class="sf-dump-key">_previous</span>" =&gt; <span class="sf-dump-note">array:1</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    "<span class="sf-dump-key">url</span>" =&gt; "<span class="sf-dump-str" title="78 characters">https://bookingfleet.com/BookingFleet/public/admin/module/tour/category/edit/1</span>"
+  </samp>]
+  "<span class="sf-dump-key">_flash</span>" =&gt; <span class="sf-dump-note">array:2</span> [<a class="sf-dump-ref sf-dump-toggle" title="[Ctrl+click] Expand all children"><span>▶</span></a><samp data-depth="2" class="sf-dump-compact">
+    "<span class="sf-dump-key">old</span>" =&gt; []
+    "<span class="sf-dump-key">new</span>" =&gt; []
+  </samp>]
+  "<span class="sf-dump-key">PHPDEBUGBAR_STACK_DATA</span>" =&gt; []
+</samp>]
+</pre>
+            <script>Sfdump("sf-dump-729515626", { "maxDepth": 0 })</script>
+          </dd>
+        </dl>
+      </div>
+    </div><a class="phpdebugbar-restore-btn" style=""></a>
+  </div>
+  <div class="phpdebugbar-openhandler" style="display: none;">
+    <div class="phpdebugbar-openhandler-header">PHP DebugBar | Open<a><i
+          class="phpdebugbar-fa phpdebugbar-fa-times"></i></a></div>
+    <table>
+      <thead>
+        <tr>
+          <th width="150">Date</th>
+          <th width="55">Method</th>
+          <th>URL</th>
+          <th width="125">IP</th>
+          <th width="100">Filter data</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="phpdebugbar-openhandler-actions"><a>Load more</a><a>Show only current URL</a><a>Show all</a><a>Delete
+        all</a>
+      <form><br><b>Filter results</b><br>Method: <select name="method">
+          <option></option>
+          <option>GET</option>
+          <option>POST</option>
+          <option>PUT</option>
+          <option>DELETE</option>
+        </select><br>Uri: <input type="text" name="uri"><br>IP: <input type="text" name="ip"><br><button
+          type="submit">Search</button></form>
+    </div>
+  </div>
+  <div class="phpdebugbar-openhandler-overlay" style="display: none;"></div>
+
+  <!-- Scripts -->
+
+  <script src="../../../libs/js/pusher.min.js"></script>
+  <script src="../../../dist/admin/js/manifest.js"></script>
+  <script src="../../../dist/admin/js/vendor.js"></script>
+  <script src="../../../dist/admin/js/app.js"></script>
+  <script src="../../../libs/vue/vue.js"></script>
+  <script src="../../../libs/bootbox/bootbox.min.js"></script>
+  <script src="../../../js/phpdebugbar.js"></script>
+
+</body>
+<loom-container id="lo-companion-container">
+  <loom-shadow classname="resolved"></loom-shadow>
+</loom-container>
+<loom-container id="lo-engage-ext-container">
+  <loom-shadow classname="resolved"></loom-shadow>
+</loom-container>
+
+</html>

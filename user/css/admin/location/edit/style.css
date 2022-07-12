@@ -1,0 +1,21 @@
+.gm-style .gm-style-mtc label,
+.gm-style .gm-style-mtc div {
+    font-weight: 400
+}
+
+.gm-style .gm-style-mtc ul,
+.gm-style .gm-style-mtc li {
+    box-sizing: border-box
+}
+
+.ssQIHO-checkbox-menu-item>span>span {
+    background-color: #000;
+    display: inline-block
+}
+
+@media (forced-colors:active),
+(prefers-contrast:more) {
+    .ssQIHO-checkbox-menu-item>span>span {
+        background-color: ButtonText
+    }
+}

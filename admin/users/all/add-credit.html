@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ">
+
+    <title>Add credit - bookingfleet</title>
+
+    <link rel="icon" type="image/png"
+        href="https://bookingfleet.com/BookingFleet/public/uploads/0000/1/2021/08/13/finallogo.png">
+
+    <meta name="robots" content="noindex, nofollow">
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../../libs/font-awesome/css/font-awesome.css">
+    <link href="../../../css/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../../../css/ionicons/icofont.min.css" rel="stylesheet">
+
+    <link href="https://bookingfleet.com/BookingFleet/public/libs/flags/css/flag-icon.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://bookingfleet.com/BookingFleet/public/libs/daterange/daterangepicker.css">
+    <link href="https://bookingfleet.com/BookingFleet/public/dist/admin/css/vendors.css" rel="stylesheet">
+    <link href="https://bookingfleet.com/BookingFleet/public/dist/admin/css/app.css" rel="stylesheet">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.1/tinymce.min.js"></script>
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/tinymce/js/tinymce/tinymce.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" property="stylesheet"
+        href="https://bookingfleet.com/BookingFleet/public/_debugbar/assets/stylesheets?v=1625121810&amp;theme=auto">
+    <script type="text/javascript"
+        src="https://bookingfleet.com/BookingFleet/public/_debugbar/assets/javascript?v=1625121810"></script>
+    <script type="text/javascript">jQuery.noConflict(true);</script>
+
+    <script src="../../../js/app.js"></script>
+    <link rel="stylesheet" href="../../../css/phpdebugbar.css">
+
+    <link rel="stylesheet" href="../../../css/font-face.css">
+    <link rel="stylesheet" type="text/css" id="u0"
+        href="https://bookingfleet.com/BookingFleet/public/libs/tinymce/js/tinymce/skins/ui/oxide/skin.min.css">
+</head>
+
+<body class="enable_multi_lang">
+    <div id="app">
+        <div class="main-header d-flex">
+            <div class="header-logo flex-shrink-0">
+                <h3 class="logo-text"><a href="https://bookingfleet.com/BookingFleet/public/admin">Booking Core <span
+                            class="app-version">2.0.0</span></a></h3>
+            </div>
+            <div class="header-widgets d-flex flex-grow-1">
+                <div class="widgets-left d-flex flex-grow-1 align-items-center">
+                    <div class="header-widget">
+                        <span class="btn-toggle-admin-menu btn btn-sm btn-link"><i class="icon ion-ios-menu"></i></span>
+                    </div>
+                    <div class="header-widget search-widget">
+
+                        <a href="https://bookingfleet.com/BookingFleet/public" class="btn btn-link" target="_blank"><i
+                                class="fa fa-eye"></i> Home
+                        </a>
+                    </div>
+                </div>
+                <div class="widgets-right flex-shrink-0 d-flex">
+                    <div class="dropdown header-widget widget-user pt-2 dropdown-notifications flex-shrink-0"
+                        style="min-width: 0">
+                        <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa fa-lg fa-bell m-1 p-1"></i>
+                            <span class="badge badge-danger notification-icon">1156</span>
+                        </div>
+                        <div class="dropdown-menu overflow-auto notify-items dropdown-container dropdown-menu-right dropdown-large"
+                            aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-toolbar">
+                                <div class="dropdown-toolbar-actions">
+                                    <a href="#" class="markAllAsRead">Mark all as read</a>
+                                </div>
+                                <h3 class="dropdown-toolbar-title">Notifications (<span class="notif-count">1156</span>)
+                                </h3>
+                            </div>
+                            <ul class="dropdown-list-items p-0">
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="bookingFleet">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="66352cb0-240a-4c8a-badf-5131b60d27f4"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel?id=77">dawn
+                                                was updated to Publish by bookingFleet</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 10 days 16 hours 4 minutes 38 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="bookingFleet">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="1138f283-e42c-43bb-a79b-f6c103c27be4"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/edit/77">bookingFleet
+                                                has created hotel dawn</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 10 days 16 hours 39 minutes 40 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="ds">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="0d4b882b-9545-43cb-ad9b-e3da9b0bcadb"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">ds
+                                                has requested to become a vendor</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 15 days 43 minutes 37 seconds </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="waqas khursheed">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="075bd3ee-6174-4d61-bf92-c817a4041909"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas
+                                                khursheed has created new Booking</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 22 days 22 hours 28 minutes 7 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="waqas khursheed">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="f0118f76-5ff5-4c3e-b628-2ae1453be2d2"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">waqas
+                                                khursheed has created new Booking</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 22 days 22 hours 32 minutes 18 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="dropdown-footer text-center">
+                                <a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown header-widget widget-user flex-shrink-0">
+                        <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="user-avatar flex-shrink-0">
+                                <div class="avatar avatar-cover"
+                                    style="background-image: url('https://bookingfleet.com/BookingFleet/public/images/avatar.png')">
+                                </div>
+                            </span>
+                            <div class="user-info flex-grow-1">
+                                <div class="user-name">Front end Developer</div>
+                                <div class="user-role">Administrator</div>
+                            </div>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item"
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/edit/63">Edit
+                                Profile</a>
+                            <a class="dropdown-item"
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/password/63">Change
+                                Password</a>
+                            <a class="dropdown-item" href="#"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                                    class="fa fa-sign-out"></i> Logout
+                            </a>
+                        </div>
+                        <form id="logout-form" action="https://bookingfleet.com/BookingFleet/public/logout"
+                            method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="NMMcZ9jURdt7vlrQqjL25DIZLdVe4XoEXUDdewwZ">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-sidebar">
+            <ul class="main-menu">
+                <li class=" admin"><a href="https://bookingfleet.com/BookingFleet/public/admin">
+                        <span class="icon text-center"><i class="icon ion-ios-desktop"></i></span>
+                        Dashboard
+                    </a>
+                </li>
+                <li class=" has-children admin_module_news"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/news">
+                        <span class="icon text-center"><i class="ion-md-bookmarks"></i></span>
+                        News
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_news"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/news">
+                                All News</a>
+                        </li>
+                        <li class=" has-children admin_module_news"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/news/create">
+                                Add News</a>
+                        </li>
+                        <li class=" has-children admin_module_news"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/news/category">
+                                Categories</a>
+                        </li>
+                        <li class=" has-children admin_module_news"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/news/tag">
+                                Tags</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" admin_module_page"><a href="https://bookingfleet.com/BookingFleet/public/admin/module/page">
+                        <span class="icon text-center"><i class="icon ion-ios-bookmarks"></i></span>
+                        Page
+                    </a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/location">
+                        <span class="icon text-center"><i class="icon ion-md-compass"></i></span>
+                        Location
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/location">
+                                <i class="icon ion-md-compass"></i>
+                                All Location</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/location/category">
+                                <i class="icon ion-md-compass"></i>
+                                All Category</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_hotel"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel">
+                        <span class="icon text-center"><i class="fa fa-building-o"></i></span>
+                        Hotel
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel">
+                                All Hotels</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/create">
+                                Add new Hotel</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/room/attribute">
+                                Room Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_hotel"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_tour"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/tour">
+                        <span class="icon text-center"><i class="icon ion-md-umbrella"></i></span>
+                        Tour
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour">
+                                All Tours</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/create">
+                                Add Tour</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/category">
+                                Categories</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/availability">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/booking">
+                                Booking Calendar</a>
+                        </li>
+                        <li class=" has-children admin_module_tour"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_space"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/space">
+                        <span class="icon text-center"><i class="ion ion-md-home"></i></span>
+                        Space
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space">
+                                All Spaces</a>
+                        </li>
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space/create">
+                                Add new Space</a>
+                        </li>
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space/availability">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children admin_module_space"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/space/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_car"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                        <span class="icon text-center"><i class="ion-logo-model-s"></i></span>
+                        Car
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                                All Cars</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/create">
+                                Add new Car</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/availability">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children admin_module_car"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/car/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" admin_module_review"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/review">
+                        <span class="icon text-center"><i class="icon ion-ios-text"></i></span>
+                        Reviews
+                    </a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/event">
+                        <span class="icon text-center"><i class="ion-ios-calendar"></i></span>
+                        Event
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event">
+                                All Events</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event/create">
+                                Add new Event</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event/attribute">
+                                Attributes</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event/availability">
+                                Availability</a>
+                        </li>
+                        <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/event/recovery">
+                                Recovery</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" https:__bookingfleet.com_BookingFleet_public_admin_module_media"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/media">
+                        <span class="icon text-center"><i class="fa fa-picture-o"></i></span>
+                        Media
+                    </a>
+                </li>
+                <li class=" admin_module_core_menu"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/core/menu">
+                        <span class="icon text-center"><i class="icon ion-ios-apps"></i></span>
+                        Menu
+                    </a>
+                </li>
+                <li class=" admin_module_core_emailsetting"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/core/emailsetting">
+                        <span class="icon text-center"><i class="fa fa-envelope"></i></span>
+                        Email Setting
+                    </a>
+                </li>
+                <li class=" admin_module_template"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/template">
+                        <span class="icon text-center"><i class="icon ion-logo-html5"></i></span>
+                        Templates
+                    </a>
+                </li>
+                <li class=" admin_module_vendor_payout"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/vendor/payout">
+                        <span class="icon text-center"><i class="icon ion-md-card"></i></span>
+                        Payouts
+                    </a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/general">
+                        <span class="icon text-center"><i class="icon ion-ios-cog"></i></span>
+                        Setting
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/general">
+                                General Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/car">
+                                Car Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/event">
+                                Event Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/hotel">
+                                Hotel Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/space">
+                                Space Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/tour">
+                                Tour Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/news">
+                                News Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/booking">
+                                Booking Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/enquiry">
+                                Enquiry Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/user">
+                                User Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/wallet">
+                                Wallet Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/vendor">
+                                Vendor Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/payment">
+                                Payment Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/style">
+                                Style Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/advance">
+                                Advance Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/email">
+                                Email Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/sms">
+                                Sms Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/api">
+                                Mobile App Settings</a>
+                        </li>
+                        <li class=" has-children admin_module_core_settings_index_general"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/settings/index/review">
+                                Review Advance Settings</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="active has-children admin_module_core_tools"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/core/tools">
+                        <span class="icon text-center"><i class="icon ion-ios-hammer"></i></span>
+                        Tools
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/language">
+                                <i class="icon ion-ios-globe"></i>
+                                Languages</a>
+                        </li>
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/language/translations">
+                                <i class="icon ion-ios-globe"></i>
+                                Translation Manager</a>
+                        </li>
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/logs">
+                                <i class="icon ion-ios-nuclear"></i>
+                                System Logs</a>
+                        </li>
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/updater">
+                                <i class="icon ion-md-download"></i>
+                                Updater</a>
+                        </li>
+                        <li class="active has-children admin_module_core_tools"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/core/plugins">
+                                <i class="icon ion-md-color-wand"></i>
+                                Plugins</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_user"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/user">
+                        <span class="icon text-center"><i class="icon ion-ios-contacts"></i></span>
+                        Users <span class="badge badge-warning">1</span>
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user">
+                                <i class="fa fa-user"></i>
+                                All Users</a>
+                        </li>
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/role">
+                                <i class="fa fa-lock"></i>
+                                Role Manager</a>
+                        </li>
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/subscriber">
+                                Subscribers</a>
+                        </li>
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">
+                                Upgrade Request <span class="badge badge-warning">4</span></a>
+                        </li>
+                        <li class=" has-children admin_module_user"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/verification">
+                                Verification Request <span class="badge badge-warning">1</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class=" has-children admin_module_report_booking"><a
+                        href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">
+                        <span class="icon text-center"><i class="icon ion-ios-pie"></i></span>
+                        Reports <span class="badge badge-warning">2</span>
+                    </a>
+                    <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+                    <ul class="children">
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/report/enquiry">
+                                <i class="icon ion-ios-pricetags"></i>
+                                Enquiry Reports</a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/report/booking">
+                                <i class="icon ion-ios-pricetags"></i>
+                                Booking Reports</a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/report/statistic">
+                                <i class="icon ion ion-md-podium"></i>
+                                Booking Statistic</a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/contact">
+                                <i class="icon ion ion-md-mail"></i>
+                                Contact Submissions</a>
+                        </li>
+                        <li class=" has-children admin_module_report_booking"><a
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/wallet/report">
+                                <i class="fa fa-money"></i>
+                                Credit Purchase Report <span class="badge badge-warning">2</span></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <nav class="main-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="https://bookingfleet.com/BookingFleet/public/admin"><i class="fa fa-home"></i> Dashboard</a></li>
+    
+                                <li class="breadcrumb-item ">
+                                                <a href="https://bookingfleet.com/BookingFleet/public/admin/module/user">Users</a>
+                                        </li>
+                                <li class="breadcrumb-item ">
+                                                <a href="#">Add credit for Front end Developer</a>
+                                        </li>
+                
+        </ol>
+    </nav>
+                <form action="https://bookingfleet.com/BookingFleet/public/admin/module/user/wallet/add-credit/63" method="post">
+            <input type="hidden" name="_token" value="jCFiUvbqPK0BmYLl9rhanNMePk01bfbb6FSysSMG">        <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        <div class="d-flex justify-content-between mb20">
+                            <div class="">
+                                <h1 class="title-bar">Add credit for Front end Developer</h1>
+                            </div>
+                        </div>
+                                            <div class="panel">
+                            <div class="panel-title"><strong>Add credit</strong></div>
+                            <div class="panel-body">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label>Balance</label>
+                                            <input type="number" readonly="" value="0" step="0.1" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Credit Amount</label>
+                                            <input type="number" name="credit_amount" value="0" step="0.1" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel-footer">
+                                <button class="btn btn-primary" type="submit">Add now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    
+            <footer class="main-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 copy-right">
+                            2022 © Booking Core by <a href="https://www.bookingcore.org" target="_blank">BookingCore Team</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="https://www.bookingcore.org" target="_blank">About Us</a>
+                                <a href="https://m.me/bookingcore" target="_blank">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <div class="backdrop-sidebar-mobile"></div>
+    </div>
+
+    <div id="cdn-browser-modal" class="modal fade">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div id="cdn-browser" class="cdn-browser d-flex flex-column">
+                    <div class="files-nav flex-shrink-0">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-left d-flex align-items-center">
+                                <div class="filter-item"><input type="text" placeholder="Search file name...."
+                                        class="form-control">
+                                </div>
+                                <div class="filter-item"><button class="btn btn-default"><i class="fa fa-search"></i>
+                                        Search</button></div>
+                                <div class="filter-item"><small><i>Total: 0 files</i></small></div>
+                            </div>
+                            <div class="col-right"><i class="fa-spin fa fa-spinner icon-loading active"
+                                    style="display: none;"></i>
+                                <button class="btn btn-success btn-pick-files"><span><i class="fa fa-upload"></i>
+                                        Upload</span> <input multiple="multiple" type="file" name="files[]"></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div display="none" class="upload-new" style="display: none;"><input type="file" name="filepond[]"
+                            class="my-pond"></div>
+                    <div class="files-list">
+                        <div class="files-wraps  view-grid"></div>
+                        <p class="no-files-text text-center" style="display: none;">No file found</p>
+                        <!---->
+                    </div>
+                    <!---->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tox tox-silver-sink tox-tinymce-aux" style="position: relative;"></div>
+
+    <!-- Scripts -->
+
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/pusher.min.js"></script>
+    <script src="https://bookingfleet.com/BookingFleet/public/dist/admin/js/manifest.js?_ver=2.0.0"></script>
+    <script src="https://bookingfleet.com/BookingFleet/public/dist/admin/js/vendor.js?_ver=2.0.0"></script>
+
+    <script src="https://bookingfleet.com/BookingFleet/public/dist/admin/js/app.js?_ver=2.0.0"></script>
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/vue/vue.js"></script>
+
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/bootbox/bootbox.min.js"></script>
+
+    <script src="https://bookingfleet.com/BookingFleet/public/libs/daterange/moment.min.js"></script>
+    <script
+        src="https://bookingfleet.com/BookingFleet/public/libs/daterange/daterangepicker.min.js?_ver=2.0.0"></script>
+    <script src="../../../js/phpdebugbar.js"></script>
+
+</body>
+<loom-container id="lo-companion-container">
+    <loom-shadow classname="resolved"></loom-shadow>
+</loom-container>
+<loom-container id="lo-engage-ext-container">
+    <loom-shadow classname="resolved"></loom-shadow>
+</loom-container>
+
+</html>

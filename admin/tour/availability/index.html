@@ -1,0 +1,857 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="9iskTOJbSwAPkKcLRWvXzaIMEZm42xnZYhjAQacR">
+
+    <title>Room Availability - bookingfleet</title>  
+    <link rel="icon" type="image/png" href="../../../uploads/finallogo.png">
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+
+    <!-- Styles -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../../../libs/font-awesome/css/font-awesome.css">
+    <link href="../../../css/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="../../../css/ionicons/icofont.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/admin/vendors.css">
+    <link rel="stylesheet" href="../../../css/admin/app.css">
+    <link rel="stylesheet" href="../../../css/font-face.css">
+    <link rel="stylesheet" href="../../../libs/fullcalendar-4.2.0/core/main.css">
+    <link rel="stylesheet" href="../../../libs/fullcalendar-4.2.0/daygrid/main.css">
+    <style>
+        .event-name {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" property="stylesheet"
+        href="https://bookingfleet.com/BookingFleet/public/_debugbar/assets/stylesheets?v=1625121810&amp;theme=auto">
+    <script type="text/javascript"
+        src="https://bookingfleet.com/BookingFleet/public/_debugbar/assets/javascript?v=1625121810"></script>
+    <script type="text/javascript">jQuery.noConflict(true);</script>
+    <script src="../../../js/app.js"></script>
+    <link rel="stylesheet" href="../../../css/phpdebugbar.css">
+</head>
+
+<body class=" ">
+    <div id="app">
+        <div class="main-header d-flex">
+            <div class="header-logo flex-shrink-0">
+                <h3 class="logo-text"><a href="https://bookingfleet.com/BookingFleet/public/admin">Booking Core <span
+                            class="app-version">2.0.0</span></a></h3>
+            </div>
+            <div class="header-widgets d-flex flex-grow-1">
+                <div class="widgets-left d-flex flex-grow-1 align-items-center">
+                    <div class="header-widget">
+                        <span class="btn-toggle-admin-menu btn btn-sm btn-link"><i class="icon ion-ios-menu"></i></span>
+                    </div>
+                    <div class="header-widget search-widget">
+
+                        <a href="https://bookingfleet.com/BookingFleet/public" class="btn btn-link" target="_blank"><i
+                                class="fa fa-eye"></i> Home
+                        </a>
+                    </div>
+                </div>
+                <div class="widgets-right flex-shrink-0 d-flex">
+                    <div class="dropdown header-widget widget-user pt-2 dropdown-notifications flex-shrink-0"
+                        style="min-width: 0">
+                        <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+                            aria-expanded="false">
+                            <i class="fa fa-lg fa-bell m-1 p-1"></i>
+                            <span class="badge badge-danger notification-icon">2</span>
+                        </div>
+                        <div class="dropdown-menu overflow-auto notify-items dropdown-container dropdown-menu-right dropdown-large"
+                            aria-labelledby="dropdownMenuButton">
+                            <div class="dropdown-toolbar">
+                                <div class="dropdown-toolbar-actions">
+                                    <a href="#" class="markAllAsRead">Mark all as read</a>
+                                </div>
+                                <h3 class="dropdown-toolbar-title">Notifications (<span class="notif-count">2</span>)
+                                </h3>
+                            </div>
+                            <ul class="dropdown-list-items p-0">
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://www.bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="saad khan">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="8f4c97f9-464a-42a5-8915-542324580005"
+                                                href="https://www.bookingfleet.com/BookingFleet/public/admin/module/hotel?id=78">
+                                                was updated to Draft by saad khan</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">2 days 18 hours 29 minutes 27 seconds </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification active">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://www.bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="saad khan">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="markAsRead" data-id="50310a0d-edc7-43b7-98c9-8cd138508aab"
+                                                href="https://www.bookingfleet.com/BookingFleet/public/admin/module/hotel/edit/78">saad
+                                                khan has created hotel </a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">2 days 18 hours 29 minutes 35 seconds </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification ">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="bookingFleet">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="" data-id="66352cb0-240a-4c8a-badf-5131b60d27f4"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel?id=77">dawn
+                                                was updated to Publish by bookingFleet</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 14 days 19 hours 37 minutes 20 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification ">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="bookingFleet">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="" data-id="1138f283-e42c-43bb-a79b-f6c103c27be4"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/hotel/edit/77">bookingFleet
+                                                has created hotel dawn</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 14 days 20 hours 12 minutes 22 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="notification ">
+                                    <div class="media">
+                                        <div class="media-left">
+                                            <div class="media-object">
+                                                <img class="image-responsive"
+                                                    src="https://bookingfleet.com/BookingFleet/public/images/avatar.png"
+                                                    alt="ds">
+                                            </div>
+                                        </div>
+                                        <div class="media-body">
+                                            <a class="" data-id="0d4b882b-9545-43cb-ad9b-e3da9b0bcadb"
+                                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/userUpgradeRequest">ds
+                                                has requested to become a vendor</a>
+                                            <div class="notification-meta">
+                                                <small class="timestamp">1 months 19 days 4 hours 16 minutes 19 seconds
+                                                </small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="dropdown-footer text-center">
+                                <a href="https://bookingfleet.com/BookingFleet/public/admin/module/core/notifications">View
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown header-widget widget-user flex-shrink-0">
+                        <div data-toggle="dropdown" class="user-dropdown d-flex align-items-center" aria-haspopup="true"
+                            aria-expanded="false">
+                            <span class="user-avatar flex-shrink-0">
+                                <div class="avatar avatar-cover"
+                                    style="background-image: url('https://bookingfleet.com/BookingFleet/public/images/avatar.png')">
+                                </div>
+                            </span>
+                            <div class="user-info flex-grow-1">
+                                <div class="user-name">Front end Developer</div>
+                                <div class="user-role">Administrator</div>
+                            </div>
+                            <i class="fa fa-angle-down"></i>
+                        </div>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item"
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/edit/63">Edit
+                                Profile</a>
+                            <a class="dropdown-item"
+                                href="https://bookingfleet.com/BookingFleet/public/admin/module/user/password/63">Change
+                                Password</a>
+                            <a class="dropdown-item" href="#"
+                                onclick="event.preventDefault(); document.getElementById('logout-form').submit();"><i
+                                    class="fa fa-sign-out"></i> Logout
+                            </a>
+                        </div>
+                        <form id="logout-form" action="https://bookingfleet.com/BookingFleet/public/logout"
+                            method="POST" style="display: none;">
+                            <input type="hidden" name="_token" value="9iskTOJbSwAPkKcLRWvXzaIMEZm42xnZYhjAQacR">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-sidebar">
+          <ul class="main-menu">
+            <li class=" admin"><a href="../../index.html">
+                <span class="icon text-center"><i class="icon ion-ios-desktop"></i></span>
+                Dashboard
+              </a>
+            </li>
+            <li class=" has-children admin_module_news">
+              <a href="../../news/index.html">
+                <span class="icon text-center"><i class="ion-md-bookmarks"></i></span>
+                News
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class="has-children admin_module_news"><a href="../../news/index.html"> All News</a> </li>
+                <li class="has-children admin_module_news"><a href="../../news/create/index.html"> Add News</a>
+                </li>
+                <li class="has-children admin_module_news"><a href="../../news/category/index.html">Categories</a>
+                </li>
+                <li class="has-children admin_module_news"><a href="../../news/tags/index.html"> Tags</a></li>
+              </ul>
+            </li>
+            <li class=" admin_module_page">
+              <a href="../../pages/index.html">
+                <span class="icon text-center"><i class="icon ion-ios-bookmarks"></i></span>
+                Page
+              </a>
+            </li>
+            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location">
+              <a href="../../location/index.html">
+                <span class="icon text-center"><i class="icon ion-md-compass"></i></span>
+                Location
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class="has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location">
+                  <a href="../../location/index.html">
+                    <i class="icon ion-md-compass"></i>
+                    All Location
+                  </a>
+                </li>
+                <li class="has-children https:__bookingfleet.com_BookingFleet_public_admin_module_location">
+                  <a href="../../location/category/index.html">
+                    <i class="icon ion-md-compass"></i>
+                    All Category
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" has-children admin_module_hotel">
+              <a href="../../hotel/index.html">
+                <span class="icon text-center"><i class="fa fa-building-o"></i></span>
+                Hotel
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class="has-children admin_module_hotel">
+                  <a href="../../hotel/index.html">All Hotels</a>
+                </li>
+                <li class="has-children admin_module_hotel">
+                  <a href="../../hotel/add/index.html">Add new Hotel</a>
+                </li>
+                <li class="has-children admin_module_hotel">
+                  <a href="../../hotel/attribute/index.html">Attributes</a>
+                </li>
+                <li class="has-children admin_module_hotel">
+                  <a href="../../hotel/room/index.html">Room Attributes</a>
+                </li>
+                <li class="has-children admin_module_hotel">
+                  <a href="../../hotel/recovery.html">Recovery</a>
+                </li>
+              </ul>
+            </li>
+            <li class=" has-children admin_module_tour">
+              <a href="../../tour/index.html">
+                <span class="icon text-center"><i class="icon ion-md-umbrella"></i></span>
+                Tour
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class="active has-children admin_module_tour">
+                  <a href="../../tour/index.html">All Tours</a>
+                </li>
+                <li class="active has-children admin_module_tour">
+                  <a href="../../tour/add/index.html">Add Tour</a>
+                </li>
+                <li class="active has-children admin_module_tour">
+                  <a href="../../tour/categories/index.html">Categories</a>
+                </li>
+                <li class="active has-children admin_module_tour">
+                  <a href="../../tour/attribute/index.html">Attributes</a>
+                </li>
+                <li class="active has-children admin_module_tour">
+                  <a href="../../tour/availability/index.html">Availability</a>
+                </li>
+                <li class=" has-children admin_module_tour">
+                  <a href="../../tour/bookingCalendar.html">Booking
+                    Calendar</a>
+                </li>
+                <li class=" has-children admin_module_tour">
+                  <a href="../../tour/recovery">Recovery</a>
+                </li>
+              </ul>
+            </li>
+            <li class=" has-children admin_module_space">
+              <a href="../../space/index.html">
+                <span class="icon text-center"><i class="ion ion-md-home"></i></span>
+                Space
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class=" has-children admin_module_space">
+                  <a href="../../space/index.html">
+                    All Spaces</a>
+                </li>
+                <li class=" has-children admin_module_space">
+                  <a href="../../space/add/index.html">
+                    Add new Space</a>
+                </li>
+                <li class=" has-children admin_module_space">
+                  <a href="../../space/attribute/index.html">
+                    Attributes</a>
+                </li>
+                <li class=" has-children admin_module_space">
+                  <a href="../../space/availability/index.html">
+                    Availability</a>
+                </li>
+                <li class=" has-children admin_module_space">
+                  <a href="../../space/recovery/index.html">
+                    Recovery</a>
+                </li>
+              </ul>
+            </li>
+            <li class=" has-children admin_module_car">
+              <a href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                <span class="icon text-center"><i class="ion-logo-model-s"></i></span>
+                Car
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class=" has-children admin_module_car"><a
+                    href="https://bookingfleet.com/BookingFleet/public/admin/module/car">
+                    All Cars</a>
+                </li>
+                <li class=" has-children admin_module_car"><a
+                    href="https://bookingfleet.com/BookingFleet/public/admin/module/car/create">
+                    Add new Car</a>
+                </li>
+                <li class=" has-children admin_module_car"><a
+                    href="https://bookingfleet.com/BookingFleet/public/admin/module/car/attribute">
+                    Attributes</a>
+                </li>
+                <li class=" has-children admin_module_car"><a
+                    href="https://bookingfleet.com/BookingFleet/public/admin/module/car/availability">
+                    Availability</a>
+                </li>
+                <li class=" has-children admin_module_car"><a
+                    href="https://bookingfleet.com/BookingFleet/public/admin/module/car/recovery">
+                    Recovery</a>
+                </li>
+              </ul>
+            </li>
+            <li class=" admin_module_review">
+              <a href="../../review/index.html">
+                <span class="icon text-center"><i class="icon ion-ios-text"></i></span>
+                Reviews
+              </a>
+            </li>
+            <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+              <a href="../../event/index.html">
+                <span class="icon text-center"><i class="ion-ios-calendar"></i></span>
+                Event
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                  <a href="../../event/index.html">
+                    All Events</a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                  <a href="../../event/add/index.html">
+                    Add new Event</a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                  <a href="../../event/attribute/index.html">
+                    Attributes</a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                  <a href="../../event/availability/index.html">
+                    Availability</a>
+                </li>
+                <li class=" has-children https:__bookingfleet.com_BookingFleet_public_admin_module_event">
+                  <a href="../../event/recovery.html">
+                    Recovery</a>
+                </li>
+              </ul>
+            </li>
+            <li class=" https:__bookingfleet.com_BookingFleet_public_admin_module_media">
+              <a href="../../media/index.html">
+                <span class="icon text-center"><i class="fa fa-picture-o"></i></span>
+                Media
+              </a>
+            </li>
+            <li class=" admin_module_core_menu">
+              <a href="../../menu/index.html">
+                <span class="icon text-center"><i class="icon ion-ios-apps"></i></span>
+                Menu
+              </a>
+            </li>
+            <li class=" admin_module_core_emailsetting">
+              <a href="../../emailsetting/index.html">
+                <span class="icon text-center"><i class="fa fa-envelope"></i></span>
+                Email Setting
+              </a>
+            </li>
+            <li class=" admin_module_template">
+              <a href="../../templates/index.html">
+                <span class="icon text-center"><i class="icon ion-logo-html5"></i></span>
+                Templates
+              </a>
+            </li>
+            <li class=" admin_module_vendor_payout">
+              <a href="../../payout/index.html">
+                <span class="icon text-center"><i class="icon ion-md-card"></i></span>
+                Payouts
+              </a>
+            </li>
+            <li class=" has-children admin_module_core_settings_index_general">
+              <a href="../../setting/index.html">
+                <span class="icon text-center"><i class="icon ion-ios-cog"></i></span>
+                Setting
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/index.html"> General Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/car/index.html"> Car Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/event/index.html"> Event Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/hotel/index.html"> Hotel Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/space/index.html"> Space Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/tour/index.html"> Tour Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/news/index.html"> News Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/booking/index.html"> Booking Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/enquiry/index.html"> Enquiry Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/user/index.html"> User Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/wallet/index.html"> Wallet Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/vendor/index.html"> Vendor Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/payment/index.html"> Payment Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/style/index.html"> Style Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/advance/index.html"> Advance Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/email/index.html"> Email Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/sms/index.html"> Sms Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/mobile/index.html"> Mobile App Settings</a>
+                </li>
+                <li class=" has-children admin_module_core_settings_index_general">
+                  <a href="../../setting/review/index.html"> Review Advance Settings</a>
+                </li>
+              </ul>
+            </li>
+            <li class=" has-children admin_module_core_tools">
+              <a href="../../tools/index.html">
+                <span class="icon text-center"><i class="icon ion-ios-hammer"></i></span>
+                Tools
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class=" has-children admin_module_core_tools">
+                  <a href="../../tools/index.html">
+                    <i class="icon ion-ios-globe"></i>
+                    Languages
+                  </a>
+                </li>
+                <li class=" has-children admin_module_core_tools">
+                  <a href="../../tools/translation/index.html">
+                    <i class="icon ion-ios-globe"></i>
+                    Translation Manager
+                  </a>
+                </li>
+                <li class=" has-children admin_module_core_tools">
+                  <a href="../../logs/index.html">
+                    <i class="icon ion-ios-nuclear"></i>
+                    System Logs
+                  </a>
+                </li>
+                <li class=" has-children admin_module_core_tools">
+                  <a href="../../tools/updater/index.html">
+                    <i class="icon ion-md-download"></i>
+                    Updater
+                  </a>
+                </li>
+                <li class=" has-children admin_module_core_tools">
+                  <a href="../../tools/plugins/index.html">
+                    <i class="icon ion-md-color-wand"></i>
+                    Plugins
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class=" has-children admin_module_user">
+              <a href="../../users/all/index.html">
+                <span class="icon text-center"><i class="icon ion-ios-contacts"></i></span>
+                Users <span class="badge badge-warning">1</span>
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class=" has-children admin_module_user">
+                  <a href="../../users/all/index.html">
+                    <i class="fa fa-user"></i>
+                    All Users</a>
+                </li>
+                <li class=" has-children admin_module_user">
+                  <a href="../../users/role/index.html">
+                    <i class="fa fa-lock"></i>
+                    Role Manager</a>
+                </li>
+                <li class=" has-children admin_module_user">
+                  <a href="../../users/subscribers/index.html">
+                    Subscribers</a>
+                </li>
+                <li class=" has-children admin_module_user">
+                  <a href="../../users/upgradeRequest/index.html">
+                    Upgrade Request <span class="badge badge-warning">4</span></a>
+                </li>
+                <li class=" has-children admin_module_user">
+                  <a href="../../users/verification/index.html">
+                    Verification Request <span class="badge badge-warning">1</span></a>
+                </li>
+              </ul>
+            </li>
+            <li class=" has-children admin_module_report_booking">
+              <a href="report/enquiry/index.html">
+                <span class="icon text-center"><i class="icon ion-ios-pie"></i></span>
+                Reports <span class="badge badge-warning">2</span>
+              </a>
+              <span class="btn-toggle"><i class="fa fa-angle-left pull-right"></i></span>
+              <ul class="children">
+                <li class=" has-children admin_module_report_booking">
+                  <a href="../../report/enquiry/index.html">
+                    <i class="icon ion-ios-pricetags"></i>
+                    Enquiry Reports
+                  </a>
+                </li>
+                <li class=" has-children admin_module_report_booking">
+                  <a href="../../report/booking/index.html">
+                    <i class="icon ion-ios-pricetags"></i>
+                    Booking Reports
+                  </a>
+                </li>
+                <li class=" has-children admin_module_report_booking">
+                  <a href="../../report/statistic/index.html">
+                    <i class="icon ion ion-md-podium"></i>
+                    Booking Statistic
+                  </a>
+                </li>
+                <li class=" has-children admin_module_report_booking">
+                  <a href="../../report/contact/index.html">
+                    <i class="icon ion ion-md-mail"></i>
+                    Contact Submissions
+                  </a>
+                </li>
+                <li class=" has-children admin_module_report_booking">
+                  <a href="../../report/credit-purchase/index.html">
+                    <i class="fa fa-money"></i>
+                    Credit Purchase Report <span class="badge badge-warning">2</span>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="main-content">
+            <nav class="main-breadcrumb" aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="https://bookingfleet.com/BookingFleet/public/admin"><i class="fa fa-home"></i> Dashboard</a></li>
+    
+                                <li class="breadcrumb-item ">
+                                                <a href="https://bookingfleet.com/BookingFleet/public/user/tour">Tours</a>
+                                        </li>
+                                <li class="breadcrumb-item active">
+                                                Availability
+                                        </li>
+                
+        </ol>
+    </nav>
+                    <div class="container-fluid">
+            <div class="d-flex justify-content-between mb20">
+                <h1 class="title-bar">Tours Availability Calendar</h1>
+            </div>
+                    <div class="panel">
+                <div class="panel-body">
+                    <div class="filter-div d-flex justify-content-between ">
+                        <div class="col-left">
+                            <form method="get" action="" class="filter-form filter-form-left d-flex flex-column flex-sm-row" role="search">
+                                <input type="text" name="s" value="" placeholder="Search by name" class="form-control">
+                                <button class="btn-info btn btn-icon btn_search " type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="col-right">
+                                                        <span class="count-string">Showing 1 - 15 of 16 spaces</span>
+                                                </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="panel">
+                <div class="panel-title"><strong>Availability</strong></div>
+                <div class="panel-body no-padding" style="background: #f4f6f8;padding: 0px 15px;">
+                    <div class="row">
+                        <div class="col-md-3" style="border-right: 1px solid #dee2e6;">
+                            <ul class="nav nav-tabs  flex-column vertical-nav" id="items_tab" role="tablist">
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link active" data-id="16" data-toggle="tab" href="#calendar-16" title="River Cruise Tour on the Seine">#16 - River Cruise Tour on the Seine</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="15" data-toggle="tab" href="#calendar-15" title="Cannes and Antibes Night Tour">#15 - Cannes and Antibes Night Tour</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="14" data-toggle="tab" href="#calendar-14" title="San Francisco Express Never Ceases">#14 - San Francisco Express Never Ceases</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="13" data-toggle="tab" href="#calendar-13" title="Hollywood Sign Small Group Tour in Luxury Van">#13 - Hollywood Sign Small Group Tour in Luxury Van</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="12" data-toggle="tab" href="#calendar-12" title="Segway Tour of Washington, D.C. Highlights">#12 - Segway Tour of Washington, D.C. Highlights</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="11" data-toggle="tab" href="#calendar-11" title="Trip of New York – Discover America">#11 - Trip of New York – Discover America</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="10" data-toggle="tab" href="#calendar-10" title="Giverny and Versailles Small Group Day Trip">#10 - Giverny and Versailles Small Group Day Trip</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="9" data-toggle="tab" href="#calendar-9" title="Tastes and Sounds of the South 2019">#9 - Tastes and Sounds of the South 2019</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="8" data-toggle="tab" href="#calendar-8" title="Pure Luxe in Punta Mita">#8 - Pure Luxe in Punta Mita</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="7" data-toggle="tab" href="#calendar-7" title="Eastern Discovery">#7 - Eastern Discovery</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="6" data-toggle="tab" href="#calendar-6" title="Eastern Discovery (Start New Orleans)">#6 - Eastern Discovery (Start New Orleans)</a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="5" data-toggle="tab" href="#calendar-5" title="Southwest States (Ex Los Angeles) ">#5 - Southwest States (Ex Los Angeles) </a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="4" data-toggle="tab" href="#calendar-4" title="Paris Vacation Travel ">#4 - Paris Vacation Travel </a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="3" data-toggle="tab" href="#calendar-3" title="Los Angeles to San Francisco Express ">#3 - Los Angeles to San Francisco Express </a>
+                                    </li>
+                                                                <li class="nav-item event-name ">
+                                        <a class="nav-link" data-id="2" data-toggle="tab" href="#calendar-2" title="New York: Museum of Modern Art">#2 - New York: Museum of Modern Art</a>
+                                    </li>
+                                                        </ul>
+                        </div>
+                        <div class="col-md-9" style="background: white;padding: 15px;">
+                            <div id="dates-calendar" class="dates-calendar fc fc-ltr fc-unthemed" style=""><div class="fc-toolbar fc-header-toolbar"><div class="fc-left"><h2>June 2022</h2></div><div class="fc-center"></div><div class="fc-right"><button type="button" class="fc-today-button fc-button fc-button-primary" disabled="">today</button><div class="fc-button-group"><button type="button" class="fc-prev-button fc-button fc-button-primary" aria-label="prev"><span class="fc-icon fc-icon-chevron-left"></span></button><button type="button" class="fc-next-button fc-button fc-button-primary" aria-label="next"><span class="fc-icon fc-icon-chevron-right"></span></button></div></div></div><div class="fc-view-container"><div class="fc-view fc-dayGridMonth-view fc-dayGrid-view" style=""><table class=""><thead class="fc-head"><tr><td class="fc-head-container fc-widget-header"><div class="fc-row fc-widget-header"><table class=""><thead><tr><th class="fc-day-header fc-widget-header fc-mon"><span>Mon</span></th><th class="fc-day-header fc-widget-header fc-tue"><span>Tue</span></th><th class="fc-day-header fc-widget-header fc-wed"><span>Wed</span></th><th class="fc-day-header fc-widget-header fc-thu"><span>Thu</span></th><th class="fc-day-header fc-widget-header fc-fri"><span>Fri</span></th><th class="fc-day-header fc-widget-header fc-sat"><span>Sat</span></th><th class="fc-day-header fc-widget-header fc-sun"><span>Sun</span></th></tr></thead></table></div></td></tr></thead><tbody class="fc-body"><tr><td class="fc-widget-content"><div class="fc-scroller fc-day-grid-container" style="overflow: hidden; height: 420px;"><div class="fc-day-grid"><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 70px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-mon fc-other-month fc-past" data-date="2022-05-30"></td><td class="fc-day fc-widget-content fc-tue fc-other-month fc-past" data-date="2022-05-31"></td><td class="fc-day fc-widget-content fc-wed fc-past" data-date="2022-06-01"></td><td class="fc-day fc-widget-content fc-thu fc-past" data-date="2022-06-02"></td><td class="fc-day fc-widget-content fc-fri fc-past" data-date="2022-06-03"></td><td class="fc-day fc-widget-content fc-sat fc-past" data-date="2022-06-04"></td><td class="fc-day fc-widget-content fc-sun fc-past" data-date="2022-06-05"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-mon fc-other-month fc-past" data-date="2022-05-30"><span class="fc-day-number">30</span></td><td class="fc-day-top fc-tue fc-other-month fc-past" data-date="2022-05-31"><span class="fc-day-number">31</span></td><td class="fc-day-top fc-wed fc-past" data-date="2022-06-01"><span class="fc-day-number">1</span></td><td class="fc-day-top fc-thu fc-past" data-date="2022-06-02"><span class="fc-day-number">2</span></td><td class="fc-day-top fc-fri fc-past" data-date="2022-06-03"><span class="fc-day-number">3</span></td><td class="fc-day-top fc-sat fc-past" data-date="2022-06-04"><span class="fc-day-number">4</span></td><td class="fc-day-top fc-sun fc-past" data-date="2022-06-05"><span class="fc-day-number">5</span></td></tr></thead><tbody><tr><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 70px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-mon fc-past" data-date="2022-06-06"></td><td class="fc-day fc-widget-content fc-tue fc-today " data-date="2022-06-07"></td><td class="fc-day fc-widget-content fc-wed fc-future" data-date="2022-06-08"></td><td class="fc-day fc-widget-content fc-thu fc-future" data-date="2022-06-09"></td><td class="fc-day fc-widget-content fc-fri fc-future" data-date="2022-06-10"></td><td class="fc-day fc-widget-content fc-sat fc-future" data-date="2022-06-11"></td><td class="fc-day fc-widget-content fc-sun fc-future" data-date="2022-06-12"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-mon fc-past" data-date="2022-06-06"><span class="fc-day-number">6</span></td><td class="fc-day-top fc-tue fc-today " data-date="2022-06-07"><span class="fc-day-number">7</span></td><td class="fc-day-top fc-wed fc-future" data-date="2022-06-08"><span class="fc-day-number">8</span></td><td class="fc-day-top fc-thu fc-future" data-date="2022-06-09"><span class="fc-day-number">9</span></td><td class="fc-day-top fc-fri fc-future" data-date="2022-06-10"><span class="fc-day-number">10</span></td><td class="fc-day-top fc-sat fc-future" data-date="2022-06-11"><span class="fc-day-number">11</span></td><td class="fc-day-top fc-sun fc-future" data-date="2022-06-12"><span class="fc-day-number">12</span></td></tr></thead><tbody><tr><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 70px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-mon fc-future" data-date="2022-06-13"></td><td class="fc-day fc-widget-content fc-tue fc-future" data-date="2022-06-14"></td><td class="fc-day fc-widget-content fc-wed fc-future" data-date="2022-06-15"></td><td class="fc-day fc-widget-content fc-thu fc-future" data-date="2022-06-16"></td><td class="fc-day fc-widget-content fc-fri fc-future" data-date="2022-06-17"></td><td class="fc-day fc-widget-content fc-sat fc-future" data-date="2022-06-18"></td><td class="fc-day fc-widget-content fc-sun fc-future" data-date="2022-06-19"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-mon fc-future" data-date="2022-06-13"><span class="fc-day-number">13</span></td><td class="fc-day-top fc-tue fc-future" data-date="2022-06-14"><span class="fc-day-number">14</span></td><td class="fc-day-top fc-wed fc-future" data-date="2022-06-15"><span class="fc-day-number">15</span></td><td class="fc-day-top fc-thu fc-future" data-date="2022-06-16"><span class="fc-day-number">16</span></td><td class="fc-day-top fc-fri fc-future" data-date="2022-06-17"><span class="fc-day-number">17</span></td><td class="fc-day-top fc-sat fc-future" data-date="2022-06-18"><span class="fc-day-number">18</span></td><td class="fc-day-top fc-sun fc-future" data-date="2022-06-19"><span class="fc-day-number">19</span></td></tr></thead><tbody><tr><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 70px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-mon fc-future" data-date="2022-06-20"></td><td class="fc-day fc-widget-content fc-tue fc-future" data-date="2022-06-21"></td><td class="fc-day fc-widget-content fc-wed fc-future" data-date="2022-06-22"></td><td class="fc-day fc-widget-content fc-thu fc-future" data-date="2022-06-23"></td><td class="fc-day fc-widget-content fc-fri fc-future" data-date="2022-06-24"></td><td class="fc-day fc-widget-content fc-sat fc-future" data-date="2022-06-25"></td><td class="fc-day fc-widget-content fc-sun fc-future" data-date="2022-06-26"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-mon fc-future" data-date="2022-06-20"><span class="fc-day-number">20</span></td><td class="fc-day-top fc-tue fc-future" data-date="2022-06-21"><span class="fc-day-number">21</span></td><td class="fc-day-top fc-wed fc-future" data-date="2022-06-22"><span class="fc-day-number">22</span></td><td class="fc-day-top fc-thu fc-future" data-date="2022-06-23"><span class="fc-day-number">23</span></td><td class="fc-day-top fc-fri fc-future" data-date="2022-06-24"><span class="fc-day-number">24</span></td><td class="fc-day-top fc-sat fc-future" data-date="2022-06-25"><span class="fc-day-number">25</span></td><td class="fc-day-top fc-sun fc-future" data-date="2022-06-26"><span class="fc-day-number">26</span></td></tr></thead><tbody><tr><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 70px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-mon fc-future" data-date="2022-06-27"></td><td class="fc-day fc-widget-content fc-tue fc-future" data-date="2022-06-28"></td><td class="fc-day fc-widget-content fc-wed fc-future" data-date="2022-06-29"></td><td class="fc-day fc-widget-content fc-thu fc-future" data-date="2022-06-30"></td><td class="fc-day fc-widget-content fc-fri fc-other-month fc-future" data-date="2022-07-01"></td><td class="fc-day fc-widget-content fc-sat fc-other-month fc-future" data-date="2022-07-02"></td><td class="fc-day fc-widget-content fc-sun fc-other-month fc-future" data-date="2022-07-03"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-mon fc-future" data-date="2022-06-27"><span class="fc-day-number">27</span></td><td class="fc-day-top fc-tue fc-future" data-date="2022-06-28"><span class="fc-day-number">28</span></td><td class="fc-day-top fc-wed fc-future" data-date="2022-06-29"><span class="fc-day-number">29</span></td><td class="fc-day-top fc-thu fc-future" data-date="2022-06-30"><span class="fc-day-number">30</span></td><td class="fc-day-top fc-fri fc-other-month fc-future" data-date="2022-07-01"><span class="fc-day-number">1</span></td><td class="fc-day-top fc-sat fc-other-month fc-future" data-date="2022-07-02"><span class="fc-day-number">2</span></td><td class="fc-day-top fc-sun fc-other-month fc-future" data-date="2022-07-03"><span class="fc-day-number">3</span></td></tr></thead><tbody><tr><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td></tr></tbody></table></div></div><div class="fc-row fc-week fc-widget-content fc-rigid" style="height: 70px;"><div class="fc-bg"><table class=""><tbody><tr><td class="fc-day fc-widget-content fc-mon fc-other-month fc-future" data-date="2022-07-04"></td><td class="fc-day fc-widget-content fc-tue fc-other-month fc-future" data-date="2022-07-05"></td><td class="fc-day fc-widget-content fc-wed fc-other-month fc-future" data-date="2022-07-06"></td><td class="fc-day fc-widget-content fc-thu fc-other-month fc-future" data-date="2022-07-07"></td><td class="fc-day fc-widget-content fc-fri fc-other-month fc-future" data-date="2022-07-08"></td><td class="fc-day fc-widget-content fc-sat fc-other-month fc-future" data-date="2022-07-09"></td><td class="fc-day fc-widget-content fc-sun fc-other-month fc-future" data-date="2022-07-10"></td></tr></tbody></table></div><div class="fc-content-skeleton"><table><thead><tr><td class="fc-day-top fc-mon fc-other-month fc-future" data-date="2022-07-04"><span class="fc-day-number">4</span></td><td class="fc-day-top fc-tue fc-other-month fc-future" data-date="2022-07-05"><span class="fc-day-number">5</span></td><td class="fc-day-top fc-wed fc-other-month fc-future" data-date="2022-07-06"><span class="fc-day-number">6</span></td><td class="fc-day-top fc-thu fc-other-month fc-future" data-date="2022-07-07"><span class="fc-day-number">7</span></td><td class="fc-day-top fc-fri fc-other-month fc-future" data-date="2022-07-08"><span class="fc-day-number">8</span></td><td class="fc-day-top fc-sat fc-other-month fc-future" data-date="2022-07-09"><span class="fc-day-number">9</span></td><td class="fc-day-top fc-sun fc-other-month fc-future" data-date="2022-07-10"><span class="fc-day-number">10</span></td></tr></thead><tbody><tr><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td><td class="fc-event-container"><a class="fc-day-grid-event fc-h-event fc-event fc-start fc-end" style="color:#2791fe"><div class="fc-content" data-html="true" title="" data-original-title="Adult: 1,000 ₨<br>Child: 300 ₨<br>"> <span class="fc-title">Adult: 1,000 ₨<br>Child: 300 ₨<br></span></div></a></td></tr></tbody></table></div></div></div></div></td></tr></tbody></table></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    <div class="d-flex justify-content-center">
+                <nav>
+            <ul class="pagination">
+                
+                                <li class="page-item disabled" aria-disabled="true" aria-label="« Previous">
+                        <span class="page-link" aria-hidden="true">‹</span>
+                    </li>
+                
+                
+                                
+                    
+                    
+                                                                                            <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
+                                                                                                    <li class="page-item"><a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/availability?page=2">2</a></li>
+                                                                            
+                
+                                <li class="page-item">
+                        <a class="page-link" href="https://bookingfleet.com/BookingFleet/public/admin/module/tour/availability?page=2" rel="next" aria-label="Next »">›</a>
+                    </li>
+                        </ul>
+        </nav>
+    
+            </div>
+        </div>
+        <div id="bravo_modal_calendar" class="modal fade"><div role="document" class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title">Date Information</h5> <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button></div> <div class="modal-body"><form novalidate="novalidate" onsubmit="return false" class="row form_modal_calendar form-horizontal"><div class="col-md-6"><div class="form-group"><label>Date Ranges</label> <input readonly="readonly" type="text" class="form-control has-daterangepicker"></div></div> <div class="col-md-6"><div class="form-group"><label>Status</label> <br> <label><input true-value="1" false-value="0" type="checkbox"> Available for booking?</label></div></div> <div class="col-md-6"><div class="form-group"><label>Max Guest</label> <input type="number" class="form-control"></div></div> <div></div></form> <!----></div> <div class="modal-footer"><button type="button" data-dismiss="modal" class="btn btn-secondary">Close</button> <button type="button" class="btn btn-primary">Save changes</button></div></div></div></div>
+            <footer class="main-footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-6 copy-right">
+                            2022 © Booking Core by <a href="https://www.bookingcore.org" target="_blank">BookingCore Team</a>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="text-md-right footer-links d-none d-sm-block">
+                                <a href="https://www.bookingcore.org" target="_blank">About Us</a>
+                                <a href="https://m.me/bookingcore" target="_blank">Contact Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="backdrop-sidebar-mobile"></div>
+    </div>
+
+    <div id="cdn-browser-modal" class="modal fade">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div id="cdn-browser" class="cdn-browser d-flex flex-column" v-cloak :class="{is_loading:isLoading}">
+                    <div class="files-nav flex-shrink-0">
+                        <div class="d-flex justify-content-between">
+                            <div class="col-left d-flex align-items-center">
+                                <div class="filter-item">
+                                    <input type="text" placeholder="Search file name...." class="form-control"
+                                        v-model="filter.s" @keyup.enter="filter.page = 1;reloadLists()">
+                                </div>
+                                <div class="filter-item">
+                                    <button class="btn btn-default" @click="filter.page = 1;reloadLists()">
+                                        <i class="fa fa-search"></i> Search</button>
+                                </div>
+                                <div class="filter-item">
+                                    <small><i>Total: {{total}} files</i></small>
+                                </div>
+                            </div>
+                            <div class="col-right">
+                                <i class="fa-spin fa fa-spinner icon-loading active" v-show="isLoading"></i>
+                                <button class="btn btn-success btn-pick-files">
+                                    <span><i class="fa fa-upload"></i> Upload</span>
+                                    <input multiple type="file" name="files[]" ref="files">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upload-new" v-show="showUploader" display="none">
+                        <input type="file" name="filepond[]" class="my-pond">
+                    </div>
+                    <div class="files-list">
+                        <div class="files-wraps " :class="'view-'+viewType">
+                            <file-item v-for="(file,index) in files" :key="index" :view-type="viewType"
+                                :selected="selected" :file="file" v-on:select-file="selectFile"></file-item>
+                        </div>
+                        <p class="no-files-text text-center" v-show="!total && apiFinished" style="display: none">No
+                            file found</p>
+                        <div class="text-center" v-if="totalPage > 1">
+                            <nav aria-label="Page navigation example">
+                                <ul class="pagination">
+                                    <li class="page-item" :class="{disabled:filter.page <= 1}">
+                                        <a class="page-link" v-if="filter.page <=1">Previous</a>
+                                        <a class="page-link" href="#" v-if="filter.page > 1"
+                                            v-on:click="changePage(filter.page-1,$event)">Previous</a>
+                                    </li>
+                                    <li class="page-item" v-if="p >= (filter.page-3) && p <= (filter.page+3)"
+                                        :class="{active: p == filter.page}" v-for="p in totalPage"
+                                        @click="changePage(p,$event)">
+                                        <a class="page-link" href="#">{{p}}</a>
+                                    </li>
+                                    <li class="page-item" :class="{disabled:filter.page >= totalPage}">
+                                        <a v-if="filter.page >= totalPage" class="page-link">Next</a>
+                                        <a href="#" class="page-link" v-if="filter.page < totalPage"
+                                            v-on:click="changePage(filter.page+1,$event)">Next</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="browser-actions d-flex justify-content-between flex-shrink-0" v-if="selected.length">
+                        <div class="col-left" v-show="selected.length">
+                            <div class="control-remove" v-if="selected && selected.length">
+                                <button class="btn btn-danger" @click="removeFiles">Delete file</button>
+                            </div>
+                            <div class="control-info" v-if="selected && selected.length">
+                                <div class="count-selected">{{selected.length}} file selected</div>
+                                <div class="clear-selected" @click="selected=[]"><i>unselect</i></div>
+                            </div>
+                        </div>
+                        <div class="col-right" v-show="selected.length">
+                            <button class="btn btn-primary" :class="{disabled:!selected.length}" @click="sendFiles">Use
+                                file</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="../../../libs/js/pusher.min.js"></script>
+    <script src="../../../dist/admin/js/manifest.js"></script>
+    <script src="../../../dist/admin/js/vendor.js"></script>
+    <script src="../../../dist/admin/js/app.js"></script>
+    <script src="../../../libs/vue/vue.js"></script>
+    <script src="../../../libs/bootbox/bootbox.min.js"></script>
+    <script src="../../../js/phpdebugbar.js"></script>
+
+    <script src="../../../libs/fullcalendar-4.2.0/core/main.js"></script>
+    <script src="../../../libs/fullcalendar-4.2.0/interaction/main.js"></script>
+    <script src="../../../libs/fullcalendar-4.2.0/daygrid/main.js"></script>
+
+    <script src="../../../js/admin/calendar.js"></script>
+</body>
+
+</html>
